@@ -1,4 +1,3 @@
-
 ---
 - nomeAluno: "Aparecida"
 - matricula: "601014"
