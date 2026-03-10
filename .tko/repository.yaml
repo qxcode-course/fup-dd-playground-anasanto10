@@ -14,10 +14,10 @@ sources:
   quests: null
   tasks: null
 expanded:
-- sandbox@sandbox
-- fup@campanha-principal
 - sandbox@sandbox:00_rascunhos
 - fup@missão-operações
+- sandbox@sandbox
+- fup@campanha-principal
 tasks:
   sandbox@user_002: '{rate:100}'
   fup@tres: '{rate:100}'
