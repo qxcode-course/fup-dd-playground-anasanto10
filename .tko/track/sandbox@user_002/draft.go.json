@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-10_17-15-25",
+            "content": "@@ -73,43 +73,6 @@\n  %22)%0A\n-    fmt.Println(%22primeiro codigofm%22)%0A\n %7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-10_17-16-17",
+            "content": "@@ -101,13 +101,15 @@\n o codigo\n+fm\n %22)%0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-10_17-16-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"primeiro codigo \")\n    fmt.Println(\"primeiro codigo\")\n}\n",
+            "lines": "6"
+        }
+    ]
+}
