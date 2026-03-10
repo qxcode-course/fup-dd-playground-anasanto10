@@ -22,3 +22,14 @@
 2026-03-10 18:04:25, MOVE, v:1, k:fup@tres, mode:PICK
 2026-03-10 18:04:39, EXEC, v:1, k:fup@tres, mode:FULL, rate:0, size:5
 2026-03-10 18:10:37, EXEC, v:1, k:fup@tres, mode:FULL, rate:100, size:9
+2026-03-10 18:12:34, EXEC, v:1, k:fup@tres, mode:FULL, rate:100, size:7
+2026-03-10 18:12:54, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-10 18:12:54, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-10 18:12:56, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-10 18:12:56, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-10 18:12:57, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-10 18:13:02, MOVE, v:1, k:fup@resto, mode:DOWN
+2026-03-10 18:13:04, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-10 18:13:06, EXEC, v:1, k:fup@resto, mode:FULL, rate:0, size:5
+2026-03-10 18:13:07, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-10 18:13:10, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
