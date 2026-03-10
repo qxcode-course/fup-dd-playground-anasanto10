@@ -6,7 +6,9 @@ sources:
   writeable: true
   quests: null
   tasks: null
-expanded: []
+expanded:
+- sandbox@sandbox
+- sandbox@sandbox:00_rascunhos
 tasks: {}
 flags:
   painel: 0
