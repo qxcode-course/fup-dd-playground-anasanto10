@@ -12,8 +12,58 @@
         },
         {
             "label": "2026-03-10_17-16-27",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"primeiro codigo \")\n    fmt.Println(\"primeiro codigo\")\n}\n",
+            "content": "@@ -19,18 +19,16 @@\n t %22fmt%22%0A\n-%0A%0A\n func mai\n@@ -40,22 +40,22 @@\n %0A   \n+ \n fmt.\n-Sp\n+P\n rintln(%22\n ola \n@@ -54,16 +54,58 @@\n ln(%22\n-ola mund\n+primeiro codigo %22)%0A    fmt.Println(%22primeiro codig\n o%22)%0A\n",
             "lines": "6"
+        },
+        {
+            "label": "2026-03-10_17-31-00",
+            "content": "@@ -38,17 +38,16 @@\n () %7B%0A   \n- \n fmt.Spri\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-31-18",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -20,16 +20,17 @@\n  %22fmt%22%0A%0A\n+%0A\n func mai\n@@ -39,9 +39,12 @@\n ) %7B%0A\n-%09\n+    \n fmt.\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-31-51",
+            "content": "@@ -44,9 +44,10 @@\n fmt.\n-P\n+Sp\n rint\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-32-19",
+            "content": "@@ -39,28 +39,8 @@\n ) %7B%0A\n-%09var num1, num2 int%0A\n %09fmt\n@@ -63,20 +63,8 @@\n ndo%22\n-, num1, num2\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-10_17-40-07",
+            "content": "@@ -59,28 +59,8 @@\n int%0A\n-    fmt.Scan(&num1)%0A\n %09fmt\n@@ -92,12 +92,11 @@\n 1, num2)\n- \n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-10_17-43-20",
+            "content": "@@ -78,52 +78,8 @@\n um1)\n- //para ler as variaveis%0A    fmt.Scan(&num2)\n %0A%09fm\n@@ -117,21 +117,7 @@\n m2) \n-//para printar\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-10_17-44-29",
+            "content": "@@ -58,20 +58,8 @@\n  int\n- //variaveis\n %0A   \n@@ -81,34 +81,29 @@\n ) //\n-lendo e escrevendo EM num1\n+para ler as variaveis\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-52-48",
+            "content": "@@ -89,15 +89,8 @@\n num1\n-, &num2\n ) //\n@@ -116,16 +116,36 @@\n EM num1%0A\n+    fmt.Scan(&num2)%0A\n %09fmt.Pri\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-03-10_17-55-54",
+            "content": "@@ -140,14 +140,26 @@\n tln(\n+%22ola mundo%22, \n num1\n- +\n+,\n  num\n@@ -180,35 +180,6 @@\n tar%0A\n-    fmt.Println(num1 - num2)%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-10_17-57-47",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar num1, num2 int //variaveis\n    fmt.Scan(&num1, &num2) //lendo e escrevendo EM num1\n\tfmt.Println(num1 + num2) //para printar\n    fmt.Println(num1 - num2)\n}\n",
+            "lines": "10"
         }
     ]
 }
