@@ -16,8 +16,8 @@ sources:
 expanded:
 - sandbox@sandbox
 - fup@campanha-principal
-- fup@missão-operações
 - sandbox@sandbox:00_rascunhos
+- fup@missão-operações
 tasks:
   sandbox@user_002: '{rate:100}'
   fup@tres: '{rate:100}'

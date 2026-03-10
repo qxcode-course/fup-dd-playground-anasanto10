@@ -1,6 +1,7 @@
 package main
 import "fmt"
 func main() {
-    var a, b int
-    fmt.Println("qxcode")
-}
+    var bombom, criancas int
+    fmt.Scan(&bombom, &criancas)
+    fmt.Println(bombom / criancas, bombom % criancas)
+

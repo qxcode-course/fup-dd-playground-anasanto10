@@ -33,3 +33,10 @@
 2026-03-10 18:13:06, EXEC, v:1, k:fup@resto, mode:FULL, rate:0, size:5
 2026-03-10 18:13:07, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
 2026-03-10 18:13:10, EXEC, v:1, k:fup@resto, mode:FULL, rate:0
+2026-03-10 18:16:18, MOVE, v:1, k:fup@resto, mode:BACK
+2026-03-10 18:18:16, MOVE, v:1, k:fup@resto, mode:PICK
+2026-03-10 18:18:17, EXEC, v:1, k:fup@resto, mode:FULL, size:6, fail:COMP
+2026-03-10 18:18:19, EXEC, v:1, k:fup@resto, mode:FULL, fail:COMP
+2026-03-10 18:20:28, EXEC, v:1, k:fup@resto, mode:FULL, size:7, fail:COMP
+2026-03-10 18:20:43, EXEC, v:1, k:fup@resto, mode:FULL, fail:COMP
+2026-03-10 18:20:44, EXEC, v:1, k:fup@resto, mode:FULL, fail:COMP
