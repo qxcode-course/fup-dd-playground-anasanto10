@@ -12,7 +12,12 @@
         },
         {
             "label": "2026-03-10_18-20-28",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var bombom, criancas int\n    fmt.Scan(&bombom, &criancas)\n    fmt.Println(bombom / criancas, bombom % criancas)\n\n",
+            "content": "@@ -153,6 +153,5 @@\n as)%0A\n-%7D\n %0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-11_16-54-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var bombom, criancas int\n    fmt.Scan(&bombom, &criancas)\n    fmt.Println(bombom / criancas, bombom % criancas)\n}\n",
             "lines": "7"
         }
     ]

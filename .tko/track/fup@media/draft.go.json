@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-11_16-54-50",
+            "content": "@@ -41,104 +41,28 @@\n     \n-var num1, num2 int %0A    fmt.Scan(&num1)%0A    fmt.Scan(&num2)%0A    fmt.Println(num1 + num2 / 2)%0A    \n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-11_17-03-33",
+            "content": "@@ -113,17 +113,16 @@\n Println(\n-(\n num1 + n\n@@ -128,14 +128,17 @@\n num2\n-)\n  / 2)%0A\n+    \n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-11_17-04-02",
+            "content": "@@ -132,10 +132,11 @@\n 2) / 2)%0A\n+%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-11_17-04-10",
+            "content": "@@ -117,18 +117,8 @@\n tln(\n-%22%25.1f%5Cn%22, \n (num\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-11_17-10-30",
+            "content": "@@ -100,16 +100,17 @@\n um2)%0A   \n+ \n fmt.Prin\n@@ -117,33 +117,23 @@\n tln(\n-fmt.Sprintf(\n %22%25.1f\n+%5Cn\n %22, (num1\n +num\n@@ -132,17 +132,20 @@\n num1\n-+\n+ + \n num2)\n-/2)\n+ / 2\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-11_17-11-06",
+            "content": "@@ -116,24 +116,42 @@\n tln(\n+fmt.Sprintf(%22%25.1f%22, \n (num1\n- + \n++\n num2)\n- / 2\n+/2)\n )%0A%7D\n+%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-11_17-12-07",
+            "content": "@@ -56,15 +56,12 @@\n um2 \n-float32\n+int \n %0A   \n@@ -116,19 +116,8 @@\n tln(\n-%22%25.1f%5Cn%22 , \n (num\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-11_17-13-10",
+            "content": "@@ -115,16 +115,26 @@\n Println(\n+%22%25.1f%5Cn%22 ,\n  (num1 +\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-11_17-13-22",
+            "content": "@@ -100,18 +100,16 @@\n (&num2)%0A\n-%0A \n    fmt.P\n@@ -116,32 +116,28 @@\n rint\n-f(%22%25.1f%5Cn%22,\n+ln(\n  (num1\n-+\n+ + \n num2)\n-/\n+ / \n 2)%0A%7D\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-11_17-14-32",
+            "content": "@@ -100,16 +100,17 @@\n (&num2)%0A\n+%0A\n     fmt.\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-11_23-36-38",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num1, num2 float32\n    fmt.Scan(&num1)\n    fmt.Scan(&num2)\n    fmt.Printf(\"%.1f\\n\", (num1+num2)/2)\n}",
+            "lines": "8"
+        }
+    ]
+}

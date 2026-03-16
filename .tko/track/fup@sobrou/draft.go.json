@@ -1,0 +1,114 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_16-05-22",
+            "content": "@@ -41,233 +41,28 @@\n     \n-var a, b, c int%0A    fmt.Scan(&a, &b, &c)%0A    var preco1, preco2, preco3 float32%0A    fmt.Scan(&preco1, &preco2, &preco3)%0A    var saldo float32%0A    fmt.Scan(&saldo)%0A    fmt.Println(((a*preco1) + (b*preco2) + (c*preco3)) - saldo\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_16-15-00",
+            "content": "@@ -110,26 +110,26 @@\n preco3 float\n-64\n+32\n %0A    fmt.Sca\n@@ -180,10 +180,10 @@\n loat\n-64\n+32\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_16-15-25",
+            "content": "@@ -49,23 +49,19 @@\n a, b, c \n-float64\n+int\n %0A    fmt\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_16-15-33",
+            "content": "@@ -270,18 +270,8 @@\n aldo\n-, %22%25.2f%5Cn%22\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_16-16-56",
+            "content": "@@ -224,18 +224,8 @@\n tln(\n-%22%25.2f%5Cn%22, \n ((a*\n@@ -266,12 +266,22 @@\n  - saldo\n+, %22%25.2f%5Cn%22\n )%0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_16-17-20",
+            "content": "@@ -225,16 +225,18 @@\n ln(%22%25.2f\n+%5Cn\n %22, ((a*p\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_16-19-51",
+            "content": "@@ -220,16 +220,24 @@\n Println(\n+%22%25.2f%22, \n ((a*prec\n@@ -280,46 +280,6 @@\n do)%0A\n-    fmt.Println(%22saldo: %25.2f%5Cn%22, saldo)%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_16-21-00",
+            "content": "@@ -212,15 +212,19 @@\n     \n-saldo= \n+fmt.Println\n (((a\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_16-21-35",
+            "content": "@@ -208,27 +208,23 @@\n do)%0A    \n-fmt.Println\n+saldo= \n (((a*pre\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_16-22-06",
+            "content": "@@ -212,38 +212,19 @@\n     \n-var resto float64%0A    resto = \n+fmt.Println\n (((a\n@@ -285,16 +285,23 @@\n rintln(%22\n+saldo: \n %25.2f%5Cn%22,\n@@ -305,12 +305,12 @@\n n%22, \n-rest\n+sald\n o)%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_16-23-16",
+            "content": "@@ -308,16 +308,18 @@\n ln(%22%25.2f\n+%5Cn\n %22, resto\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-23-31",
+            "content": "@@ -291,11 +291,37 @@\n do)%0A    \n+fmt.Println(%22%25.2f%22, resto)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-24-39",
+            "content": "@@ -295,25 +295,7 @@\n     \n-fmt.Println(resto)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-24-53",
+            "content": "@@ -243,16 +243,8 @@\n  = (\n-saldo - \n ((a*\n@@ -277,16 +277,24 @@\n preco3))\n+ - saldo\n )%0A    fm\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-25-25",
+            "content": "@@ -307,18 +307,8 @@\n tln(\n-%22%25.2f%5Cn%22, \n rest\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-25-51",
+            "content": "@@ -303,16 +303,26 @@\n Println(\n+%22%25.2f%5Cn%22, \n resto)%0A%7D\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-26-05",
+            "content": "@@ -307,17 +307,8 @@\n tln(\n-%22%25.f%5Cn%22, \n rest\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-27-14",
+            "content": "@@ -306,17 +306,16 @@\n ntln(%22%25.\n-2\n f%5Cn%22, re\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-27-21",
+            "content": "@@ -304,24 +304,16 @@\n rintln(%22\n-resto = \n %25.2f%5Cn%22,\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-27-33",
+            "content": "@@ -300,17 +300,18 @@\n mt.Print\n-f\n+ln\n (%22resto \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-28-59",
+            "content": "@@ -303,16 +303,24 @@\n Printf(%22\n+resto = \n %25.2f%5Cn%22,\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-16_16-29-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c float64\n    fmt.Scan(&a, &b, &c)\n    var preco1, preco2, preco3 float64\n    fmt.Scan(&preco1, &preco2, &preco3)\n    var saldo float64\n    fmt.Scan(&saldo)\n    var resto float64\n    resto = (saldo - ((a*preco1) + (b*preco2) + (c*preco3)))\n    fmt.Printf(\"%.2f\\n\", resto)\n}\n",
+            "lines": "13"
+        }
+    ]
+}
