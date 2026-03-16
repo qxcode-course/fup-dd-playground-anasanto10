@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_16-34-55",
+            "content": "@@ -37,27 +37,8 @@\n ) %7B%0A\n-    var t_celsius %0A\n     \n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-16_16-40-03",
+            "content": "@@ -55,15 +55,8 @@\n ius \n-float32\n %0A   \n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-16_16-42-27",
+            "content": "@@ -50,21 +50,16 @@\n _celsius\n-, t_f\n  float32\n@@ -67,65 +67,28 @@\n     \n-t_f = (t_celsius * 1.8) + 32%0A    fmt.Printf(%22%25.6f%5Cn%22, t_f\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-16_16-43-52",
+            "content": "@@ -52,19 +52,17 @@\n elsius, \n-$$T\n+t\n _f float\n@@ -72,36 +72,36 @@\n     \n-$$T\n+t\n _f = \n-1.8 %5Ccdot T_c\n+(t_celsius * 1.8)\n  + 32\n-$$\n %0A   \n@@ -126,11 +126,9 @@\n n%22, \n-$$T\n+t\n _f)%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_16-44-29",
+            "content": "@@ -52,16 +52,18 @@\n elsius, \n+$$\n T_f floa\n@@ -70,16 +70,18 @@\n t32%0A    \n+$$\n T_f = 1.\n@@ -124,15 +124,17 @@\n .6f%5Cn%22, \n+$$\n T_f)%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_16-44-46",
+            "content": "@@ -92,16 +92,18 @@\n T_c + 32\n+$$\n %0A    fmt\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_16-44-55",
+            "content": "@@ -82,9 +82,13 @@\n 1.8 \n-*\n+%5Ccdot\n  T_c\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_16-45-07",
+            "content": "@@ -80,25 +80,19 @@\n = 1.8 * \n-t\n+T\n _c\n-elsius\n  + 32%0A  \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-50-44",
+            "content": "@@ -74,17 +74,16 @@\n   T_f = \n-(\n 1.8 * t_\n@@ -89,17 +89,16 @@\n _celsius\n-)\n  + 32%0A  \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_17-51-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t_celsius, T_f float32\n    T_f = (1.8 * t_celsius) + 32\n    fmt.Printf(\"%.6f\\n\", T_f)\n}\n",
+            "lines": "7"
+        }
+    ]
+}
