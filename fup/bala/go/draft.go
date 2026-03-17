@@ -5,8 +5,17 @@ import (
 	"math"
 )
 func main() {
-    var x1, x2, y1, y2, dist float64
-    fmt.Scan(&x1, &x2, &y1, &y2)
-    dist = math.Sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)))
-    fmt.Printf("%.2f\n", dist)
+   	var x1, y1, x2, y2 float64
+
+	fmt.Scanln(&x1)
+	fmt.Scanln(&y1)
+	fmt.Scanln(&x2)
+	fmt.Scanln(&y2)
+
+	dx := x2 - x1
+	dy := y2 - y1
+
+	distancia := math.Sqrt(dx*dx + dy*dy)
+
+	fmt.Printf("%.2f\n", distancia)
 }
