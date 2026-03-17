@@ -2,8 +2,108 @@
     "patches": [
         {
             "label": "2026-03-16_17-53-41",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -41,122 +41,28 @@\n     \n-var a, b, c, area float32%0A    fmt.Scan(&a, &b, &c)%0A    area = (a + b + c) / 2%0A    fmt.Printf(%22area = %25.2f%5Cn%22, area\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-16_18-00-03",
+            "content": "@@ -131,16 +131,23 @@\n Printf(%22\n+area = \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-00-11",
+            "content": "@@ -131,22 +131,16 @@\n Printf(%22\n- area \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-00-32",
+            "content": "@@ -131,16 +131,21 @@\n Printf(%22\n+ area\n  %25.2f%5Cn%22\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-00-42",
+            "content": "@@ -131,16 +131,17 @@\n Printf(%22\n+ \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-00-56",
+            "content": "@@ -131,17 +131,16 @@\n Printf(%22\n- \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-01-05",
+            "content": "@@ -131,16 +131,17 @@\n Printf(%22\n+ \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-04-01",
+            "content": "@@ -131,17 +131,16 @@\n Printf(%22\n- \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-04-07",
+            "content": "@@ -131,16 +131,17 @@\n Printf(%22\n+ \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-12-03",
+            "content": "@@ -131,17 +131,16 @@\n Printf(%22\n- \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-12-07",
+            "content": "@@ -131,16 +131,17 @@\n Printf(%22\n+ \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-13-43",
+            "content": "@@ -48,16 +48,22 @@\n  a, b, c\n+, area\n  float32\n@@ -92,20 +92,16 @@\n &c)%0A    \n-var \n area = (\n@@ -114,17 +114,16 @@\n + c) / 2\n- \n %0A    fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-15-31",
+            "content": "@@ -130,17 +130,16 @@\n Printf(%22\n- \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-15-47",
+            "content": "@@ -130,16 +130,17 @@\n Printf(%22\n+ \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-16-04",
+            "content": "@@ -130,17 +130,16 @@\n Printf(%22\n- \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-16-53",
+            "content": "@@ -130,16 +130,17 @@\n Printf(%22\n+ \n %25.2f%5Cn%22,\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-17-10",
+            "content": "@@ -17,32 +17,13 @@\n ort \n-%7B%0A    %22fmt%22%0A    %22math%22%0A%7D\n+%22fmt%22\n %0Afun\n@@ -90,19 +90,20 @@\n     var \n-per\n+area\n  = (a + \n@@ -122,69 +122,33 @@\n     \n- var area = math.Sqrt(per * (per - a) * (per - b) * (per - c)\n+fmt.Printf(%22%25.2f%5Cn%22, area\n )%0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-16_18-21-04",
+            "content": "@@ -203,38 +203,6 @@\n c))%0A\n-     fmt.Printf(%22%25.2f%5Cn%22,area )%0A\n %7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-03-16_18-21-41",
+            "content": "@@ -224,17 +224,16 @@\n %25.2f%5Cn%22,\n- \n area )%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_18-21-46",
+            "content": "@@ -17,28 +17,31 @@\n ort \n-%22fmt%22%0Aimport\n+%7B%0A    %22fmt%22%0A   \n  %22math%22%0A\n func\n@@ -36,16 +36,18 @@\n  %22math%22%0A\n+%7D%0A\n func mai\n@@ -77,10 +77,10 @@\n loat\n-64\n+32\n %0A   \n@@ -132,16 +132,17 @@\n c) / 2 %0A\n+ \n     var \n@@ -199,16 +199,17 @@\n r - c))%0A\n+ \n     fmt.\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-03-16_18-23-34",
+            "content": "package main\nimport \"fmt\"\nimport \"math\"\nfunc main() {\n    var a, b, c float64\n    fmt.Scan(&a, &b, &c)\n    var per = (a + b + c) / 2 \n    var area = math.Sqrt(per * (per - a) * (per - b) * (per - c))\n    fmt.Printf(\"%.2f\\n\", area )\n}\n",
+            "lines": "10"
         }
     ]
 }

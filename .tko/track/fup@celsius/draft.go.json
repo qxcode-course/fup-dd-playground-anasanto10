@@ -47,8 +47,28 @@
         },
         {
             "label": "2026-03-16_17-51-25",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t_celsius, T_f float32\n    T_f = (1.8 * t_celsius) + 32\n    fmt.Printf(\"%.6f\\n\", T_f)\n}\n",
+            "content": "@@ -65,10 +65,10 @@\n loat\n-64\n+32\n %0A   \n",
             "lines": "7"
+        },
+        {
+            "label": "2026-03-16_23-55-58",
+            "content": "@@ -115,17 +115,17 @@\n intf(%22%25.\n-2\n+6\n f%5Cn%22, T_\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_23-57-14",
+            "content": "@@ -115,17 +115,17 @@\n intf(%22%25.\n-6\n+2\n f%5Cn%22, T_\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-16_23-57-26",
+            "content": "@@ -68,33 +68,8 @@\n t64%0A\n-    fmt.Scan(&t_celsius)%0A\n     \n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-17_00-01-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var t_celsius, T_f float64\n    fmt.Scan(&t_celsius)\n    T_f = (1.8 * t_celsius) + 32\n    fmt.Printf(\"%.6f\\n\", T_f)\n}\n",
+            "lines": "8"
         }
     ]
 }

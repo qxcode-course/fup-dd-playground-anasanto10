@@ -13,9 +13,9 @@ sources:
   quests: null
   tasks: null
 expanded:
-- sandbox@sandbox:00_rascunhos
-- fup@missão-operações
 - fup@campanha-principal
+- fup@missão-operações
+- sandbox@sandbox:00_rascunhos
 - sandbox@sandbox
 tasks:
   sandbox@user_002: '{self:1, rate:100, study:5, friend:Nao, guided:1}'
@@ -23,6 +23,9 @@ tasks:
   fup@resto: '{self:1, rate:100, study:5, friend:Nao, guided:1}'
   fup@media: '{self:1, rate:100, study:6, friend:Nao, guided:1}'
   fup@sobrou: '{self:1, rate:100, study:10, friend:Nao, concept:1}'
+  fup@celsius: '{self:1, rate:100, study:15, friend:Nao, guided:1, concept:1}'
+  fup@pintando: '{self:1, rate:100, study:20, friend:Hanna, guided:1}'
+  fup@bala: '{rate:16}'
 flags:
   painel: 0
   quests: 2
@@ -31,4 +34,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@pintando
+selected: fup@segundos
