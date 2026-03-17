@@ -17,3 +17,25 @@
 2026-03-17 17:02:32, EXEC, v:1, k:fup@segundos, mode:FULL, rate:100, size:12
 2026-03-17 17:02:51, MOVE, v:1, k:fup@segundos, mode:BACK
 2026-03-17 17:03:23, SELF, v:1, k:fup@segundos, self:1, rate:100, study:10, friend:Nao, concept:1
+2026-03-17 17:27:01, MOVE, v:1, k:fup@tres, mode:PICK
+2026-03-17 17:27:02, EXEC, v:1, k:fup@tres, mode:FULL, rate:100
+2026-03-17 17:27:03, MOVE, v:1, k:fup@tres, mode:BACK
+2026-03-17 17:27:27, SELF, v:1, k:fup@tres, self:1, rate:100, friend:Nao, concept:1, debug:1
+2026-03-17 17:27:38, SELF, v:1, k:fup@resto, self:1, rate:100, friend:Nao, guided:1
+2026-03-17 17:27:46, SELF, v:1, k:fup@media, self:1, rate:100, friend:Nao, guided:1
+2026-03-17 17:27:53, SELF, v:1, k:fup@sobrou, self:1, rate:100, friend:Nao, concept:1
+2026-03-17 17:28:00, SELF, v:1, k:fup@segundos, self:1, rate:100, friend:Nao, concept:1
+2026-03-17 17:28:09, SELF, v:1, k:fup@celsius, self:1, rate:100, friend:Nao, guided:1, concept:1
+2026-03-17 17:28:20, SELF, v:1, k:fup@pintando, self:1, rate:100, friend:Hanna, guided:1
+2026-03-17 17:28:28, SELF, v:1, k:fup@bala, self:1, rate:100, friend:Nao, guided:1, concept:1, problem:1
+2026-03-17 17:32:55, MOVE, v:1, k:sandbox@user_004, mode:PICK
+2026-03-17 17:32:56, EXEC, v:1, k:sandbox@user_004, mode:LOCK, rate:0, size:5
+2026-03-17 17:40:35, EXEC, v:1, k:sandbox@user_004, mode:LOCK, rate:0, size:23
+2026-03-17 17:40:45, EXEC, v:1, k:sandbox@user_004, mode:LOCK, rate:0, size:23
+2026-03-17 17:40:58, EXEC, v:1, k:sandbox@user_004, mode:LOCK, rate:0, size:23
+2026-03-17 17:49:23, EXEC, v:1, k:sandbox@user_004, mode:LOCK, rate:0, size:32
+2026-03-17 18:02:02, EXEC, v:1, k:sandbox@user_004, mode:FULL, size:46, fail:COMP
+2026-03-17 18:02:29, EXEC, v:1, k:sandbox@user_004, mode:FULL, size:46, fail:COMP
+2026-03-17 18:04:45, EXEC, v:1, k:sandbox@user_004, mode:FULL, size:45, fail:COMP
+2026-03-17 18:06:00, EXEC, v:1, k:sandbox@user_004, mode:FULL, size:46, fail:COMP
+2026-03-17 18:09:22, EXEC, v:1, k:sandbox@user_004, mode:FULL, size:57, fail:COMP
