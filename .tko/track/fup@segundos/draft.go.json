@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-03-16_17-44-53",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -41,204 +41,28 @@\n     \n-var tempo int64%0A    fmt.Scan(&tempo)%0A    horas := tempo / 3600%0A    resto := tempo %25 3600%0A%0A    minutos := resto / 60%0A    segundos := resto %25 60%0A    fmt.Printf(%22%25d:%25d:%25d%5Cn%22, horas, minutos, segundos\n+fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-17_17-02-32",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var tempo int64\n    fmt.Scan(&tempo)\n    horas := tempo / 3600\n    resto := tempo % 3600\n\n    minutos := resto / 60\n    segundos := resto % 60\n    fmt.Printf(\"%d:%d:%d\\n\", horas, minutos, segundos)\n}\n",
+            "lines": "12"
         }
     ]
 }
