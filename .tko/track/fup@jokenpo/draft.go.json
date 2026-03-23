@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_16-50-48",
+            "content": "@@ -41,393 +41,28 @@\n     \n-var pedra, papel, tesoura, jog1, jog2 string%0A    pedra == R%0A    papel == P %0A    tesoura == S%0A    if (jog1 ==R && jog2 ==S %7C%7C jog1 == P && jog2 == R %7C%7C jog1 == S && jog2 == P)%7B%0A        fmt.Println(%22jog1%22)%0A    %7D else if (jog2 ==R && jog1 ==S %7C%7C jog2 == P && jog1 == R %7C%7C jog2 == S && jog1 == P)%7B%0A        fmt.Println(%22jog2%22)%0A    %7D else if(jog1 == jog2)%7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_16-57-10",
+            "content": "@@ -95,19 +95,17 @@\n edra == \n-'R'\n+R\n %0A    pap\n@@ -110,19 +110,18 @@\n apel == \n-'P'\n+P \n %0A    tes\n@@ -128,19 +128,17 @@\n oura == \n-'S'\n+S\n %0A    if \n@@ -145,20 +145,17 @@\n (jog1 ==\n- 'R'\n+R\n  && jog2\n@@ -157,19 +157,17 @@\n  jog2 ==\n-'S'\n+S\n  %7C%7C jog1\n@@ -166,27 +166,25 @@\n  %7C%7C jog1 == \n-'P'\n+P\n  && jog2 == \n@@ -179,27 +179,25 @@\n  && jog2 == \n-'R'\n+R\n  %7C%7C jog1 == \n@@ -192,27 +192,25 @@\n  %7C%7C jog1 == \n-'S'\n+S\n  && jog2 == \n@@ -205,27 +205,25 @@\n  && jog2 == \n-'P'\n+P\n )%7B%0A        f\n@@ -263,20 +263,17 @@\n (jog2 ==\n- 'R'\n+R\n  && jog1\n@@ -275,19 +275,17 @@\n  jog1 ==\n-'S'\n+S\n  %7C%7C jog2\n@@ -288,19 +288,17 @@\n jog2 == \n-'P'\n+P\n  && jog1\n@@ -305,11 +305,9 @@\n  == \n-'R'\n+R\n  %7C%7C \n@@ -318,11 +318,9 @@\n  == \n-'S'\n+S\n  && \n@@ -331,11 +331,9 @@\n  == \n-'P'\n+P\n )%7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-23_16-59-08",
+            "content": "@@ -93,20 +93,21 @@\n  pedra =\n- %22R%22\n+= 'R'\n %0A    pap\n@@ -110,20 +110,21 @@\n  papel =\n- %22P%22\n+= 'P'\n %0A    tes\n@@ -129,20 +129,21 @@\n esoura =\n- %22S%22\n+= 'S'\n %0A    if \n@@ -147,27 +147,27 @@\n if (jog1 == \n-%22R%22\n+'R'\n  && jog2 == \n@@ -165,20 +165,19 @@\n  jog2 ==\n- %22S%22\n+'S'\n  %7C%7C jog1\n@@ -176,27 +176,27 @@\n  %7C%7C jog1 == \n-%22P%22\n+'P'\n  && jog2 == \n@@ -191,27 +191,27 @@\n  && jog2 == \n-%22R%22\n+'R'\n  %7C%7C jog1 == \n@@ -206,27 +206,27 @@\n  %7C%7C jog1 == \n-%22S%22\n+'S'\n  && jog2 == \n@@ -221,27 +221,27 @@\n  && jog2 == \n-%22P%22\n+'P'\n )%7B%0A        f\n@@ -282,19 +282,19 @@\n jog2 == \n-%22R%22\n+'R'\n  && jog1\n@@ -296,19 +296,19 @@\n  jog1 ==\n-%22S%22\n+'S'\n  %7C%7C jog2\n@@ -311,19 +311,19 @@\n jog2 == \n-%22P%22\n+'P'\n  && jog1\n@@ -330,11 +330,11 @@\n  == \n-%22R%22\n+'R'\n  %7C%7C \n@@ -345,11 +345,11 @@\n  == \n-%22S%22\n+'S'\n  && \n@@ -360,11 +360,11 @@\n  == \n-%22P%22\n+'P'\n )%7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-23_17-02-03",
+            "content": "@@ -45,53 +45,98 @@\n var \n-jog1, jog2 string%0A    fmt.Scan(&jog1, &jog2)%0A\n+pedra, papel, tesoura, jog1, jog2 string%0A    pedra = %22R%22%0A    papel = %22P%22%0A    tesoura = %22S%22\n %0A   \n@@ -165,32 +165,24 @@\n g2 == %22S%22 %7C%7C\n-%0A       \n  jog1 == %22P%22\n@@ -199,24 +199,16 @@\n = %22R%22 %7C%7C\n-%0A       \n  jog1 ==\n@@ -296,39 +296,24 @@\n og1 ==%22S%22 %7C%7C\n-%0A              \n  jog2 == %22P%22\n@@ -334,23 +334,8 @@\n %22 %7C%7C\n-%0A              \n  jog\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-23_17-04-37",
+            "content": "@@ -120,24 +120,32 @@\n g2 == %22S%22 %7C%7C\n+%0A       \n  jog1 == %22P%22\n@@ -158,24 +158,32 @@\n g2 == %22R%22 %7C%7C\n+%0A       \n  jog1 == %22S%22\n@@ -271,16 +271,31 @@\n ==%22S%22 %7C%7C\n+%0A              \n  jog2 ==\n@@ -316,16 +316,30 @@\n = %22R%22 %7C%7C\n+%0A             \n   jog2 =\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_17-04-58",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var jog1, jog2 string\n    fmt.Scan(&jog1, &jog2)\n\n    if (jog1 == \"R\" && jog2 == \"S\" || jog1 == \"P\" && jog2 == \"R\" || jog1 == \"S\" && jog2 == \"P\"){\n        fmt.Println(\"jog1\")\n    } else if (jog2 == \"R\" && jog1 ==\"S\" || jog2 == \"P\" && jog1 == \"R\" ||  jog2 == \"S\" && jog1 == \"P\"){\n        fmt.Println(\"jog2\")\n    } else if(jog1 == jog2){\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "14"
+        }
+    ]
+}

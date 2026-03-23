@@ -13,10 +13,12 @@ sources:
   quests: null
   tasks: null
 expanded:
-- sandbox@sandbox
-- fup@campanha-principal
+- fup@missão-seleção-1
 - sandbox@sandbox:00_rascunhos
+- sandbox@sandbox
+- fup@missão-seleção-2
 - fup@missão-operações
+- fup@campanha-principal
 tasks:
   sandbox@user_002: '{self:1, rate:100, study:5, friend:Nao, guided:1}'
   fup@tres: '{self:1, rate:100, friend:Nao, concept:1, debug:1}'
@@ -27,6 +29,19 @@ tasks:
   fup@celsius: '{self:1, rate:100, friend:Nao, guided:1, concept:1}'
   fup@pintando: '{self:1, rate:100, friend:Hanna, guided:1}'
   fup@bala: '{self:1, rate:100, friend:Nao, guided:1, concept:1, problem:1}'
+  fup@abs: '{self:1, rate:100, friend:Nao}'
+  fup@max: '{self:1, rate:100}'
+  fup@ou: '{self:1, rate:100, friend:Nao}'
+  fup@positivo: '{self:1, rate:100, friend:Nao}'
+  fup@multiplo: '{self:1, rate:100, friend:Nao}'
+  fup@calc: '{self:1, rate:100, friend:Nao}'
+  fup@guarda: '{self:1, rate:100, friend:Nao, concept:1, problem:1}'
+  fup@quantos: '{self:1, rate:100, friend:Nao, problem:1}'
+  fup@impar: '{self:1, rate:100, friend:Nao, problem:1}'
+  fup@round: '{self:1, rate:100, friend:nao, guided:1, concept:1}'
+  fup@mumia: '{self:1, rate:100, friend:Nao}'
+  fup@meio: '{self:1, rate:100, friend:Nao}'
+  fup@jokenpo: '{self:1, rate:100, friend:nao}'
 flags:
   painel: 0
   quests: 2
@@ -35,4 +50,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: sandbox@user_004
+selected: fup@final

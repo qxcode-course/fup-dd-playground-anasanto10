@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_22-08-21",
+            "content": "@@ -41,173 +41,28 @@\n     \n-var p, D1, D2 int16%0A    fmt.Scan(&p, &D1, &D2)%0A    total := D1 + D2%0A    if (total%252 == 0)%7B%0A        fmt.Println(%22p%22)%0A    %7D else %7B%0A        fmt.Println(1 - p)%0A    %7D%0A    \n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-22_22-17-40",
+            "content": "@@ -190,12 +190,13 @@\n tln(\n-p -1\n+1 - p\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-22_22-18-00",
+            "content": "@@ -54,16 +54,18 @@\n , D2 int\n+16\n %0A    fmt\n@@ -190,13 +190,12 @@\n tln(\n-1 - p\n+p -1\n )%0A  \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-22_22-19-00",
+            "content": "@@ -146,17 +146,19 @@\n Println(\n-p\n+%22p%22\n )%0A    %7D \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-22_22-21-16",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, D1, D2 int\n    fmt.Scan(&p, &D1, &D2)\n    total := D1 + D2\n    if (total%2 == 0){\n        fmt.Println(p)\n    } else {\n        fmt.Println(1 - p)\n    }\n    \n}\n",
+            "lines": "13"
+        }
+    ]
+}

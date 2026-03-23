@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_17-05-14",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,466 +41,28 @@\n     \n-var op string%0A    var num float64%0A%0A    inteiro := int(num)%0A    decimal := num - float64(inteiro)%0A%0A    if (op == %22f%22) %7B%0A        fmt.Println(inteiro)%0A    %7D else if (op == %22c%22) %7B%0A        if (decimal %3E 0) %7B%0A            fmt.Println(inteiro + 1)%0A        %7D else %7B%0A            fmt.Println(inteiro)%0A        %7D%0A    %7D else if (op == %22r%22) %7B%0A        (if decimal %3E= 0.5) %7B%0A            fmt.Println(inteiro + 1)%0A        %7D else %7B%0A            fmt.Println(inteiro)%0A        %7D%0A    %7D%0A%7D\n+fmt.Println(%22qxcode%22)%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_17-33-42",
+            "content": "@@ -370,29 +370,28 @@\n ) %7B%0A        \n- \n+(\n if \n-(\n decimal %3E= 0\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_17-33-58",
+            "content": "@@ -136,25 +136,24 @@\n teiro)%0A%0A    \n- \n if (op == %22f\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_17-34-20",
+            "content": "@@ -75,32 +75,8 @@\n at64\n-%0A    fmt.Scan(&op, &num)\n %0A%0A  \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_17-35-23",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    var op string\n    var num float64\n    fmt.Scan(&op, &num)\n\n    inteiro := int(num)\n    decimal := num - float64(inteiro)\n\n     if (op == \"f\") {\n        fmt.Println(inteiro)\n    } else if (op == \"c\") {\n        if (decimal > 0) {\n            fmt.Println(inteiro + 1)\n        } else {\n            fmt.Println(inteiro)\n        }\n    } else if (op == \"r\") {\n         if (decimal >= 0.5) {\n            fmt.Println(inteiro + 1)\n        } else {\n            fmt.Println(inteiro)\n        }\n    }\n}",
+            "lines": "27"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_21-05-08",
+            "content": "@@ -37,49 +37,8 @@\n ) %7B%0A\n-    var a, b, int16%0A    fmt.Scan(&a, &b)%0A\n     \n@@ -53,13 +53,16 @@\n tln(\n-a - b\n+%22qxcode%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-22_21-07-35",
+            "content": "@@ -46,20 +46,16 @@\n ar a, b,\n- dif\n  int16%0A \n@@ -78,24 +78,8 @@\n &b)%0A\n-    dif = a - b%0A\n     \n@@ -94,19 +94,13 @@\n tln(\n-%22%25d%5Cn%22, dif\n+a - b\n )%0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-22_21-08-14",
+            "content": "@@ -102,125 +102,31 @@\n     \n-if(dif %3C 0) %7B%0A     abs := dif * (-1)%0A     fmt.Println(%22%25d%5Cn%22, abs)%0A    %7D else %7B%0A        fmt.Println(%22%25d%5Cn%22), dif%0A    %7D\n+fmt.Println(%22%25d%5Cn%22, dif)\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-22_21-10-51",
+            "content": "@@ -50,21 +50,16 @@\n , b, dif\n-, abs\n  int16%0A \n@@ -121,16 +121,17 @@\n     abs \n+:\n = dif * \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-22_21-11-11",
+            "content": "@@ -212,14 +212,14 @@\n d%5Cn%22\n+)\n , dif\n-)\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-22_21-11-29",
+            "content": "@@ -156,16 +156,24 @@\n Println(\n+%22%25d%5Cn%22, \n abs)%0A   \n@@ -202,16 +202,24 @@\n Println(\n+%22%25d%5Cn%22, \n dif)%0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-22_21-11-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, dif, abs int16\n    fmt.Scan(&a, &b)\n    dif = a - b\n    if(dif < 0) {\n     abs = dif * (-1)\n     fmt.Println(abs)\n    } else {\n        fmt.Println(dif)\n    }\n}\n",
+            "lines": "13"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-22_21-31-31",
+            "content": "@@ -41,287 +41,28 @@\n     \n-var a, b int16%0A    var op string%0A    fmt.Scan(&a, &b, &c)%0A    if (op == %22+%22) %7B%0A        fmt.Println(a + b)%0A    %7D else if (op == %22-%22) %7B%0A        fmt.Println(a - b)%0A    %7D else if (op == %22*%22) %7B%0A        fmt.Println(a * b)%0A    %7D else if (op == %22/%22)%7B%0A        fmt.Println(a / b)%0A    %7D%0A    \n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-22_21-35-51",
+            "content": "@@ -92,18 +92,17 @@\n a, &b, &\n-op\n+c\n )%0A    if\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-22_21-36-01",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int16\n    var op string\n    fmt.Scan(&a, &b, &op)\n    if (op == \"+\") {\n        fmt.Println(a + b)\n    } else if (op == \"-\") {\n        fmt.Println(a - b)\n    } else if (op == \"*\") {\n        fmt.Println(a * b)\n    } else if (op == \"/\"){\n        fmt.Println(a / b)\n    }\n    \n}\n",
+            "lines": "17"
+        }
+    ]
+}

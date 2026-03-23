@@ -1,0 +1,94 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_16-33-01",
+            "content": "@@ -41,369 +41,28 @@\n     \n-var nome string%0A    var idd int%0A    fmt.Scan(&nome, &idd)%0A    if (idd %3C 12)%7B%0A        fmt.Println(%22crianca%22)%0A    %7D else if (idd %3E 12 && idd %3C 18) %7B%0A        fmt.Println(%22jovem%22)%0A    %7D else if (idd %3E 18 && idd %3C 65) %7B%0A        fmt.Println(%22adulto%22)%0A    %7D else if (idd %3E 65 && idd %3C 1000) %7B%0A        fmt.Println(%22idoso%22)%0A    %7D else %7B%0A        fmt.Println(%22mumia%22)%0A    %7D\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-23_16-37-25",
+            "content": "@@ -139,17 +139,8 @@\n ln(%22\n-maria eh \n cria\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-37-42",
+            "content": "@@ -139,17 +139,17 @@\n ln(%22mari\n-o\n+a\n  eh cria\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-37-47",
+            "content": "@@ -135,16 +135,25 @@\n rintln(%22\n+mario eh \n crianca%22\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-38-03",
+            "content": "@@ -139,17 +139,8 @@\n ln(%22\n-mario eh \n cria\n@@ -348,16 +348,8 @@\n ln(%22\n-jose eh \n idos\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-38-32",
+            "content": "@@ -315,9 +315,8 @@\n dd %3E\n-=\n  65 \n@@ -353,16 +353,24 @@\n rintln(%22\n+jose eh \n idoso%22)%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-38-48",
+            "content": "@@ -177,16 +177,28 @@\n idd \n+%3E 12 && idd \n %3C 18) %7B%0A\n     \n@@ -189,24 +189,24 @@\n idd %3C 18) %7B%0A\n-\n         fmt.\n@@ -241,16 +241,28 @@\n if (idd \n+%3E 18 && idd \n %3C 65) %7B%0A\n@@ -287,24 +287,24 @@\n n(%22adulto%22)%0A\n-\n     %7D else i\n@@ -310,16 +310,29 @@\n if (idd \n+%3E= 65 && idd \n %3C 1000) \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-39-30",
+            "content": "@@ -321,16 +321,8 @@\n ln(%22\n-jose eh \n idos\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-39-50",
+            "content": "@@ -206,19 +206,8 @@\n ln(%22\n-mariana eh \n jove\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-39-59",
+            "content": "@@ -207,16 +207,18 @@\n n(%22maria\n+na\n  eh jove\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-40-05",
+            "content": "@@ -135,16 +135,25 @@\n rintln(%22\n+mario eh \n crianca%22\n@@ -202,16 +202,25 @@\n rintln(%22\n+maria eh \n jovem%22)%0A\n@@ -326,16 +326,24 @@\n rintln(%22\n+jose eh \n idoso%22)%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-40-19",
+            "content": "@@ -134,26 +134,17 @@\n Println(\n-nome %22 eh \n+%22\n crianca%22\n@@ -192,25 +192,17 @@\n Println(\n-nome %22eh \n+%22\n jovem%22)%0A\n@@ -252,17 +252,9 @@\n tln(\n-nome %22eh \n+%22\n adul\n@@ -311,18 +311,9 @@\n tln(\n-nome %22 eh \n+%22\n idos\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-41-12",
+            "content": "@@ -134,25 +134,25 @@\n Println(nome\n-,\n+ \n %22 eh crianca\n@@ -201,25 +201,25 @@\n Println(nome\n-,\n+ \n %22eh jovem%22)%0A\n@@ -269,17 +269,17 @@\n tln(nome\n-,\n+ \n %22eh adul\n@@ -336,17 +336,17 @@\n tln(nome\n-,\n+ \n %22 eh ido\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-41-28",
+            "content": "@@ -140,16 +140,17 @@\n n(nome,%22\n+ \n eh crian\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-41-35",
+            "content": "@@ -337,16 +337,17 @@\n n(nome,%22\n+ \n eh idoso\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-41-40",
+            "content": "@@ -381,21 +381,16 @@\n Println(\n-nome,\n %22mumia%22)\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-41-52",
+            "content": "@@ -387,19 +387,16 @@\n n(nome,%22\n-eh \n mumia%22)%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-03-23_16-42-20",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nome string\n    var idd int\n    fmt.Scan(&nome, &idd)\n    if (idd < 12){\n        fmt.Println(nome,\"eh crianca\")\n    } else if (idd < 18) {\n        fmt.Println(nome,\"eh jovem\")\n    } else if (idd < 65) {\n        fmt.Println(nome,\"eh adulto\")\n    } else if (idd < 1000) {\n        fmt.Println(nome,\"eh idoso\")\n    } else {\n        fmt.Println(nome,\"eh mumia\")\n    }\n}\n",
+            "lines": "18"
+        }
+    ]
+}
