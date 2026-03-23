@@ -42,6 +42,7 @@ tasks:
   fup@mumia: '{self:1, rate:100, friend:Nao}'
   fup@meio: '{self:1, rate:100, friend:Nao}'
   fup@jokenpo: '{self:1, rate:100, friend:nao}'
+  fup@final: '{self:1, rate:100, friend:nao}'
 flags:
   painel: 0
   quests: 2
@@ -50,4 +51,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@final
+selected: fup@semana

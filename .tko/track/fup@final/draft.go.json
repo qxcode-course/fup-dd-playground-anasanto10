@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-03-23_17-36-19",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -41,479 +41,28 @@\n     \n-var nota1, nota2, nota_final float32%0A    var media float32%0A    fmt.Scan(&nota1, &nota2, &nota_final)%0A    %0A    media = (nota1 + nota2) / 2%0A%0A    if (media %3E= 7)%7B%0A        fmt.Println(%22aprovado%22)%0A    %7D else if (media %3E= 4 && media %3C= 7)%7B%0A        mf := media / nota_final%0A        if (mf %3E= 5)%7B%0A            fmt.Println(%22aprovado na final%22)%0A        %7D else %7B%0A            fmt.Println(%22reprovado na final%22)%0A        %7D%0A    %7D else if (media %3C 4)%7B%0A        fmt.Println(%22reprovado%22)%0A    %7D\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-23_17-58-56",
+            "content": "@@ -390,18 +390,8 @@\n lse \n-if (mf %3C5)\n %7B%0A  \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-23_17-59-36",
+            "content": "@@ -289,16 +289,15 @@\n  := \n-(\n media \n-+\n+/\n  not\n@@ -303,21 +303,16 @@\n ta_final\n-) / 2\n %0A       \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-03-23_18-00-44",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var nota1, nota2, nota_final float32\n    var media float32\n    fmt.Scan(&nota1, &nota2, &nota_final)\n    \n    media = (nota1 + nota2) / 2\n\n    if (media >= 7){\n        fmt.Println(\"aprovado\")\n    } else if (media >= 4 && media <= 7){\n        mf := (media + nota_final) / 2\n        if (mf >= 5){\n            fmt.Println(\"aprovado na final\")\n        } else if (mf <5){\n            fmt.Println(\"reprovado na final\")\n        }\n    } else if (media < 4){\n        fmt.Println(\"reprovado\")\n    }\n}\n",
+            "lines": "22"
         }
     ]
 }

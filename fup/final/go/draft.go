@@ -10,6 +10,13 @@ func main() {
     if (media >= 7){
         fmt.Println("aprovado")
     } else if (media >= 4 && media <= 7){
-        
+        mf := (media + nota_final) / 2
+        if (mf >= 5){
+            fmt.Println("aprovado na final")
+        } else if (mf <5){
+            fmt.Println("reprovado na final")
+        }
+    } else if (media < 4){
+        fmt.Println("reprovado")
     }
 }
