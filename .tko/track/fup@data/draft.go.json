@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-24_17-06-13",
+            "content": "@@ -41,129 +41,35 @@\n     \n-var hora, min, dia, mes, ano int16%0A    fmt.Scan(&hora, &min, &dia, &mes, &ano)%0A    fmt.Println(hora%22:%22min dia%22/%22mes%22/%22ano\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-24_17-09-09",
+            "content": "@@ -124,92 +124,43 @@\n     \n-ano = ano %25 100%0A%0A    fmt.Println(%22%2502d:%2502d %2502d/%2502d/%2502d%5Cn%22, \n+fmt.Println(\n hora\n-, \n+%22:%22\n min\n-,\n  dia\n-, mes, \n+%22/%22mes%22/%22\n ano)\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-03-24_17-15-08",
+            "content": "@@ -150,17 +150,18 @@\n mt.Print\n-f\n+ln\n (%22%2502d:%25\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-24_17-15-20",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var hora, min, dia, mes, ano int16\n    fmt.Scan(&hora, &min, &dia, &mes, &ano)\n    ano = ano % 100\n\n    fmt.Printf(\"%02d:%02d %02d/%02d/%02d\\n\", hora, min, dia, mes, ano)\n}\n",
+            "lines": "9"
+        }
+    ]
+}

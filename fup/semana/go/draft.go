@@ -1,5 +1,7 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("qxcode")
+    var dia, hora int16
+    fmt.Scan(&dia, &hora)
+    
 }

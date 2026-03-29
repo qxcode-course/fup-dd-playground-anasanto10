@@ -12,13 +12,7 @@ sources:
   writeable: false
   quests: null
   tasks: null
-expanded:
-- fup@missão-seleção-1
-- sandbox@sandbox:00_rascunhos
-- sandbox@sandbox
-- fup@missão-seleção-2
-- fup@missão-operações
-- fup@campanha-principal
+expanded: []
 tasks:
   sandbox@user_002: '{self:1, rate:100, study:5, friend:Nao, guided:1}'
   fup@tres: '{self:1, rate:100, friend:Nao, concept:1, debug:1}'
@@ -29,6 +23,10 @@ tasks:
   fup@celsius: '{self:1, rate:100, friend:Nao, guided:1, concept:1}'
   fup@pintando: '{self:1, rate:100, friend:Hanna, guided:1}'
   fup@bala: '{self:1, rate:100, friend:Nao, guided:1, concept:1, problem:1}'
+  fup@quebrada: '{self:1, rate:100, friend:nao}'
+  fup@operacoes: '{self:1, rate:100, friend:nao}'
+  fup@data: '{self:1, rate:100, friend:nao, concept:1}'
+  fup@opala: '{self:1, rate:100, friend:nao}'
   fup@abs: '{self:1, rate:100, friend:Nao}'
   fup@max: '{self:1, rate:100}'
   fup@ou: '{self:1, rate:100, friend:Nao}'
@@ -44,11 +42,11 @@ tasks:
   fup@jokenpo: '{self:1, rate:100, friend:nao}'
   fup@final: '{self:1, rate:100, friend:nao}'
 flags:
-  painel: 0
-  quests: 2
-  tracks: 0
+  panel: 0
+  inbox: 0
+  show_panel: 0
   tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@semana
+selected: fup@if2
