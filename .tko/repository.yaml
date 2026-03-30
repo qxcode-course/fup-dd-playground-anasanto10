@@ -12,7 +12,8 @@ sources:
   writeable: false
   quests: null
   tasks: null
-expanded: []
+expanded:
+- fup@if2
 tasks:
   sandbox@user_002: '{self:1, rate:100, study:5, friend:Nao, guided:1}'
   fup@tres: '{self:1, rate:100, friend:Nao, concept:1, debug:1}'
@@ -41,12 +42,15 @@ tasks:
   fup@meio: '{self:1, rate:100, friend:Nao}'
   fup@jokenpo: '{self:1, rate:100, friend:nao}'
   fup@final: '{self:1, rate:100, friend:nao}'
+  fup@semana: '{self:1, rate:100}'
+  fup@monica: '{self:1, rate:100}'
+  fup@goiabas: '{self:1, rate:100}'
+  fup@salario: '{self:1, rate:100}'
 flags:
   panel: 0
   inbox: 0
   show_panel: 0
-  tasks: 0
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: fup@if2
+selected: fup@game10

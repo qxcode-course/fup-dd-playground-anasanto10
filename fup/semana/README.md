@@ -1,7 +1,6 @@
 # Semana e sábado
 
 ![_](../../.tko/cache/e2bc1de5ac270eaa50476053dc6bb1f9ff79f7ba/base/semana/cover.jpg)
-
 ## Contexto
 
 Um funcionário trabalha de segunda a sexta-feira, das 8h às 11h e das 14h às 17h. Às 17h ele ainda deve estar trabalhando! No sábado, ele trabalha apenas das 8h às 11h.
