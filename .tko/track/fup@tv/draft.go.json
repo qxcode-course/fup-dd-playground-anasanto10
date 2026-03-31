@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-03-24_17-22-24",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,71 +41,35 @@\n     \n-var preco, parcela float32%0A    if (parcela == 1)%7B%0A        %0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-31_15-24-56",
+            "content": "@@ -68,39 +68,8 @@\n t32%0A\n-    fmt.Scan(&preco, &parcela)%0A\n     \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_15-25-50",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,46 +37,43 @@\n ) %7B%0A\n-%09var valor float64%0A%09var parcelas int%0A%09\n+    var preco, parcela float32%0A    \n fmt.\n@@ -78,21 +78,21 @@\n t.Scan(&\n-valor\n+preco\n , &parce\n@@ -97,250 +97,46 @@\n cela\n-s\n )%0A\n-%09var juros float64%0A%0A%09\n+    \n if \n+(\n parcela\n-s\n  == 1\n- %7B%0A%09%09juros = 0%0A%09%7D else %7B%0A%09%09juros = float64(parcelas-1) * 0.05%0A%09%7D%0A%0A%09total := valor * (1 + juros)%0A%09valorParcela := total / float64(parcelas)%0A%0A%09fmt.Printf(%22%25.2f%5Cn%22, valorParcela)%0A%09fmt.Printf(%22%25.2f%5Cn%22, total)%0A%7D\n+)%7B%0A        %0A    %7D%0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-03-31_15-29-03",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar valor float64\n\tvar parcelas int\n\tfmt.Scan(&valor, &parcelas)\n\tvar juros float64\n\n\tif parcelas == 1 {\n\t\tjuros = 0\n\t} else {\n\t\tjuros = float64(parcelas-1) * 0.05\n\t}\n\n\ttotal := valor * (1 + juros)\n\tvalorParcela := total / float64(parcelas)\n\n\tfmt.Printf(\"%.2f\\n\", valorParcela)\n\tfmt.Printf(\"%.2f\\n\", total)\n}",
+            "lines": "22"
         }
     ]
 }

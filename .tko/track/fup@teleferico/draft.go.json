@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_15-15-22",
+            "content": "@@ -41,154 +41,35 @@\n     \n-var C, A int%0A    fmt.Println(&C, &A)%0A%0A    capacidade := A / (C - 1)%0A%0A    if (A%25(c-1)) %7B%0A        capacidade ++%0A        fmt.Println(capacidade)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_15-20-39",
+            "content": "@@ -118,15 +118,12 @@\n if (\n- A %25 (C\n+A%25(c\n -1))\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_15-20-57",
+            "content": "@@ -121,19 +121,17 @@\n ( A %25 (C\n- - \n+-\n 1)) %7B%0A  \n@@ -151,24 +151,10 @@\n ade \n-= capacidade + 1\n+++\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_15-21-34",
+            "content": "@@ -50,15 +50,11 @@\n , A \n-float64\n+int\n %0A   \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_15-21-44",
+            "content": "@@ -46,19 +46,23 @@\n ar C, A \n-int\n+float64\n %0A    fmt\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_15-21-57",
+            "content": "@@ -62,11 +62,14 @@\n fmt.\n-Sca\n+Printl\n n(&C\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_15-22-19",
+            "content": "@@ -109,16 +109,18 @@\n %0A%0A    if\n+ (\n  A %25 (C \n@@ -127,13 +127,9 @@\n - 1)\n- != 0\n+)\n  %7B%0A \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_15-22-55",
+            "content": "@@ -201,86 +201,8 @@\n de)%0A\n-    %7D else %7B%0A        capacidade = A / (C - 1)%0A        fmt.Println(capacidade)%0A\n     \n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-03-31_15-23-56",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var C, A int\n    fmt.Scan(&C, &A)\n\n    capacidade := A / (C - 1)\n\n    if A % (C - 1) != 0 {\n        capacidade = capacidade + 1\n        fmt.Println(capacidade)\n    } else {\n        capacidade = A / (C - 1)\n        fmt.Println(capacidade)\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

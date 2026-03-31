@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-03-30_16-40-58",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,67 +41,35 @@\n     \n-var A, B, C, H, L int%0A    fmt.Scan(&A, &B, &C, &H, &L)%0A%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-03-31_15-52-28",
+            "content": "@@ -101,137 +101,7 @@\n     \n-areaR := H * L%0A    areaD := A * B * C%0A%0A    if areaD %3C areaR %7B%0A        fmt.Println(%22S%22)%0A    %7D else %7B%0A        fmt.Println(%22N%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-03-31_15-56-24",
+            "content": "@@ -121,17 +121,16 @@\n    areaD\n-1\n  := A * \n@@ -134,107 +134,34 @@\n  * B\n-%0A    areaD2 := A * C%0A    areaD3 := B * C%0A%0A    if areaR %3E areaD1 && areaR %3E areaD2 && areaR %3E areaD3\n+ * C%0A%0A    if areaD %3C areaR\n  %7B%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-31_15-59-21",
+            "content": "@@ -101,139 +101,142 @@\n     \n-if (A %3C= H && B %3C= L) %7C%7C (A %3C= L && B %3C= H) %7C%7C (A %3C= H && C %3C= L) %7C%7C (A %3C= L && C %3C= H) %7C%7C (B %3C= H && C %3C= L) %7C%7C (B %3C= L && C %3C= H)\n+areaR := H * L%0A    areaD1 := A * B%0A    areaD2 := A * C%0A    areaD3 := B * C%0A%0A    if areaR %3E areaD1 && areaR %3E areaD2 && areaR %3E areaD3 \n %7B%0A  \n@@ -258,16 +258,16 @@\n ln(%22S%22)%0A\n-\n     %7D el\n@@ -268,16 +268,17 @@\n   %7D else\n+ \n %7B%0A      \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-03-31_16-08-22",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B, C, H, L int\n    fmt.Scan(&A, &B, &C, &H, &L)\n\n    if (A <= H && B <= L) || (A <= L && B <= H) || (A <= H && C <= L) || (A <= L && C <= H) || (B <= H && C <= L) || (B <= L && C <= H){\n        fmt.Println(\"S\")\n    } else{\n        fmt.Println(\"N\")\n    }\n}\n",
+            "lines": "12"
         }
     ]
 }

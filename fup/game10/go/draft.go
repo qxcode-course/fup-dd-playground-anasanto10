@@ -1,5 +1,9 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("Hello, World!")
+    var N, D, A int
+    fmt.Scan(&N, &D, &A)
+
+    botao := (D - A + N) % N
+    fmt.Println(botao)
 }
