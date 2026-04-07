@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_15-08-02",
+            "content": "@@ -41,280 +41,35 @@\n     \n-var a, b, c, d int%0A    fmt.Scan(&a, &b, &c, &d)%0A%0A    if a %3E b && a %3E c && a %3E d %7B%0A        fmt.Println(a)%0A    %7D else if b %3E a &&  b %3E c && b %3E d %7B%0A        fmt.Println(b)%0A    %7D else if c %3E a && c %3E b && c %3E d %7B%0A        fmt.Println(c)%0A    %7D else %7B%0A        fmt.Println(d)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_15-10-17",
+            "content": "@@ -94,138 +94,203 @@\n     \n-maior := a%0A%0A    if b %3E maior %7B%0A        maior = b%0A    %7D else if c %3E maior%7B%0A        maior = c%0A    %7D else %7B%0A        maior = d%0A    %7D%0A%0A\n+if a %3E b && a %3E c && a %3E d %7B%0A        fmt.Println(a)%0A    %7D else if b %3E a &&  b %3E c && b %3E d %7B%0A        fmt.Println(b)%0A    %7D else if c %3E a && c %3E b && c %3E d %7B%0A        fmt.Println(c)%0A    %7D else %7B%0A   \n     \n@@ -306,13 +306,15 @@\n tln(\n-maior)\n+d)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-04-07_15-13-11",
+            "content": "@@ -197,20 +197,8 @@\n lse \n-if d %3E maior\n %7B%0A  \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_15-13-28",
+            "content": "@@ -145,20 +145,20 @@\n b%0A    %7D \n-%0A   \n+else\n  if c %3E \n@@ -187,20 +187,21 @@\n  c%0A    %7D\n-%0A   \n+ else\n  if d %3E \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_15-14-11",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b, c, d int\n    fmt.Scan(&a, &b, &c, &d)\n\n    maior := a\n\n    if b > maior {\n        maior = b\n    } \n    if c > maior{\n        maior = c\n    }\n    if d > maior{\n        maior = d\n    }\n\n     fmt.Println(maior)\n}\n",
+            "lines": "20"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_14-47-20",
+            "content": "@@ -41,398 +41,35 @@\n     \n-var p1, p2, p3, trab float32%0A    fmt.Scan(&p1, &p2, &p3, &trab)%0A    %0A    menor := p1 %0A    if p2 %3C menor %7B%0A        menor = p2%0A    %7D%0A    if p3 %3C menor %7B%0A        menor = p3%0A    %7D%0A%0A    soma_maiores = p1 + p2 + p3 - menor%0A%0A    media := (trab + soma_maiores) / 3%0A%0A    if media %3E= 7 %7B%0A        fmt.Println(%22%25.1f%5Cn aprovado com %22, media)%0A    %7D else %7B%0A        fmt.Println(%22vai para prova final%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_14-54-27",
+            "content": "@@ -231,17 +231,16 @@\n maiores \n-:\n = p1 + p\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-07_14-54-38",
+            "content": "@@ -337,16 +337,23 @@\n rintln(%22\n+%25.1f%5Cn \n aprovado\n@@ -357,22 +357,16 @@\n ado com \n-%25.1f%5Cn\n %22, media\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-07_14-54-56",
+            "content": "@@ -337,12 +337,13 @@\n rint\n-f(%22A\n+ln(%22a\n prov\n@@ -400,35 +400,33 @@\n rint\n-f(%22Final com %25.1f%5Cn%22, media\n+ln(%22vai para prova final%22\n )%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-07_14-55-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p1, p2, p3, trab float32\n    fmt.Scan(&p1, &p2, &p3, &trab)\n    \n    menor := p1 \n    if p2 < menor {\n        menor = p2\n    }\n    if p3 < menor {\n        menor = p3\n    }\n\n    soma_maiores := p1 + p2 + p3 - menor\n\n    media := (trab + soma_maiores) / 3\n\n    if media >= 7 {\n        fmt.Printf(\"Aprovado com %.1f\\n\", media)\n    } else {\n        fmt.Printf(\"Final com %.1f\\n\", media)\n    }\n}\n",
+            "lines": "24"
+        }
+    ]
+}

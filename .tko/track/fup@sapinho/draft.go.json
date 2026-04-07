@@ -1,0 +1,169 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_16-20-34",
+            "content": "@@ -41,223 +41,35 @@\n     \n-var p, s, e int%0A    fmt.Scan(&p, &s, &e)%0A    fmt.Println(%22Hello, World!%22)%0A%7D%0A%0Apos := 0 %0A%0Afor %7B%0A    pos += s%0A%0A    if pos %3E P %7B%0A        fmt.Println(%22%25d saiu %5Cn%22, p)%0A        break%0A    %7D%0A%0A    fmt.Println(pos)%0A%0A    pos -= e%0A%7D\n+fmt.Println(%22Hello, World!%22)%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_16-29-13",
+            "content": "@@ -114,18 +114,16 @@\n d!%22)%0A%7D%0A%0A\n-  \n pos := 0\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_16-29-23",
+            "content": "@@ -114,16 +114,17 @@\n d!%22)%0A%7D%0A%0A\n+ \n  pos := \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_16-30-43",
+            "content": "@@ -119,20 +119,25 @@\n %7D%0A%0A \n-   \n+pos := 0 %0A%0A\n for %7B%0A\n-   \n     \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_16-31-04",
+            "content": "@@ -45,15 +45,15 @@\n var \n-P, S, E\n+p, s, e\n  int\n@@ -71,58 +71,53 @@\n an(&\n-P)%0A    fmt.Scan(&S)%0A    fmt.Scan(&E)%0A%0A    pos := 0\n+p, &s, &e)%0A    fmt.Println(%22Hello, World!%22)%0A%7D\n %0A%0A  \n@@ -135,35 +135,30 @@\n     \n- \n pos += \n-S\n+s\n %0A%0A    \n-    \n if pos %3E\n = P \n@@ -153,17 +153,16 @@\n if pos %3E\n-=\n  P %7B%0A   \n@@ -162,28 +162,24 @@\n P %7B%0A        \n-    \n fmt.Printf(%22\n@@ -175,17 +175,18 @@\n mt.Print\n-f\n+ln\n (%22%25d sai\n@@ -190,20 +190,17 @@\n saiu\n+ \n %5Cn%22, \n-P\n+p\n )%0A\n-    \n     \n@@ -217,23 +217,15 @@\n     \n-    %7D%0A%0A   \n+%7D%0A%0A\n     \n- \n fmt.\n@@ -238,20 +238,16 @@\n n(pos)%0A%0A\n-    \n     pos \n@@ -253,13 +253,7 @@\n  -= \n-E%0A    %7D\n+e\n %0A%7D\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_16-31-58",
+            "content": "@@ -45,15 +45,15 @@\n var \n-p, s, e\n+P, S, E\n  int\n@@ -67,17 +67,17 @@\n t.Scan(&\n-p\n+P\n )%0A    fm\n@@ -84,17 +84,17 @@\n t.Scan(&\n-s\n+S\n )%0A    fm\n@@ -101,17 +101,17 @@\n t.Scan(&\n-e\n+E\n )%0A%0A    p\n@@ -140,24 +140,17 @@\n     \n- next :=\n  pos +\n- s\n+= S\n %0A%0A  \n@@ -162,17 +162,16 @@\n  if \n-netx\n+pos\n  %3E= \n-p\n+P\n  %7B%0A \n@@ -205,17 +205,17 @@\n aiu%5Cn%22, \n-p\n+P\n )%0A      \n@@ -258,31 +258,16 @@\n rint\n-f(%22%25d %25d%5Cn%22, pos, next)\n+ln(pos)%0A\n %0A   \n@@ -279,18 +279,12 @@\n pos \n+-\n = \n-next - e\n+E\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_16-34-56",
+            "content": "@@ -167,18 +167,18 @@\n    if ne\n-x\n t\n+x\n  %3E= p %7B%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_16-36-02",
+            "content": "@@ -45,15 +45,15 @@\n var \n-P, S, E\n+p, s, e\n  int\n@@ -67,17 +67,17 @@\n t.Scan(&\n-P\n+p\n )%0A    fm\n@@ -84,17 +84,17 @@\n t.Scan(&\n-S\n+s\n )%0A    fm\n@@ -101,17 +101,17 @@\n t.Scan(&\n-E\n+e\n )%0A%0A    p\n@@ -151,17 +151,17 @@\n = pos + \n-S\n+s\n %0A%0A      \n@@ -173,17 +173,17 @@\n next %3E= \n-P\n+p\n  %7B%0A     \n@@ -213,17 +213,17 @@\n aiu%5Cn%22, \n-P\n+p\n )%0A      \n@@ -311,9 +311,9 @@\n t - \n-E\n+e\n %0A   \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_16-39-29",
+            "content": "@@ -158,73 +158,8 @@\n  S%0A%0A\n-%0A        fmt.Printf(%22%25d %25d%5Cn%22, pos, next)%0A        pos = next - E%0A\n     \n@@ -238,13 +238,86 @@\n eak%0A    \n-%7D%0A\n+    %7D%0A%0A        fmt.Printf(%22%25d %25d%5Cn%22, pos, next)%0A        pos = next - E%0A    \n %7D%0A%7D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_16-44-42",
+            "content": "@@ -1,280 +1,207 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A    var P, S, E int%0A    fmt.Scan(&P)%0A    fmt.Scan(&S)%0A    fmt.Scan(&E)%0A%0A    pos := 0%0A%0A    for %7B%0A        next := pos + S%0A%0A        if next %3E= P %7B%0A            fmt.Printf(%22%25d saiu%5Cn%22, P)%0A            break%0A    %7D%0A%0A        fmt.Printf(%22%25d %25d%5Cn%22\n+@@ -154,16 +154,81 @@%0A os + S%250A%250A%0A+%250A        fmt.Printf(%2522%2525d %2525d%255Cn%2522, pos, next)%250A        pos = next - E%250A%0A         %0A@@ -308,82 +308,8 @@%0A    %257D%0A-%250A%250A        fmt.Printf(%2522%2525d %2525d%255Cn%2522\n , po\n@@ -208,17 +208,19 @@\n s, next)\n-%0A\n+%250A\n         \n@@ -233,17 +233,19 @@\n next - E\n-%0A\n+%250A\n         \n@@ -249,7 +249,18 @@\n    %0A\n-%7D%0A%7D\n+ %250A%257D%250A%257D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-04-07_16-45-21",
+            "content": "@@ -72,14 +72,40 @@\n n(&P\n-, &S, \n+)%0A    fmt.Scan(&S)%0A    fmt.Scan(\n &E)%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_16-57-11",
+            "content": "@@ -145,16 +145,17 @@\n f next %3E\n+=\n  P %7B%0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-07_16-59-17",
+            "content": "@@ -145,17 +145,16 @@\n f next %3E\n-=\n  P %7B%0A   \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-07_16-59-24",
+            "content": "@@ -218,26 +218,8 @@\n   %7D%0A\n-    pos = next - E\n %0A   \n@@ -256,16 +256,39 @@\n , next)%0A\n+        pos = next - E%0A\n         \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-07_17-15-24",
+            "content": "@@ -214,16 +214,35 @@\n k%0A    %7D%0A\n+    pos = next - E%0A\n         \n@@ -282,26 +282,12 @@\n         \n-pos = next - E\n %0A%7D%0A%7D\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-15-52",
+            "content": "@@ -82,20 +82,8 @@\n &E)%0A\n-var next int\n %0A   \n@@ -100,24 +100,48 @@\n %0A    for %7B%0A \n+       next := pos + S%0A%0A\n         if n\n@@ -218,41 +218,8 @@\n   %7D%0A\n-        next := pos + S%0A%0A       %0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-18-46",
+            "content": "@@ -215,16 +215,17 @@\n    next \n+:\n = pos + \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-18-52",
+            "content": "@@ -200,67 +200,8 @@\n eak%0A\n-    %7D else %7B%0A            fmt.Printf(%22%25d %25d%5Cn%22, pos, next) %0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-19-31",
+            "content": "@@ -284,24 +284,65 @@\n pos + S%0A\n-        \n+%0A       %0A        fmt.Printf(%22%25d %25d%5Cn%22, pos, next)\n %0A       \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-04-07_17-19-51",
+            "content": "@@ -206,38 +206,15 @@\n   %7D \n-%0A        next = pos + S%0A      \n+else %7B%0A\n     \n@@ -255,16 +255,54 @@\n  next) %0A\n+    %7D%0A        next = pos + S%0A        %0A\n         \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-20-24",
+            "content": "@@ -163,16 +163,19 @@\n Printf(%22\n+%25d \n saiu%5Cn%22,\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_17-20-46",
+            "content": "@@ -170,16 +170,19 @@\n %22saiu%5Cn%22\n+, P\n )%0A      \n@@ -223,16 +223,26 @@\n pos + S%0A\n+          \n         \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_17-21-33",
+            "content": "@@ -52,14 +52,8 @@\n S, E\n-, saiu\n  int\n@@ -82,25 +82,8 @@\n &E)%0A\n-    saiu = 0%0A    \n var \n@@ -120,53 +120,8 @@\n  %7B%0A \n-      if saiu != 1 %7B%0A        next = pos + S %0A\n     \n@@ -132,17 +132,17 @@\n if next \n-=\n+%3E\n = P %7B%0A  \n@@ -156,32 +156,33 @@\n    fmt.Print\n-ln\n+f\n (%22saiu\n+%5Cn\n %22)%0A         \n@@ -198,36 +198,33 @@\n     \n-    %7D%0A        pos = next - E\n+%7D %0A        next = pos + S\n %0A   \n@@ -264,75 +264,32 @@\n ext)\n-%0A       %7D else %7B%0A        fmt.Println(%22saiu%22)%0A        break%0A       %7D\n+ %0A        pos = next - E\n %0A%7D%0A%7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-07_17-31-28",
+            "content": "@@ -138,16 +138,40 @@\n   for %7B%0A\n+       if saiu != 1 %7B%0A  \n       ne\n@@ -186,23 +186,26 @@\n  + S\n-%0A\n+ %0A \n       \n+ \n if next \n %3E= P\n@@ -204,9 +204,9 @@\n ext \n-%3E\n+=\n = P \n@@ -211,24 +211,28 @@\n P %7B%0A        \n+    \n fmt.Printf(%22\n@@ -228,17 +228,18 @@\n mt.Print\n-f\n+ln\n (%22saiu%22)\n@@ -247,16 +247,20 @@\n         \n+    \n break%0A  \n@@ -267,17 +267,20 @@\n     \n+  \n %7D\n-%0A\n %0A      \n+  \n pos \n@@ -290,16 +290,18 @@\n ext - E%0A\n+  \n       fm\n@@ -331,11 +331,78 @@\n , next)%0A\n+       %7D else %7B%0A        fmt.Println(%22saiu%22)%0A        break%0A       %7D%0A\n %7D%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-07_17-34-49",
+            "content": "@@ -48,16 +48,22 @@\n  P, S, E\n+, saiu\n  int%0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-34-58",
+            "content": "@@ -78,16 +78,29 @@\n &S, &E)%0A\n+    saiu = 0%0A\n     var \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-35-20",
+            "content": "@@ -211,16 +211,37 @@\n      %7D%0A%0A\n+      pos = next - E%0A\n       fm\n@@ -275,30 +275,7 @@\n xt)%0A\n-        pos = next - E%0A\n %7D%0A%7D\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-37-36",
+            "content": "@@ -165,31 +165,8 @@\n P %7B%0A\n-        pos = next - E%0A\n     \n@@ -185,21 +185,13 @@\n tf(%22\n-%25d \n saiu%22\n-, pos\n )%0A  \n@@ -250,16 +250,20 @@\n , next)%0A\n+    \n     pos \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-38-46",
+            "content": "@@ -117,24 +117,43 @@\n     for %7B%0A  \n+    next = pos + S%0A\n       if nex\n@@ -245,37 +245,11 @@\n   %7D%0A\n+%0A\n   \n-    next = pos + S%0A      %0A%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-39-21",
+            "content": "@@ -125,27 +125,8 @@\n %7B%0A  \n-    next = pos + S%0A\n     \n@@ -221,16 +221,44 @@\n %0A      %7D\n+%0A      next = pos + S%0A      \n %0A%0A    fm\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-07_17-39-30",
+            "content": "@@ -161,16 +161,39 @@\n  %3E= P %7B%0A\n+        pos = next - E%0A\n         \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-07_17-41-11",
+            "content": "@@ -188,18 +188,16 @@\n %22%25d saiu\n-%5Cn\n %22, pos)%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-07_17-41-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var P, S, E int\n    fmt.Scan(&P, &S, &E)\n    var next int\n    pos := 0\n\n    for {\n      next = pos + S\n      if next >= P {\n        fmt.Printf(\"%d saiu\\n\", pos)\n        break\n      }\n\n    fmt.Printf(\"%d %d\\n\", pos, next)\n    pos = next - E\n}\n}",
+            "lines": "19"
+        }
+    ]
+}

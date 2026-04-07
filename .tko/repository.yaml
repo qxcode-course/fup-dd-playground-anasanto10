@@ -15,6 +15,7 @@ sources:
   quests: null
   tasks: null
 expanded:
+- fup@for2
 - fup@if_extra
 flags:
   inbox: all
@@ -23,4 +24,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@bundona
+selected: fup@lotado

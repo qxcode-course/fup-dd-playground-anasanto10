@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_15-15-27",
+            "content": "@@ -41,113 +41,35 @@\n     \n-var hora, min, seg int%0A    fmt.Scan(&hora, &min, &seg)%0A%0A    seg = seg + 1%0A%0A    fmt.Println(hora, min, seg\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_15-17-44",
+            "content": "@@ -114,219 +114,9 @@\n  + 1\n- %0A%0A    if seg == 60 %7B%0A        seg = 00%0A        min = min + 1%0A    %7D%0A    if min == 60 %7B%0A        min = 00 %0A        hora = hora + 1%0A    %7D%0A    if hora == 24 %7B%0A        hora = 00%0A        min = 00%0A        seg = 00%0A    %7D\n+%0A\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-07_15-23-56",
+            "content": "@@ -339,30 +339,11 @@\n rint\n-f(%22%2502d %2502d %2502d%5Cn%22, \n+ln(\n hora\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_15-27-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var hora, min, seg int\n    fmt.Scan(&hora, &min, &seg)\n\n    seg = seg + 1 \n\n    if seg == 60 {\n        seg = 00\n        min = min + 1\n    }\n    if min == 60 {\n        min = 00 \n        hora = hora + 1\n    }\n    if hora == 24 {\n        hora = 00\n        min = 00\n        seg = 00\n    }\n    fmt.Printf(\"%02d %02d %02d\\n\", hora, min, seg)\n}\n",
+            "lines": "23"
+        }
+    ]
+}

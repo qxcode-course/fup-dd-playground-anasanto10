@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_14-56-17",
+            "content": "@@ -41,452 +41,35 @@\n     \n-var saque string%0A    var forca int%0A    fmt.Scan(&saque, &forca)%0A%0A    if saque == %22b%22 %7B%0A        P := ((forca %5C* 20) - 80) / 10%0A    %7D else %7B%0A        P := ((forca %5C* 18) - 80) / 10%0A    %7D%0A%0A    if P %3C 150 %7B%0A        fmt.Println(%22Fraco, nem passou%22)%0A    %7D else if P %3E= 150 && P  %3C 180 %7B%0A        fmt.Println(%22Perfeito%22)%0A    %7D else if P %3E= 180 && %3C= 210 %7B%0A        fmt.Println(%22Satisfeito%22)%0A    %7D else %7B%0A        fmt.Println(%22Muito forte, bola fora%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_15-04-42",
+            "content": "@@ -136,13 +136,37 @@\n     \n-T = 2\n+P := ((forca %5C* 20) - 80) / 1\n 0%0A  \n@@ -184,26 +184,8 @@\n     \n-    T = 18%0A    %7D%0A%0A\n     \n@@ -201,11 +201,13 @@\n rca \n+%5C\n * \n-T\n+18\n ) - \n@@ -214,16 +214,22 @@\n 80) / 10\n+%0A    %7D\n %0A%0A    if\n@@ -374,18 +374,16 @@\n = 180 &&\n- P\n  %3C= 210 \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_15-07-24",
+            "content": "@@ -71,11 +71,8 @@\n orca\n-, T\n  int\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-07_15-07-40",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var saque string\n    var forca, T int\n    fmt.Scan(&saque, &forca)\n\n    if saque == \"b\" {\n        T = 20\n    } else {\n        T = 18\n    }\n\n    P := ((forca * T) - 80) / 10\n\n    if P < 150 {\n        fmt.Println(\"Fraco, nem passou\")\n    } else if P >= 150 && P  < 180 {\n        fmt.Println(\"Perfeito\")\n    } else if P >= 180 && P <= 210 {\n        fmt.Println(\"Satisfeito\")\n    } else {\n        fmt.Println(\"Muito forte, bola fora\")\n    }\n}\n",
+            "lines": "25"
+        }
+    ]
+}
