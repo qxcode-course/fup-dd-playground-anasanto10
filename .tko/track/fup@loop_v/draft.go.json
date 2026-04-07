@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_16-29-55",
+            "content": "@@ -41,260 +41,34 @@\n     \n-var A, B int%0A    fmt.Scan(&A, &B)%0A%0A    fmt.Print(%22%5B %22)%0A    for%7B%0A        i:= A%0A        if i == B%7B%0A            break%0A        %7D%0A        if i%252 == 0%7B%0A            i++%0A            continue%0A        %7D%0A        fmt.Println(i)%0A        i++%0A    %7D%0A    fmt.Println(%22 \n+fmt.Println(%22Hello, World!\n %22)%0A%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_16-37-46",
+            "content": "@@ -293,9 +293,8 @@\n n(%22 \n-%5D\n %22)%0A%7D\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-06_16-37-53",
+            "content": "@@ -76,18 +76,8 @@\n B)%0A%0A\n-    i:= A%0A\n     \n@@ -101,16 +101,30 @@\n    for%7B%0A\n+        i:= A%0A\n         \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-06_16-38-43",
+            "content": "@@ -247,15 +247,12 @@\n rint\n+ln\n (i\n-, %22 %22\n )%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-06_16-39-19",
+            "content": "@@ -287,14 +287,15 @@\n rintln(%22\n+ \n %5D%22)%0A%7D%0A\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-06_16-39-25",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B int\n    fmt.Scan(&A, &B)\n\n    i:= A\n    fmt.Print(\"[ \")\n    for{\n        if i == B{\n            break\n        }\n        if i%2 == 0{\n            i++\n            continue\n        }\n        fmt.Print(i, \" \")\n        i++\n    }\n    fmt.Println(\"]\")\n}\n",
+            "lines": "21"
+        }
+    ]
+}

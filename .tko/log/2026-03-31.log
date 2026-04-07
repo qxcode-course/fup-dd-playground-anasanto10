@@ -95,3 +95,89 @@
 2026-03-31 17:00:38, EXEC, v:1, k:fup@loop_iii, mode:FULL, rate:100, size:15
 2026-03-31 17:00:41, MOVE, v:1, k:fup@loop_iii, mode:BACK
 2026-03-31 17:00:46, SELF, v:1, k:fup@loop_iii, self:1, rate:100
+2026-03-31 17:02:28, MOVE, v:1, k:fup@loop_iv, mode:DOWN
+2026-03-31 17:02:28, MOVE, v:1, k:fup@loop_iv, mode:PICK
+2026-03-31 17:02:29, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:0, size:5
+2026-03-31 17:02:30, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:0
+2026-03-31 17:08:20, EXEC, v:1, k:fup@loop_iv, mode:FULL, size:24, fail:COMP
+2026-03-31 17:08:36, EXEC, v:1, k:fup@loop_iv, mode:FULL, rate:100, size:24
+2026-03-31 17:08:41, MOVE, v:1, k:fup@loop_iv, mode:BACK
+2026-03-31 17:08:46, SELF, v:1, k:fup@loop_iv, self:1, rate:100
+2026-03-31 17:08:47, MOVE, v:1, k:fup@loop_iv, mode:PICK
+2026-03-31 17:08:48, MOVE, v:1, k:fup@loop_iv, mode:BACK
+2026-03-31 17:10:41, MOVE, v:1, k:fup@pares, mode:DOWN
+2026-03-31 17:10:42, MOVE, v:1, k:fup@pares, mode:PICK
+2026-03-31 17:10:43, EXEC, v:1, k:fup@pares, mode:FULL, rate:0, size:5
+2026-03-31 17:11:48, MOVE, v:1, k:fup@pares, mode:BACK
+2026-03-31 17:12:08, MOVE, v:1, k:fup@sapatos, mode:DOWN
+2026-03-31 17:12:09, MOVE, v:1, k:fup@sapatos, mode:PICK
+2026-03-31 17:12:10, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:0, size:5
+2026-03-31 17:21:12, MOVE, v:1, k:fup@sapatos, mode:BACK
+2026-03-31 17:24:08, MOVE, v:1, k:fup@sapatos, mode:PICK
+2026-03-31 17:24:10, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:0
+2026-03-31 17:35:50, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:71, size:19
+2026-03-31 17:37:18, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:100, size:20
+2026-03-31 17:37:22, MOVE, v:1, k:fup@sapatos, mode:BACK
+2026-03-31 17:37:30, SELF, v:1, k:fup@sapatos, self:1, rate:100
+2026-03-31 17:37:58, MOVE, v:1, k:fup@filhos, mode:DOWN
+2026-03-31 17:38:00, MOVE, v:1, k:fup@filhos, mode:PICK
+2026-03-31 17:38:01, EXEC, v:1, k:fup@filhos, mode:FULL, rate:0, size:5
+2026-03-31 17:42:29, EXEC, v:1, k:fup@filhos, mode:FULL, rate:0, size:11
+2026-03-31 17:55:58, EXEC, v:1, k:fup@filhos, mode:FULL, size:11, fail:COMP
+2026-03-31 17:56:05, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:56:19, EXEC, v:1, k:fup@filhos, mode:FULL, rate:0, size:11
+2026-03-31 17:56:25, EXEC, v:1, k:fup@filhos, mode:FULL, rate:0, size:11
+2026-03-31 17:57:18, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:57:18, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:57:19, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:57:19, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:57:19, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:57:19, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:57:20, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:57:20, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:57:21, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33, size:11
+2026-03-31 17:58:17, MOVE, v:1, k:fup@filhos, mode:BACK
+2026-03-31 17:58:23, MOVE, v:1, k:fup@pr_jokenpo, mode:DOWN
+2026-03-31 17:58:25, MOVE, v:1, k:fup@pr_jokenpo, mode:PICK
+2026-03-31 17:58:26, EXEC, v:1, k:fup@pr_jokenpo, mode:LOCK, rate:0, size:5
+2026-03-31 18:04:04, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, size:19, fail:COMP
+2026-03-31 18:04:08, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:10, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:11, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:12, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:12, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:13, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:13, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:14, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:17, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE
+2026-03-31 18:04:38, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:38, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:39, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:40, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:40, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:40, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:43, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:44, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:45, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:45, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:45, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:46, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:46, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:47, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:47, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:47, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:48, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:04:48, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:07:49, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, size:30, fail:COMP
+2026-03-31 18:07:52, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, fail:COMP
+2026-03-31 18:13:20, EXEC, v:1, k:fup@pr_jokenpo, mode:FULL, size:43, fail:COMP
+2026-03-31 18:13:24, EXEC, v:1, k:fup@pr_jokenpo, mode:FREE
+2026-03-31 18:16:23, MOVE, v:1, k:fup@pr_jokenpo, mode:BACK
+2026-03-31 18:16:29, MOVE, v:1, k:fup@filhos, mode:PICK
+2026-03-31 18:16:30, EXEC, v:1, k:fup@filhos, mode:FULL, rate:33
+2026-03-31 18:20:47, EXEC, v:1, k:fup@filhos, mode:FULL, rate:0, size:11
+2026-03-31 18:21:00, EXEC, v:1, k:fup@filhos, mode:FULL, rate:0, size:11
+2026-03-31 18:21:48, EXEC, v:1, k:fup@filhos, mode:FULL, rate:0, size:11
+2026-03-31 18:22:06, EXEC, v:1, k:fup@filhos, mode:FULL, rate:100, size:11
+2026-03-31 18:22:13, MOVE, v:1, k:fup@filhos, mode:BACK
+2026-03-31 18:22:23, SELF, v:1, k:fup@filhos, self:1, rate:100, friend:hanna

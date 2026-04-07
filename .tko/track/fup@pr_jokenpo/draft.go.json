@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-31_17-58-26",
+            "content": "@@ -23,352 +23,53 @@\n mt%22%0A\n-%0A// 0 pedra%0A// 1 papel%0A// 2 tesoura%0Afunc main() %7B%0A    const pedra int = 0%0A    const papel int = 1%0A    const tesoura int = 2%0A    %0A    var jog1, jog2 int%0A    fmt.Println(%22Jog1: digite 0(pedra), 1(papel), 2(tesoura):%22)%0A    fmt.Scan(&jog1)%0A    fmt.Println(%22Jog2:digite 0(pedra), 1(papel), 2(tesoura):%22)%0A    fmt.Scan(&jog2)%0A    valor := rand.Intn(5)%0A\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-03-31_18-04-04",
+            "content": "@@ -342,339 +342,8 @@\n g2)%0A\n-%0A    if jog1 == jog2 %5B%0A        fmt.Println(%22empate%22)%0A    %5D else if (jog1 == pedra && jog2 == tesoura) %7C%7C%0A              (jog1 == papel && jog2 == pedra) %7C%7C%0A              (jog1 == tesoura && jog2 == papel)%7B%0A                fmt.Println(%22jog1 ganhou%22)%0A              %7D else %7B%0A                fmt.Println(%22jog2 ganhou%22)%0A              %7D%0A%0A\n     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-03-31_18-07-49",
+            "content": "@@ -175,103 +175,8 @@\n int%0A\n-    var vit1, vit2 int%0A%0A    for %7B%0A        if vit1 %3E 2 %7C%7C vit2 %3E 2%7B%0A            break%0A        %7D%0A\n     \n@@ -590,34 +590,8 @@\n u%22)%0A\n-                vit1 += 1%0A\n     \n@@ -670,220 +670,36 @@\n     \n-  vit2 += 1%0A              %7D%0A            %7D%0A%0A            if vit1 %3E vit2 %7B%0A                fmt.Println(%22jog1 ganhou a partida%22)%0A            %7D else %7B%0A                fmt.Pri\n+%7D%0A%0A    valor := rand.I\n nt\n-l\n n(\n-%22jog2 ganhou a partida%22)%0A            %7D\n+5)\n %0A%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-31_18-13-20",
+            "content": "package main\nimport \"fmt\"\n\n// 0 pedra\n// 1 papel\n// 2 tesoura\nfunc main() {\n    const pedra int = 0\n    const papel int = 1\n    const tesoura int = 2\n    \n    var jog1, jog2 int\n    var vit1, vit2 int\n\n    for {\n        if vit1 > 2 || vit2 > 2{\n            break\n        }\n    fmt.Println(\"Jog1: digite 0(pedra), 1(papel), 2(tesoura):\")\n    fmt.Scan(&jog1)\n    fmt.Println(\"Jog2:digite 0(pedra), 1(papel), 2(tesoura):\")\n    fmt.Scan(&jog2)\n\n    if jog1 == jog2 [\n        fmt.Println(\"empate\")\n    ] else if (jog1 == pedra && jog2 == tesoura) ||\n              (jog1 == papel && jog2 == pedra) ||\n              (jog1 == tesoura && jog2 == papel){\n                fmt.Println(\"jog1 ganhou\")\n                vit1 += 1\n              } else {\n                fmt.Println(\"jog2 ganhou\")\n                vit2 += 1\n              }\n            }\n\n            if vit1 > vit2 {\n                fmt.Println(\"jog1 ganhou a partida\")\n            } else {\n                fmt.Println(\"jog2 ganhou a partida\")\n            }\n\n}\n",
+            "lines": "43"
+        }
+    ]
+}

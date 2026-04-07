@@ -1,0 +1,6 @@
+2026-04-07 00:00:06, EXEC, v:1, k:fup@chute, mode:FULL, rate:10, size:15
+2026-04-07 00:03:44, EXEC, v:1, k:fup@chute, mode:FULL, rate:100, size:24
+2026-04-07 00:04:03, EXEC, v:1, k:fup@chute, mode:FULL, size:25, fail:COMP
+2026-04-07 00:04:19, EXEC, v:1, k:fup@chute, mode:FULL, rate:100, size:24
+2026-04-07 00:04:22, MOVE, v:1, k:fup@chute, mode:BACK
+2026-04-07 00:04:24, SELF, v:1, k:fup@chute, self:1, rate:100

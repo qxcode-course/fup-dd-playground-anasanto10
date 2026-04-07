@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_17-09-47",
+            "content": "@@ -41,423 +41,35 @@\n     \n-var N int%0A    var pe string%0A    fmt.Scan(&N, &pe)%0A%0A     fmt.Print(%22%5B %22)%0A    for i := 0; i %3C= 9; i++ %7B%0A          if i != N %7B%0A            fmt.Print(i)%0A%0A            for a := i + 1; a %3C= 9; a++ %7B%0A                if a != N %7B%0A                    fmt.Print(%22 %22, a)%0A                %7D%0A            %7D%0A            break%0A    %7D%0A  %7D%0A        if N == 10 %7B%0A        fmt.Println(%22 %5D%22)%0A    %7D else %7B%0A        fmt.Println(%22 ceu %5D%22)%0A    %7D%0A%7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_17-39-00",
+            "content": "@@ -454,8 +454,10 @@\n    %7D%0A%7D%0A%0A\n+%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-04-06_17-39-33",
+            "content": "@@ -188,128 +188,11 @@\n nt(i\n-, pe\n )%0A%0A\n-            if pe == %22e%22 %7B%0A                pe = %22d%22%0A            %7D else %7B%0A                pe = %22e%22%0A            %7D%0A%0A\n     \n@@ -297,166 +297,10 @@\n %22, a\n-, pe\n )%0A\n-                    if pe == %22e%22 %7B%0A                        pe = %22d%22%0A                    %7D else %7B%0A                        pe = %22e%22%0A                    %7D%0A\n     \n@@ -349,26 +349,26 @@\n eak%0A    \n-  \n+%7D%0A\n   %7D%0A    \n %7D%0A%0A    i\n@@ -359,19 +359,16 @@\n   %7D%0A    \n-%7D%0A%0A\n     if N\n@@ -368,17 +368,17 @@\n    if N \n-!\n+=\n = 10 %7B%0A \n@@ -397,22 +397,22 @@\n rint\n+ln\n (%22 \n-ceu\n+%5D\n %22)%0A    %7D\n %0A   \n@@ -403,25 +403,36 @@\n (%22 %5D%22)%0A    %7D\n-%0A\n+ else %7B%0A    \n     fmt.Prin\n@@ -441,12 +441,21 @@\n n(%22 \n-%5D%22)%0A\n+ceu %5D%22)%0A    \n %7D%0A\n+%7D\n %0A%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-06_17-46-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    var pe string\n    fmt.Scan(&N, &pe)\n\n     fmt.Print(\"[ \")\n    for i := 0; i <= 9; i++ {\n          if i != N {\n            fmt.Print(i, pe)\n\n            if pe == \"e\" {\n                pe = \"d\"\n            } else {\n                pe = \"e\"\n            }\n\n            for a := i + 1; a <= 9; a++ {\n                if a != N {\n                    fmt.Print(\" \", a, pe)\n                    if pe == \"e\" {\n                        pe = \"d\"\n                    } else {\n                        pe = \"e\"\n                    }\n                }\n            }\n            break\n        }\n    }\n\n    if N != 10 {\n        fmt.Print(\" ceu\")\n    }\n    fmt.Println(\" ]\")\n}\n\n\n",
+            "lines": "39"
+        }
+    ]
+}

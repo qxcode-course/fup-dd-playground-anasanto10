@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_23-55-39",
+            "content": "@@ -41,213 +41,35 @@\n     \n-var valor, c1, c2 int%0A    fmt.Scan(&valor, &c1, &c2)%0A%0A    dist1 := valor - c1%0A    dist2 := valor - c2%0A%0A    if dist1 %3C dist2 %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else %7B%0A        fmt.Println(%22segundo%22)%0A    \n+fmt.Println(%22Hello, World!%22)%0A\n %7D%0A\n-%7D\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_00-00-06",
+            "content": "@@ -100,28 +100,24 @@\n    dist1 := \n-abs(\n valor - c1)%0A\n@@ -114,17 +114,16 @@\n lor - c1\n-)\n %0A    dis\n@@ -128,20 +128,16 @@\n ist2 := \n-abs(\n valor - \n@@ -138,17 +138,16 @@\n lor - c2\n-)\n %0A%0A    if\n@@ -210,24 +210,8 @@\n lse \n-if dist2 %3C dist1\n %7B%0A  \n@@ -243,122 +243,11 @@\n o%22)%0A\n+\n     %7D\n- else %7B%0A        fmt.Println(%22empate%22)%0A    %7D%0A%7D%0A%0Afunc abs(x int) int%7B%0A    if x %3C 0 %7B%0A    return - x%0A %7D%0A  return x\n %0A%7D\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-04-07_00-03-44",
+            "content": "@@ -1,73 +1,4 @@\n-func abs(x int) int %7B%0A    if x %3C 0 %7B%0A    return - x%0A %7D%0A  return x%0A%7D%0A%0A\n pack\n@@ -317,8 +317,74 @@\n    %7D%0A%7D%0A%0A\n+func abs(x int) int%7B%0A    if x %3C 0 %7B%0A    return - x%0A %7D%0A  return x%0A%7D\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-04-07_00-04-03",
+            "content": "@@ -1,8 +1,77 @@\n+func abs(x int) int %7B%0A    if x %3C 0 %7B%0A    return - x%0A %7D%0A  return x%0A%7D%0A%0A\n package \n@@ -390,71 +390,4 @@\n %0A%7D%0A%0A\n-func abs(x int) int %7B%0A    if x %3C 0 %7B%0A    return - x%0A %7D%0A  return x%0A%7D\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-07_00-04-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var valor, c1, c2 int\n    fmt.Scan(&valor, &c1, &c2)\n\n    dist1 := abs(valor - c1)\n    dist2 := abs(valor - c2)\n\n    if dist1 < dist2 {\n        fmt.Println(\"primeiro\")\n    } else if dist2 < dist1{\n        fmt.Println(\"segundo\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n\nfunc abs(x int) int {\n    if x < 0 {\n    return - x\n }\n  return x\n}",
+            "lines": "24"
+        }
+    ]
+}

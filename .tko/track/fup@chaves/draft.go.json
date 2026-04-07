@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-06_18-22-08",
+            "content": "@@ -41,181 +41,35 @@\n     \n-var a int%0A    fmt.Scan(&a)%0A%0A    if a %3E 0%7B%0A        fmt.Println(%22positivo%22)%0A    %7D else if a == 0%7B%0A        fmt.Println(%22nulo%22)%0A    %7D else %7B%0A        fmt.Println(%22negativo%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-06_23-55-23",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a int\n    fmt.Scan(&a)\n\n    if a > 0{\n        fmt.Println(\"positivo\")\n    } else if a == 0{\n        fmt.Println(\"nulo\")\n    } else {\n        fmt.Println(\"negativo\")\n    }\n}\n",
+            "lines": "14"
+        }
+    ]
+}
