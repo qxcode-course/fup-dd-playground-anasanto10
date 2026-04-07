@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_00-57-54",
+            "content": "@@ -41,306 +41,35 @@\n     \n-var h, m, d int%0A    var s string%0A    fmt.Scan(&h, &m, &s, &d)%0A    %0A      bloco := h*6 + m/10%0A%0A    if s == %22h%22 %7B%0A        bloco += d%0A    %7D else %7B%0A        bloco -= d%0A    %7D%0A%0A    bloco = (bloco + 72) %25 72%0A%0A    hora := bloco / 6%0A    minuto := (bloco %25 6) * 10%0A%0A    fmt.Printf(%22%2502d %2502d%5Cn%22, hora, minuto)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_01-02-11",
+            "content": "@@ -112,61 +112,27 @@\n     \n-total_minutos\n+  bloco\n  := h*6\n-0\n  + m\n-%0A    minutos_andados := d * \n+/\n 10%0A%0A\n@@ -161,155 +161,87 @@\n     \n-total_minutos += minutos_andados%0A    %7D else %7B%0A        total_minutos -= minutos_andados%0A    %7D%0A%0A    total_minutos = (total_minutos + 24*60) %25 (24*60)\n+bloco += d%0A    %7D else %7B%0A        bloco -= d%0A    %7D%0A%0A    bloco = (bloco + 72) %25 72\n %0A%0A  \n@@ -254,26 +254,17 @@\n  := \n-total_minutos\n+bloco\n  / 6\n-0\n %0A   \n@@ -278,25 +278,23 @@\n  := \n-total_minutos %25 6\n+(bloco %25 6) * 1\n 0%0A%0A \n@@ -336,10 +336,11 @@\n minuto)%0A\n+%0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_01-04-06",
+            "content": "@@ -45,15 +45,15 @@\n var \n-H, M, D\n+h, m, d\n  int\n@@ -61,17 +61,17 @@\n     var \n-S\n+s\n  string%0A\n@@ -86,72 +86,29 @@\n Scan\n-ln(&H)%0A    fmt.Scanln(&M)%0A    fmt.Scanln(&S)%0A    fmt.Scanln(&D)%0A\n+(&h, &m, &s, &d)%0A    \n %0A   \n@@ -109,25 +109,26 @@\n   %0A    total\n-M\n+_m\n inutos := H*\n@@ -129,16 +129,16 @@\n  := \n-H\n+h\n *60 + \n-M\n+m\n %0A   \n@@ -141,25 +141,26 @@\n %0A    minutos\n-A\n+_a\n ndados := D \n@@ -161,9 +161,9 @@\n  := \n-D\n+d\n  * 1\n@@ -176,15 +176,15 @@\n  if \n-S\n+s\n  == %22\n-H\n+h\n %22 %7B%0A\n@@ -192,25 +192,26 @@\n        total\n-M\n+_m\n inutos += mi\n@@ -207,33 +207,34 @@\n nutos += minutos\n-A\n+_a\n ndados%0A    %7D els\n@@ -246,25 +246,26 @@\n        total\n-M\n+_m\n inutos -= mi\n@@ -273,9 +273,10 @@\n utos\n-A\n+_a\n ndad\n@@ -290,25 +290,26 @@\n %7D%0A%0A    total\n-M\n+_m\n inutos = (to\n@@ -307,25 +307,26 @@\n tos = (total\n-M\n+_m\n inutos + 24*\n@@ -353,25 +353,26 @@\n ora := total\n-M\n+_m\n inutos / 60%0A\n@@ -394,9 +394,10 @@\n otal\n-M\n+_m\n inut\n@@ -450,8 +450,9 @@\n inuto)%0A%7D\n+%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-04-07_01-05-19",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -361,18 +361,18 @@\n s + \n-1\n 2\n+4\n *60) %25 (\n 12*6\n@@ -371,10 +371,10 @@\n  %25 (\n-1\n 2\n+4\n *60)\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-07_01-06-07",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var H, M, D int\n    var S string\n    fmt.Scanln(&H)\n    fmt.Scanln(&M)\n    fmt.Scanln(&S)\n    fmt.Scanln(&D)\n\n    totalMinutos := H*60 + M\n    minutosAndados := D * 10\n\n    if S == \"H\" {\n        totalMinutos += minutosAndados\n    } else {\n        totalMinutos -= minutosAndados\n    }\n\n    totalMinutos = (totalMinutos + 12*60) % (12*60)\n\n    hora := totalMinutos / 60\n    minuto := totalMinutos % 60\n\n    fmt.Printf(\"%02d %02d\\n\", hora, minuto)\n}",
+            "lines": "28"
+        }
+    ]
+}

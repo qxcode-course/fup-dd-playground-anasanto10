@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-07_00-35-05",
+            "content": "@@ -41,374 +41,35 @@\n     \n-var n1, n2, n3, n4 int%0A    fmt.Scan(&n1, &n2, &n3, &n4)%0A%0A    soma := n1 + n2 + n3 + n4%0A    resto := soma%254%0A%0A    if soma == 0%7B%0A        fmt.Println(%22nenhum%22)%0A    %7D else if resto == 1 %7B%0A        fmt.Println(%22jog1%22)%0A    %7D else if resto == 2 %7B%0A        fmt.Println(%22jog2%22)%0A    %7D else if resto == 3 %7B%0A        fmt.Println(%22jog3%22)%0A    %7D else %7B%0A        fmt.Println(%22jog4%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-07_00-40-19",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n1, n2, n3, n4 int\n    fmt.Scan(&n1, &n2, &n3, &n4)\n\n    soma := n1 + n2 + n3 + n4\n    resto := soma%4\n\n    if soma == 0{\n        fmt.Println(\"nenhum\")\n    } else if resto == 1 {\n        fmt.Println(\"jog1\")\n    } else if resto == 2 {\n        fmt.Println(\"jog2\")\n    } else if resto == 3 {\n        fmt.Println(\"jog3\")\n    } else {\n        fmt.Println(\"jog4\")\n    }\n}\n",
+            "lines": "21"
+        }
+    ]
+}
