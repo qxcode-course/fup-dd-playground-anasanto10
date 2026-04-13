@@ -15,8 +15,11 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@for2
 - fup@if_extra
+- fup@for2
+- fup@for_extra
+- fup@if2
+- fup@for1
 flags:
   inbox: all
   panel: skills
@@ -24,4 +27,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@lotado
+selected: fup@base

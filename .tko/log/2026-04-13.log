@@ -1,0 +1,26 @@
+2026-04-13 15:18:49, MOVE, v:1, k:fup@loop_v, mode:PICK
+2026-04-13 15:18:50, EXEC, v:1, k:fup@loop_v, mode:FULL, rate:100
+2026-04-13 15:26:09, MOVE, v:1, k:fup@loop_v, mode:BACK
+2026-04-13 15:26:13, MOVE, v:1, k:fup@pares, mode:PICK
+2026-04-13 15:26:13, EXEC, v:1, k:fup@pares, mode:FULL, rate:100
+2026-04-13 15:31:35, MOVE, v:1, k:fup@pares, mode:BACK
+2026-04-13 15:31:38, MOVE, v:1, k:fup@sapatos, mode:PICK
+2026-04-13 15:31:39, EXEC, v:1, k:fup@sapatos, mode:FULL, rate:100
+2026-04-13 15:38:24, MOVE, v:1, k:fup@sapatos, mode:BACK
+2026-04-13 15:38:28, MOVE, v:1, k:fup@filhos, mode:PICK
+2026-04-13 15:38:28, EXEC, v:1, k:fup@filhos, mode:FULL, rate:100
+2026-04-13 15:44:07, MOVE, v:1, k:fup@filhos, mode:BACK
+2026-04-13 15:44:14, MOVE, v:1, k:fup@ceu, mode:PICK
+2026-04-13 15:44:15, EXEC, v:1, k:fup@ceu, mode:FULL, rate:100
+2026-04-13 15:53:32, MOVE, v:1, k:fup@ceu, mode:BACK
+2026-04-13 16:22:17, MOVE, v:1, k:fup@ceu, mode:PICK
+2026-04-13 16:22:21, MOVE, v:1, k:fup@ceu, mode:BACK
+2026-04-13 16:33:08, MOVE, v:1, k:fup@esconde, mode:PICK
+2026-04-13 16:33:09, EXEC, v:1, k:fup@esconde, mode:FULL, rate:100
+2026-04-13 16:36:41, MOVE, v:1, k:fup@esconde, mode:BACK
+2026-04-13 16:37:03, MOVE, v:1, k:fup@zigzag, mode:PICK
+2026-04-13 16:37:04, EXEC, v:1, k:fup@zigzag, mode:FULL, rate:100
+2026-04-13 16:38:50, MOVE, v:1, k:fup@zigzag, mode:BACK
+2026-04-13 16:44:35, MOVE, v:1, k:fup@semana, mode:PICK
+2026-04-13 16:44:36, EXEC, v:1, k:fup@semana, mode:FULL, rate:100
+2026-04-13 16:45:28, MOVE, v:1, k:fup@semana, mode:BACK

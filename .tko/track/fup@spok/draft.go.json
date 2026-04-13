@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-04-07_15-43-05",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -10,34 +10,21 @@\n ain%0A\n-%0A\n import \n-(%0A%09\n %22fmt%22%0A\n-%09%22net%22%0A)%0A\n func\n@@ -41,295 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    func palindromo(n int) int %7B%0A        original := n%0A        invertido := 0%0A    %7D%0A%0A    for n %3E 0 %7B%0A        digito := n %25 10%0A        invertido = invertido*10 + digito%0A        n = n / 10%0A    %7D%0A%0A    if original == invertido %7B%0A        return 1%0A    %7D%0A    return 0\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-12_19-39-38",
+            "content": "@@ -10,21 +10,84 @@\n ain%0A\n+%0A\n import \n+(%0A%09\n %22fmt%22%0A\n+%09%22net%22%0A)%0Afunc main() %7B%0A    var n int%0A    fmt.Scan(&n)%0A%0A    \n func\n@@ -111,17 +111,24 @@\n ) int %7B%0A\n-%09\n+        \n original\n@@ -133,17 +133,24 @@\n al := n%0A\n-%09\n+        \n invertid\n@@ -156,18 +156,27 @@\n do := 0%0A\n-%0A%09\n+    %7D%0A%0A    \n for n %3E \n@@ -179,18 +179,24 @@\n n %3E 0 %7B%0A\n-%09%09\n+        \n digito :\n@@ -204,18 +204,24 @@\n  n %25 10%0A\n-%09%09\n+        \n invertid\n@@ -246,18 +246,24 @@\n  digito%0A\n-%09%09\n+        \n n = n / \n@@ -269,13 +269,19 @@\n  10%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A    \n if o\n@@ -307,10 +307,16 @@\n o %7B%0A\n-%09%09\n+        \n retu\n@@ -324,88 +324,25 @@\n n 1%0A\n-%09%7D%0A%09return 0%0A%7D%0A%0Afunc main() %7B%0A%09var n int%0A%09fmt.Scan(&n)%0A%09fmt.Println(palindromo(n))\n+    %7D%0A    return 0\n %0A%7D\n+%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-12_19-41-18",
+            "content": "package main\nimport \"fmt\"\nfunc palindromo(n int) int {\n\toriginal := n\n\tinvertido := 0\n\n\tfor n > 0 {\n\t\tdigito := n % 10\n\t\tinvertido = invertido*10 + digito\n\t\tn = n / 10\n\t}\n\n\tif original == invertido {\n\t\treturn 1\n\t}\n\treturn 0\n}\n\nfunc main() {\n\tvar n int\n\tfmt.Scan(&n)\n\tfmt.Println(palindromo(n))\n}",
+            "lines": "23"
         }
     ]
 }

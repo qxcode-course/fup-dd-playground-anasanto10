@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-12_19-15-37",
+            "content": "@@ -41,401 +41,35 @@\n     \n-var n, primo int%0A    fmt.Scan(&n)%0A%0A    fator := 2%0A    contagem := 0%0A%0A    for n != 1 %7B%0A        if n%25fator == 0 %7B%0A            n = n / fator%0A            contagem ++%0A        %7D else %7B%0A            if contagem %3E 0 %7B%0A                fmt.Println(fator, contagem)%0A            %7D%0A            fator ++%0A            contagem = 0%0A        %7D%0A    %7D%0A    if contagem %3E 0 %7B%0A        fmt.Println(fator, contagem)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-12_19-29-22",
+            "content": "@@ -42,16 +42,23 @@\n    var n\n+, primo\n  int%0A   \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-12_19-29-30",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    fator := 2\n    contagem := 0\n\n    for n != 1 {\n        if n%fator == 0 {\n            n = n / fator\n            contagem ++\n        } else {\n            if contagem > 0 {\n                fmt.Println(fator, contagem)\n            }\n            fator ++\n            contagem = 0\n        }\n    }\n    if contagem > 0 {\n        fmt.Println(fator, contagem)\n    }\n}\n",
+            "lines": "25"
+        }
+    ]
+}

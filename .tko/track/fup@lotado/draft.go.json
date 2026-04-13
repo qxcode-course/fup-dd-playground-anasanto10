@@ -72,8 +72,43 @@
         },
         {
             "label": "2026-04-07_18-17-25",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar cap int\n\tfmt.Scan(&cap)\n\tvar onibus, mov int\n\n\tfor {\n\t\tqtd, _ := fmt.Scan(&mov)\n\t\tif qtd == 0 {\n\t\t\tbreak\n\t\t}\n\t\tonibus += mov\n\t\tfmt.Println(onibus)\n\n        if mov < 0 {\n            fmt.Println(\"vazio\")\n        } else if onibus < cap {\n            fmt.Println(\"ainda cabe\")\n        } else if onibus == cap {\n            fmt.Println(\"lotado\")\n        } else if onibus == (cap * 2){\n            fmt.Println(\"hora de partir\")\n        }\n\t}\n}\n",
+            "content": "@@ -6,16 +6,17 @@\n ge main%0A\n+%0A\n import %22\n@@ -20,16 +20,17 @@\n t %22fmt%22%0A\n+%0A\n func mai\n",
             "lines": "28"
+        },
+        {
+            "label": "2026-04-12_18-37-07",
+            "content": "@@ -197,25 +197,21 @@\n      if \n-onibus ==\n+mov %3C\n  0 %7B%0A   \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-12_18-38-31",
+            "content": "@@ -464,25 +464,16 @@\n artir%22)%0A\n-%09%09%09break%0A\n         \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-12_18-39-10",
+            "content": "@@ -151,11 +151,8 @@\n %09%09%7D%0A\n-%09%09%0A\n %09%09on\n@@ -163,19 +163,47 @@\n  += mov%0A\n-%0A\n %09%09\n+fmt.Println(onibus)%0A%0A        \n if onibu\n@@ -211,19 +211,28 @@\n  == 0 %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -240,26 +240,32 @@\n ln(%22vazio%22)%0A\n-%09%09\n+        \n %7D else if on\n@@ -273,22 +273,28 @@\n bus \n-==\n+%3C\n  cap\n-*2\n  %7B%0A\n-%09%09%09\n+            \n fmt.\n@@ -306,36 +306,29 @@\n ln(%22\n-hora de partir%22)%0A%09%09%09break%0A%09%09\n+ainda cabe%22)%0A        \n %7D el\n@@ -345,27 +345,36 @@\n us == cap %7B%0A\n-%09%09%09\n+            \n fmt.Println(\n@@ -383,18 +383,24 @@\n otado%22)%0A\n-%09%09\n+        \n %7D else i\n@@ -412,47 +412,81 @@\n bus \n-%3C cap %7B%0A%09%09%09fmt.Println(%22ainda cabe%22)%0A%09%09\n+== (cap * 2)%7B%0A            fmt.Println(%22hora de partir%22)%0A%09%09%09break%0A        \n %7D%0A%09%7D\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-12_18-41-58",
+            "content": "@@ -147,16 +147,18 @@\n eak%0A%09%09%7D%0A\n+%09%09\n %0A%09%09onibu\n@@ -233,9 +233,9 @@\n bus \n-%3E\n+=\n = ca\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-12_18-43-08",
+            "content": "@@ -151,15 +151,11 @@\n %09%09%7D%0A\n-%09      \n+%0A%09%09\n onib\n@@ -397,8 +397,9 @@\n %09%09%7D%0A%09%7D%0A%7D\n+%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-04-12_18-43-41",
+            "content": "@@ -299,25 +299,25 @@\n e if onibus \n-%3E\n+=\n = cap %7B%0A%09%09%09f\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-12_18-44-41",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar cap int\n\tfmt.Scan(&cap)\n\tvar onibus, mov int\n\n\tfor {\n\t\tqtd, _ := fmt.Scan(&mov)\n\t\tif qtd == 0 {\n\t\t\tbreak\n\t\t}\n\t      onibus += mov\n\n\t\tif onibus == 0 {\n\t\t\tfmt.Println(\"vazio\")\n\t\t} else if onibus >= cap*2 {\n\t\t\tfmt.Println(\"hora de partir\")\n\t\t\tbreak\n\t\t} else if onibus >= cap {\n\t\t\tfmt.Println(\"lotado\")\n\t\t} else if onibus < cap {\n\t\t\tfmt.Println(\"ainda cabe\")\n\t\t}\n\t}\n}",
+            "lines": "26"
         }
     ]
 }
