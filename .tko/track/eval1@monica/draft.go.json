@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-16-53",
+            "content": "@@ -41,96 +41,35 @@\n     \n-var m, a, b int%0A    fmt.Scan(&m, &a, &b)%0A%0A    velho := m - (a + b)%0A    fmt.Println(velho\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-19-36",
+            "content": "@@ -83,17 +83,21 @@\n b)%0A%0A    \n-c\n+velho\n  := m - \n@@ -112,74 +112,25 @@\n     \n-%0A    if a %3E b && a %3E c %7B%0A        fmt.Println(a)%0A    %7D else if b %3E a\n+fmt.Println(velho)\n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-13_17-20-54",
+            "content": "@@ -175,83 +175,7 @@\n  %3E a\n- && b %3E c %7B%0A        fmt.Println(b)%0A    %7D else %7B%0A        fmt.Println(c)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_17-21-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var m, a, b int\n    fmt.Scan(&m, &a, &b)\n\n    c := m - (a + b)\n    \n    if a > b && a > c {\n        fmt.Println(a)\n    } else if b > a && b > c {\n        fmt.Println(b)\n    } else {\n        fmt.Println(c)\n    }\n}\n",
+            "lines": "16"
+        }
+    ]
+}

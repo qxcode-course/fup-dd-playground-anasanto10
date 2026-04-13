@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-05-50",
+            "content": "@@ -23,22 +23,8 @@\n mt%22%0A\n-       %22math%22%0A\n func\n@@ -41,169 +41,35 @@\n     \n-var x1, y1, x2, y2 float64%0A    fmt.Scan(&x1, &y1, &x2, &y2)%0A%0A    distancia := %5B(x2 - x1) * (x2-x1)%5D + %5B(y2 - y1) * (y2 - y1)%5D%0A    fmt.Printf (%22%25.2f%5Cn%22, distancia\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-10-27",
+            "content": "@@ -19,16 +19,30 @@\n t %22fmt%22%0A\n+       %22math%22%0A\n func mai\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-13_17-10-41",
+            "content": "@@ -115,16 +115,17 @@\n ncia := \n+%5B\n (x2 - x1\n@@ -139,11 +139,13 @@\n -x1)\n+%5D\n  + \n+%5B\n (y2 \n@@ -161,16 +161,17 @@\n y2 - y1)\n+%5D\n %0A    fmt\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-13_17-11-11",
+            "content": "@@ -115,17 +115,16 @@\n ncia := \n-(\n (x2 - x1\n@@ -138,13 +138,11 @@\n -x1)\n-)\n  + \n-(\n (y2 \n@@ -158,17 +158,16 @@\n y2 - y1)\n-)\n %0A    fmt\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-13_17-11-28",
+            "content": "@@ -107,13 +107,21 @@\n    d\n-1\n+istancia\n  := \n+(\n (x2 \n@@ -139,19 +139,13 @@\n -x1)\n-%0A    d2 := \n+) + (\n (y2 \n@@ -165,34 +165,9 @@\n  y1)\n-%0A%0A    distancia := d1 + d2\n+)\n %0A   \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-13_17-12-52",
+            "content": "@@ -23,23 +23,8 @@\n mt%22%0A\n-        %22math%22%0A\n func\n@@ -106,59 +106,91 @@\n     \n-$$d_%7BAB%7D = %5Csqrt%7B(x%E2%82%82\n+d1 := (x2\n  - x\n-%E2%82%81)%5E2 + (y%E2%82%82\n+1) * (x2-x1)%0A    d2 := (y2\n  - y\n-%E2%82%81)%5E2%7D$$ %0A    \n+1) * (y2 - y1)%0A%0A    distancia := d1 + d2\n %0A   \n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-13_17-34-23",
+            "content": "@@ -121,65 +121,59 @@\n     \n-distancia = (x2\n+$$d_%7BAB%7D = %5Csqrt%7B(x%E2%82%82\n  - x\n-1) * (x2 - x1)\n+%E2%82%81)%5E2\n  + (y\n-2\n+%E2%82%82\n  - y\n-1) * (y2 - y1)\n+%E2%82%81)%5E2%7D$$ %0A    \n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-04-13_17-35-29",
+            "content": "@@ -19,16 +19,31 @@\n t %22fmt%22%0A\n+        %22math%22%0A\n func mai\n@@ -131,9 +131,8 @@\n cia \n-:\n = (x\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-13_17-35-43",
+            "content": "@@ -115,17 +115,16 @@\n ncia := \n-(\n (x2 - x1\n@@ -136,17 +136,16 @@\n x2 - x1)\n-)\n  + (y2 -\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-13_17-35-54",
+            "content": "@@ -23,22 +23,8 @@\n mt%22%0A\n-       %22math%22%0A\n func\n@@ -107,85 +107,66 @@\n    d\n-x\n+istancia\n  := \n+((\n x2 - x1\n-%0A    dy := y2 - y1%0A%0A    distancia := math.Sqrt (dx * dx + dy * dy\n+) * (x2 - x1)) + (y2 - y1) * (y2 - y1\n )%0A  \n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-04-13_17-41-02",
+            "content": "@@ -26,17 +26,16 @@\n %0A       \n- \n %22math%22%0Af\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-13_17-41-21",
+            "content": "@@ -26,16 +26,17 @@\n %0A       \n+ \n %22math%22%0Af\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-13_17-41-28",
+            "content": "@@ -17,27 +17,28 @@\n ort \n-(%0A%09\n %22fmt%22%0A\n-%09\n+       \n %22math%22%0A\n-)%0A\n func\n@@ -50,17 +50,17 @@\n () %7B%0A   \n-%09\n+ \n var x1, \n@@ -112,17 +112,20 @@\n , &y2)%0A%0A\n-%09\n+    \n dx := x2\n@@ -130,17 +130,20 @@\n x2 - x1%0A\n-%09\n+    \n dy := y2\n@@ -149,17 +149,20 @@\n 2 - y1%0A%0A\n-%09\n+    \n distanci\n@@ -175,16 +175,17 @@\n ath.Sqrt\n+ \n (dx * dx\n@@ -200,9 +200,12 @@\n dy)%0A\n-%09\n+    \n fmt.\n@@ -210,16 +210,17 @@\n t.Printf\n+ \n (%22%25.2f%5Cn\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-04-13_17-44-21",
+            "content": "package main\nimport (\n\t\"fmt\"\n\t\"math\"\n)\nfunc main() {\n   \tvar x1, y1, x2, y2 float64\n    fmt.Scan(&x1, &y1, &x2, &y2)\n\n\tdx := x2 - x1\n\tdy := y2 - y1\n\n\tdistancia := math.Sqrt(dx * dx + dy * dy)\n\tfmt.Printf(\"%.2f\\n\", distancia)\n}\n",
+            "lines": "15"
+        }
+    ]
+}

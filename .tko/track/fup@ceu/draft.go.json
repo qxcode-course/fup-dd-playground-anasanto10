@@ -87,6 +87,16 @@
         },
         {
             "label": "2026-04-06_16-29-29",
+            "content": "@@ -264,16 +264,17 @@\n .Print(%22\n+ \n %22, a)%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-13_17-57-37",
+            "content": "@@ -264,17 +264,16 @@\n .Print(%22\n- \n %22, a)%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-13_17-58-08",
             "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n\n    fmt.Print(\"[ \")\n    for i := 0; i <= 9; i++ {\n          if i != N {\n            fmt.Print(i)\n\n            for a := i + 1; a <= 9; a++ {\n                if a != N {\n                    fmt.Print(\" \", a)\n                }\n            }\n            break\n    }\n  }\n        if N == 10 {\n        fmt.Println(\" ]\")\n    } else {\n        fmt.Println(\" ceu ]\")\n    }\n}\n",
             "lines": "25"
         }

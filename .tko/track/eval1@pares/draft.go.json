@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-13_17-21-56",
+            "content": "@@ -41,261 +41,35 @@\n     \n-var a, b int%0A    fmt.Scan(&a, &b)%0A%0A%0A    if a %3E b %7B%0A        fmt.Println(%22invalido%22)%0A    %7D else %7B%0A        soma := 0%0A        for i := a; a %3C b; i++ %7B%0A            if i%252 == 0 %7B%0A                soma += i%0A            %7D%0A        %7D%0A        fmt.Println(soma)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-13_17-27-02",
+            "content": "@@ -72,16 +72,17 @@\n a, &b)%0A%0A\n+%0A\n     if a\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-04-13_17-27-29",
+            "content": "@@ -45,18 +45,17 @@\n var \n-A, B\n+a, b\n  int%0A\n-%0A\n     \n@@ -68,13 +68,13 @@\n an(&\n-A, &B\n+a, &b\n )%0A%0A \n@@ -83,13 +83,13 @@\n  if \n-A %3E B\n+a %3E b\n  %7B%0A \n@@ -158,18 +158,16 @@\n         \n-  \n for i :=\n@@ -171,17 +171,16 @@\n  := \n-A; i %3C= B\n+a; a %3C b\n ; i+\n@@ -249,38 +249,34 @@\n       %7D%0A        \n-  %7D%0A  \n+%7D%0A\n         fmt.Prin\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-13_17-32-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var A, B int\n\n    fmt.Scan(&A, &B)\n\n    if A > B {\n        fmt.Println(\"invalido\")\n    } else {\n        soma := 0\n          for i := A; i <= B; i++ {\n            if i%2 == 0 {\n                soma += i\n            }\n          }\n          fmt.Println(soma)\n    }\n}\n",
+            "lines": "19"
+        }
+    ]
+}
