@@ -22,7 +22,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- eval1@teste-1
+- fup@list
+- sandbox@sandbox
 flags:
   inbox: all
   panel: skills
@@ -30,4 +31,4 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: eval1@ceu
+selected: fup@vet_i
