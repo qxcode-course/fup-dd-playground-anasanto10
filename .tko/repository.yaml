@@ -22,8 +22,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- fup@list
 - sandbox@sandbox
+- fup@list
 flags:
   inbox: all
   panel: skills
@@ -31,4 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@vet_i
+selected: sandbox@user_002
+selected_index: 1
