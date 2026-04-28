@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-28_17-37-42",
+            "content": "@@ -41,37 +41,35 @@\n     \n-arr := make(%5B%5Dint, nums)%0A%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-28_17-44-18",
+            "content": "@@ -17,34 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22slices%22%0A)\n+%22fmt%22\n %0Afun\n@@ -71,56 +71,7 @@\n     \n-maior := slices.Max(nums)%0A    fmt.Println(maior)%0A\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-04-28_17-58-39",
+            "content": "@@ -58,22 +58,8 @@\n ) %7B%0A\n-    nums := 5%0A\n     \n@@ -87,191 +87,38 @@\n ms)%0A\n-     for i := 0; i %3C nums; i++%7B%0A        fmt.Scan(&arr%5Bi%5D)%0A     %7D%0A     a := arr%5B0%5D%0A     for _, inteiro := range arr %7B%0A        if inteiro %3C a %7B%0A            a = inteiro%0A        %7D%0A%0A     %7D\n+%0A    maior := slices.Max(nums)\n %0A   \n@@ -130,14 +130,18 @@\n Println(\n-a\n+maior\n )%0A%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-04-28_18-06-40",
+            "content": "@@ -25,16 +25,30 @@\n   %22fmt%22%0A\n+    %22slices%22%0A)\n %0Afunc ma\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-04-28_18-06-50",
+            "content": "@@ -13,16 +13,21 @@\n %0Aimport \n+(%0A   \n  %22fmt%22%0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-28_18-06-56",
+            "content": "package main\nimport  \"fmt\"\n\nfunc main() {\n    nums := 5\n    arr := make([]int, nums)\n     for i := 0; i < nums; i++{\n        fmt.Scan(&arr[i])\n     }\n     a := arr[0]\n     for _, inteiro := range arr {\n        if inteiro < a {\n            a = inteiro\n        }\n\n     }\n    fmt.Println(a)\n\n}\n",
+            "lines": "19"
+        }
+    ]
+}

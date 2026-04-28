@@ -22,8 +22,8 @@ sources:
   quests: null
   tasks: null
 expanded:
-- sandbox@sandbox
 - fup@list
+- sandbox@sandbox
 flags:
   inbox: all
   panel: skills
@@ -31,5 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: sandbox@user_002
-selected_index: 1
+selected: fup@dieta
+selected_index: 15
