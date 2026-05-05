@@ -45,6 +45,7 @@ func count(nums []int, valor int) int{
 
 func separar_figurinhas(montante []int) ([]int, []int) { //tupla
     album := make([]int, 0, len(montante))
+  
     repet := make([]int, 0, len(montante))
     for _, fig := range montante {
         if !contains(album, fig) {

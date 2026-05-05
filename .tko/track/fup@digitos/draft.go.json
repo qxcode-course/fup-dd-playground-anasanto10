@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_16-58-40",
+            "content": "@@ -41,202 +41,35 @@\n     \n-var a, b int%0A    fmt.Scan(&a, &b)%0A%0A    contador := 0%0A%0A    for b %3E 0 %7B%0A        ult := b%2510%0A%0A        if ult == a %7B%0A            contador ++%0A        %7D%0A        b = b/10%0A    %7D%0A    fmt.Println(contador\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-05-27",
+            "content": "@@ -102,17 +102,16 @@\n  for b %3E\n-=\n  0 %7B%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-06-01",
+            "content": "@@ -179,26 +179,8 @@\n  ++%0A\n-            break%0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-06-18",
+            "content": "@@ -175,16 +175,34 @@\n ador ++%0A\n+            break%0A\n         \n@@ -220,30 +220,16 @@\n  = b/10%0A\n-        break%0A\n     %7D%0A  \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-05_17-06-35",
+            "content": "@@ -202,16 +202,30 @@\n  = b/10%0A\n+        break%0A\n     %7D%0A  \n@@ -248,20 +248,10 @@\n ntador)%0A\n-    break%0A\n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-05_17-06-45",
+            "content": "@@ -234,11 +234,20 @@\n ntador)%0A\n+    break\n %0A%7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-05_17-07-38",
+            "content": "@@ -234,10 +234,11 @@\n ntador)%0A\n+%0A\n %7D%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-05_17-07-46",
+            "content": "@@ -102,16 +102,17 @@\n  for b %3E\n+=\n  0 %7B%0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-07-59",
+            "content": "@@ -95,154 +95,8 @@\n  0%0A%0A\n-    if b == 0%7B%0A        if a == 0 %7B%0A            fmt.Println(%221%22)%0A        %7D else %7B%0A            fmt.Println(%220%22)%0A        %7D%0A        return%0A    %7D%0A    %0A\n     \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-05_17-10-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var a, b int\n    fmt.Scan(&a, &b)\n\n    contador := 0\n\n    if b == 0{\n        if a == 0 {\n            fmt.Println(\"1\")\n        } else {\n            fmt.Println(\"0\")\n        }\n        return\n    }\n    \n    for b > 0 {\n        ult := b%10\n\n        if ult == a {\n            contador ++\n        }\n        b = b/10\n    }\n    fmt.Println(contador)\n}\n",
+            "lines": "27"
+        }
+    ]
+}

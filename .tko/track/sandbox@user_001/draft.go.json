@@ -132,7 +132,12 @@
         },
         {
             "label": "2026-04-14_17-35-44",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n   //var qtd int \n   //fmt.Scan(&qtd)\n   //var idades[]int = make([]int, qtd)\n   //fmt.Println(idades)\n\n   //arr := []int {9, 8, 7, 6, 5, 4}\n   //fmt.Print(\"[ \")\n   //for i:=0; i < len(arr); i++{\n   // fmt.Printf(\"%d \", arr[i])\n   //}\n   //fmt.Println(\"]\")\n\n   //arr := []int {9, 8, 7, 6, 5, 4, 3, 2}\n   //fmt.Print(\"[ \")\n   //for pos, _ := range arr {\n   // fmt.Printf(\"%d \", pos)\n   //}\n   //fmt.Print(\"]\\n\")\n\n    func mostrar_vetor (arr []int, sep string) {\n    arr := []int {9, 8, 7, 6, 5, 4, 3, 2}\n    fmt.Print(\"[ \")\n    for i, valor := range arr {\n     if i != 0 {\n        fmt.Print(sep)\n     }\n     fmt.Printf(\"%v\", valor)\n    }\n    fmt.Print(\"]\\n\")\n}\n\n    func main() {\n        var qtd int\n        fmt.Scan(&qtd)\n        var arr []int = make([]int, qtd)\n        for i := range arr {\n            fmt.Scan(&arr[i])\n        }\n        mostrar_vetor(arr, \" \")\n    }\n\n}\n\n\n\n\n\n",
+            "content": "@@ -445,17 +445,16 @@\n %22%5D%5Cn%22)%0A%0A\n-%0A\n     func\n@@ -906,12 +906,13 @@\n    %7D%0A%0A%7D%0A%0A%0A%0A%0A\n+%0A\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-05-05_17-14-45",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n   //var qtd int \n   //fmt.Scan(&qtd)\n   //var idades[]int = make([]int, qtd)\n   //fmt.Println(idades)\n\n   //arr := []int {9, 8, 7, 6, 5, 4}\n   //fmt.Print(\"[ \")\n   //for i:=0; i < len(arr); i++{\n   // fmt.Printf(\"%d \", arr[i])\n   //}\n   //fmt.Println(\"]\")\n\n   //arr := []int {9, 8, 7, 6, 5, 4, 3, 2}\n   //fmt.Print(\"[ \")\n   //for pos, _ := range arr {\n   // fmt.Printf(\"%d \", pos)\n   //}\n   //fmt.Print(\"]\\n\")\n\n\n    func mostrar_vetor (arr []int, sep string) {\n    arr := []int {9, 8, 7, 6, 5, 4, 3, 2}\n    fmt.Print(\"[ \")\n    for i, valor := range arr {\n     if i != 0 {\n        fmt.Print(sep)\n     }\n     fmt.Printf(\"%v\", valor)\n    }\n    fmt.Print(\"]\\n\")\n}\n\n    func main() {\n        var qtd int\n        fmt.Scan(&qtd)\n        var arr []int = make([]int, qtd)\n        for i := range arr {\n            fmt.Scan(&arr[i])\n        }\n        mostrar_vetor(arr, \" \")\n    }\n\n}\n\n\n\n\n",
             "lines": "50"
         }
     ]

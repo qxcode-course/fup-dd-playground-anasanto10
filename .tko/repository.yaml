@@ -31,5 +31,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@dieta
-selected_index: 15
+selected: sandbox@user_001
+selected_index: 1
