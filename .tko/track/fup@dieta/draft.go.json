@@ -2,8 +2,63 @@
     "patches": [
         {
             "label": "2026-04-28_18-07-57",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,45 +41,35 @@\n     \n-var dias int%0A    fmt.Scan(&dias)%0A%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-05-11_16-48-24",
+            "content": "@@ -74,118 +74,14 @@\n as)%0A\n-    calorias := make(%5B%5Dint, dias)%0A%0A    for i := 0; i %3C dias; i++ %7B%0A        fmt.Println(%5B%5Dcalorias)%0A    %7D\n %0A    %0A%7D%0A\n %0A%0A\n@@ -78,10 +78,8 @@\n %0A    %0A%7D%0A\n-%0A%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-05-11_16-52-23",
+            "content": "@@ -109,22 +109,8 @@\n s)%0A%0A\n-    soma := 0%0A\n     \n@@ -157,17 +157,18 @@\n Println(\n-&\n+%5B%5D\n calorias\n@@ -172,116 +172,19 @@\n ias)\n-%0A%0A        soma += calorias\n %0A    %7D%0A\n-%0A\n     \n-media := float64(soma) / float64(dias)%0A    fmt.Printf(%22%25.1f%5Cn%22, media)\n %0A%7D%0A%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-11_16-56-32",
+            "content": "@@ -200,10 +200,10 @@\n oma \n-=\n +\n+=\n  cal\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-11_16-56-45",
+            "content": "@@ -93,23 +93,19 @@\n  make(%5B%5D\n-float64\n+int\n , dias)%0A\n@@ -197,22 +197,16 @@\n   soma =\n- soma \n + calori\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-11_16-57-19",
+            "content": "@@ -93,19 +93,23 @@\n  make(%5B%5D\n-int\n+float64\n , dias)%0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-11_16-57-25",
+            "content": "@@ -180,18 +180,16 @@\n calorias\n-%5B%5D\n )%0A%0A     \n@@ -200,10 +200,16 @@\n oma \n-+\n =\n+ soma +\n  cal\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-11_16-58-33",
+            "content": "@@ -119,17 +119,16 @@\n ma := 0%0A\n-%0A\n     for \n@@ -163,19 +163,22 @@\n     fmt.\n-Sca\n+Printl\n n(&calor\n@@ -180,16 +180,18 @@\n calorias\n+%5B%5D\n )%0A%0A     \n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-11_17-00-14",
+            "content": "@@ -183,38 +183,8 @@\n ias)\n-%0A        fmt.Println(calorias)\n %0A%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-11_17-00-36",
+            "content": "@@ -180,25 +180,24 @@\n lorias)%0A\n-%0A\n         \n soma := \n@@ -192,22 +192,46 @@\n     \n-soma :=\n+fmt.Println(calorias)%0A%0A       \n  soma +\n+=\n  cal\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-11_17-02-17",
+            "content": "@@ -178,19 +178,16 @@\n calorias\n-%5Bi%5D\n )%0A%0A     \n@@ -198,10 +198,17 @@\n oma \n+:= soma \n +\n-=\n  cal\n@@ -216,11 +216,8 @@\n rias\n-%5Bi%5D\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-11_17-03-46",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var dias int\n    fmt.Scan(&dias)\n    calorias := make([]int, dias)\n\n    soma := 0\n\n    for i := 0; i < dias; i++ {\n        fmt.Scan(&calorias[i])\n\n        soma += calorias[i]\n    }\n\n    media := float64(soma) / float64(dias)\n    fmt.Printf(\"%.1f\\n\", media)\n}\n\n\n",
+            "lines": "20"
         }
     ]
 }
