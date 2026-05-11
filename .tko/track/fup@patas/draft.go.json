@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-23-08",
+            "content": "@@ -41,747 +41,35 @@\n     \n-var cb, cc, qtd int%0A    fmt.Scan(&cb, &cc, &qtd)%0A%0A    animais := make(%5B%5Dstring, qtd)%0A%0A    for i := 0; i %3C qtd; i++%7B%0A        fmt.Scan(&animais%5Bi%5D)%0A    %7D%0A%0A    total := 0%0A%0A    for i := 0; i %3C qtd; i++%7B%0A        if animais%5Bi%5D == %22v%22%7B%0A            total += 4%0A        %7D else if animais%5Bi%5D == %22g%22%7B%0A            total += 2%0A        %7D else if animais%5Bi%5D == %22c%22%7B%0A            total += 4%0A        %7D   %0A    %7D%0A%0A    dif_chico := cb - total%0A    if dif_chico %3C 0%7B%0A        dif_chico = -dif_chico%0A    %7D%0A    dif_ceb := cc - total%0A    if dif_ceb %3C 0%7B%0A        dif_ceb = -dif_ceb%0A    %7D%0A%0A    if dif_chico %3C dif_ceb %7B%0A        fmt.Println(%22Chico Bento%22)%0A    %7D else if dif_ceb %3C dif_chico %7B%0A        fmt.Println(%22Cebolinha%22)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-45-06",
+            "content": "@@ -423,35 +423,8 @@\n   %7D \n-%0A        fmt.Println(total)\n   %0A \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-05_17-45-33",
+            "content": "@@ -420,26 +420,24 @@\n      %7D %0A    \n-%7D%0A\n     fmt.Prin\n@@ -446,16 +446,24 @@\n n(total)\n+  %0A    %7D\n %0A%0A    di\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-05_17-45-54",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var cb, cc, qtd int\n    fmt.Scan(&cb, &cc, &qtd)\n\n    animais := make([]string, qtd)\n\n    for i := 0; i < qtd; i++{\n        fmt.Scan(&animais[i])\n    }\n\n    total := 0\n\n    for i := 0; i < qtd; i++{\n        if animais[i] == \"v\"{\n            total += 4\n        } else if animais[i] == \"g\"{\n            total += 2\n        } else if animais[i] == \"c\"{\n            total += 4\n        } \n    }\n    fmt.Println(total)\n\n    dif_chico := cb - total\n    if dif_chico < 0{\n        dif_chico = -dif_chico\n    }\n    dif_ceb := cc - total\n    if dif_ceb < 0{\n        dif_ceb = -dif_ceb\n    }\n\n    if dif_chico < dif_ceb {\n        fmt.Println(\"Chico Bento\")\n    } else if dif_ceb < dif_chico {\n        fmt.Println(\"Cebolinha\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "42"
+        }
+    ]
+}

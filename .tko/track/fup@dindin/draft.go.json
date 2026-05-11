@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_17-46-26",
+            "content": "@@ -41,81 +41,35 @@\n     \n-var qtd int%0A    var sabor, turno string%0A    fmt.Scan(&qtd, &sabor, &turno\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_17-48-09",
+            "content": "@@ -57,637 +57,65 @@\n     \n-fmt.Scan(&qtd)%0A    sabor := make(%5B%5Dstring, qtd)%0A    turno := make(%5B%5Dstring, qtd)%0A%0A    for i := 0; i %3C qtd; i++%7B%0A        fmt.Scan(&sabor%5Bi%5D)%0A    %7D%0A    for i := 0; i %3C qtd; i++%7B%0A        fmt.Scan(&turno%5Bi%5D)%0A    %7D%0A%0A    choc := 0%0A    lim := 0%0A%0A    man := 0%0A    tar := 0%0A%0A    if sabor%5Bi%5D == %22c%22 %7B%0A        choc ++%0A    %7D else if sabor%5Bi%5D == %22l%22%7B%0A        lim ++%0A    %7D%0A%0A    if turno%5Bi%5D == %22m%22 %7B%0A        man ++%0A    %7D else if turno%5Bi%5D == %22t%22%7B%0A        tar ++%0A    %7D%0A%0A    if choc %3C lim %7B%0A        fmt.Println(%22l%22)%0A    %7D else %7B%0A        fmt.Println(%22c%22)%0A    %7D%0A%0A    if man %3C tar %7B%0A        fmt.Println(%22m%22)%0A    %7D else %7B%0A        fmt.Println(%22t%22)%0A    %7D\n+var sabor, turno string%0A    fmt.Scan(&qtd, &sabor, &turno)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-05_18-01-09",
+            "content": "@@ -323,38 +323,8 @@\n  0%0A%0A\n-    for i := 0; i %3C qtd; i++%7B%0A\n     \n@@ -340,24 +340,24 @@\n i%5D == %22c%22 %7B%0A\n+\n         choc\n@@ -416,44 +416,8 @@\n   %7D%0A\n-    %7D%0A%0A    for i := 0; i %3C qtd; i++%7B\n %0A   \n@@ -484,16 +484,16 @@\n == %22t%22%7B%0A\n+\n         \n@@ -504,22 +504,16 @@\n ++%0A    %7D\n-%0A    %7D\n %0A%0A    if\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-05_18-02-21",
+            "content": "@@ -638,22 +638,8 @@\n lse \n-if lim %3C choc \n %7B%0A  \n@@ -670,51 +670,8 @@\n    %7D\n- else %7B%0A        fmt.Println(%22empate%22)%0A    %7D\n %0A%0A  \n@@ -727,20 +727,8 @@\n lse \n-if tar %3C man\n %7B%0A  \n@@ -754,51 +754,8 @@\n t%22)%0A\n-    %7D else %7B%0A        fmt.Println(%22empate%22)%0A\n     \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-05-05_18-03-31",
+            "content": "@@ -287,24 +287,25 @@\n    lim := 0%0A\n+%0A\n     man := 0\n@@ -446,16 +446,48 @@\n   %7D%0A    \n+%7D%0A%0A    for i := 0; i %3C qtd; i++%7B\n %0A    if \n@@ -590,17 +590,17 @@\n if choc \n-%3E\n+%3C\n  lim %7B%0A \n@@ -619,17 +619,17 @@\n rintln(%22\n-c\n+l\n %22)%0A    %7D\n@@ -645,9 +645,9 @@\n lim \n-%3E\n+%3C\n  cho\n@@ -663,33 +663,33 @@\n    fmt.Println(%22\n-l\n+c\n %22)%0A    %7D else %7B%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-05_18-07-15",
+            "content": "@@ -189,24 +189,60 @@\n (&sabor%5Bi%5D)%0A\n+    %7D%0A    for i := 0; i %3C qtd; i++%7B%0A\n         fmt.\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-05-05_18-11-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n    sabor := make([]string, qtd)\n    turno := make([]string, qtd)\n\n    for i := 0; i < qtd; i++{\n        fmt.Scan(&sabor[i])\n        fmt.Scan(&turno[i])\n    }\n\n    choc := 0\n    lim := 0\n    man := 0\n    tar := 0\n\n    for i := 0; i < qtd; i++{\n    if sabor[i] == \"c\" {\n        choc ++\n    } else if sabor[i] == \"l\"{\n        lim ++\n    }\n    \n    if turno[i] == \"m\" {\n        man ++\n    } else if turno[i] == \"t\"{\n        tar ++\n    }\n    }\n\n    if choc > lim {\n        fmt.Println(\"c\")\n    } else if lim > choc {\n        fmt.Println(\"l\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n\n    if man < tar {\n        fmt.Println(\"m\")\n    } else if tar < man{\n        fmt.Println(\"t\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "48"
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-05_18-12-12",
+            "content": "@@ -41,257 +41,35 @@\n     \n-var p, n int %0A    fmt.Scan(&p, &n)%0A%0A    vet := make(%5B%5Dint, n)%0A%0A    for i := 0; i %3C n; i++%7B%0A        fmt.Scan(vet%5Bi%5D)%0A    %7D%0A%0A    cont := 0%0A%0A    for i := 0; i %3C n; i++%7B%0A        if vetor%5Bi%5D == p %7B%0A            cont ++%0A        %7D%0A    %7D%0A    fmt.Println(cont\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-05_18-21-24",
+            "content": "@@ -217,16 +217,18 @@\n   if vet\n+or\n %5Bi%5D == p\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_18-21-30",
+            "content": "@@ -72,16 +72,17 @@\n &p, &n)%0A\n+%0A\n     vet \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-05_18-22-14",
+            "content": "@@ -267,69 +267,8 @@\n   %7D%0A\n-     for i := 0; i %3C n; i++%7B%0A        fmt.Print(vet%5Bi%5D)%0A    %7D%0A\n     \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-05_18-24-55",
+            "content": "@@ -147,17 +147,9 @@\n Scan\n-f(%22%25d%22, &\n+(\n vet%5B\n@@ -267,16 +267,72 @@\n   %7D%0A    \n+ for i := 0; i %3C n; i++%7B%0A        fmt.Print(vet%5Bi%5D)%0A    %7D\n %0A    fmt\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-05_18-26-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var p, n int \n    fmt.Scan(&p, &n)\n    vet := make([]int, n)\n\n    for i := 0; i < n; i++{\n        fmt.Scanf(\"%d\", &vet[i])\n    }\n\n    cont := 0\n\n    for i := 0; i < n; i++{\n        if vet[i] == p {\n            cont ++\n        }\n    }\n    \n    fmt.Println(cont)\n}\n",
+            "lines": "21"
+        }
+    ]
+}
