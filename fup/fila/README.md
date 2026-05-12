@@ -2,7 +2,8 @@
 
 ![_](../../.tko/cache/e2bc1de5ac270eaa50476053dc6bb1f9ff79f7ba/base/fila/assets/cover.jpg)
 
-Você foi encarregado de organizar a fila do Restaurante Universitário (RU). Para agilizar o processo, você teve a brilhante ideia de dividir a fila em dois grupos: uma fila para professores e STAs, e outra para alunos.
+Você foi encarregado de organizar a fila do Restaurante Universitário (RU). Para agilizar o processo, você teve a brilhante ideia de dividir a fila em dois grupos: uma fila para professores e STAs, e outra pa
+ra alunos.
 
 - Professores e STAs (servidores) serão representados pelos números pares.
 - Alunos serão representados pelos números ímpares.
