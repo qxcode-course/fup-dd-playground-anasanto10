@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_16-39-23",
+            "content": "@@ -17,350 +17,59 @@\n ort \n-(%0A    %22fmt%22%0A    %22bufio%22%0A    %22os%22%0A)%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    line := scanner.Text()%0A    scanner.Scan()%0A    palavra := scanner.Text()%0A    letra := rune(palavra%5B0%5D)%0A%0A    cont := 0%0A    for _, c := range line %7B%0A        if c == letra %7B%0A            cont += 1%0A        %7D%0A    %7D%0A    fmt.Println(cont\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-18_16-42-56",
+            "content": "@@ -52,140 +52,8 @@\n %22%0A)%0A\n-%0Afunc toLower(value rune) rune %7B%0A    if value %3E= 'A' && value %3C= 'Z' %7B%0A        return value + ('a' - 'A')%0A    %7D%0A    return value%0A%7D%0A%0A\n func\n@@ -288,36 +288,18 @@\n  if \n-toLower(c) == toLower(\n+c == \n letra\n-)\n  %7B%0A \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-18_16-46-38",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\n\nfunc toLower(value rune) rune {\n    if value >= 'A' && value <= 'Z' {\n        return value + ('a' - 'A')\n    }\n    return value\n}\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    line := scanner.Text()\n    scanner.Scan()\n    palavra := scanner.Text()\n    letra := rune(palavra[0])\n\n    cont := 0\n    for _, c := range line {\n        if toLower(c) == toLower(letra) {\n            cont += 1\n        }\n    }\n    fmt.Println(cont)\n}\n",
+            "lines": "30"
+        }
+    ]
+}

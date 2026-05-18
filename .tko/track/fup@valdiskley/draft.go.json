@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_16-28-58",
+            "content": "@@ -41,159 +41,35 @@\n     \n-var palavra string%0A    var delta int%0A    fmt.Scan(&palavra, &delta)%0A    var letra byte = palavra%5B0%5D%0A%0A    letra -= 'a' //0 e 25%0A    letra += byte(delta)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-18_16-34-30",
+            "content": "@@ -194,147 +194,6 @@\n a)%0A%0A\n-    if letra %3C 0%7B%0A        letra += 26%0A    %7D else if letra %3E= 26 %7B%0A        letra -= 26%0A    %7D%0A%0A    letra += 'a'%0A%0A    fmt.Printf(%22%25c%5Cn%22, letra)%0A\n %7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-18_16-37-17",
+            "content": "@@ -123,18 +123,15 @@\n tra \n-int = int(\n+byte = \n pala\n@@ -136,17 +136,16 @@\n lavra%5B0%5D\n-)\n %0A%0A    le\n@@ -177,21 +177,27 @@\n etra += \n+byte(\n delta\n+)\n %0A%0A    if\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-18_16-38-52",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var palavra string\n    var delta int\n    fmt.Scan(&palavra, &delta)\n    var letra int = int(palavra[0])\n\n    letra -= 'a' //0 e 25\n    letra += delta\n\n    if letra < 0{\n        letra += 26\n    } else if letra >= 26 {\n        letra -= 26\n    }\n\n    letra += 'a'\n\n    fmt.Printf(\"%c\\n\", letra)\n}\n",
+            "lines": "21"
+        }
+    ]
+}

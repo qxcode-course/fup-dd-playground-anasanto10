@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_16-22-03",
+            "content": "@@ -17,43 +17,14 @@\n ort \n-(%0A    %22bufio%22%0A    %22os%22%0A    \n %22fmt%22%0A\n-)%0A\n func\n@@ -41,112 +41,35 @@\n     \n-scanner := bufio.Newscanner(os.Stdin)%0A    scanner.Scan()%0A    line := scanner.Text()%0A    fmt.Println(line\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-18_16-24-15",
+            "content": "@@ -86,17 +86,17 @@\n ufio.New\n-S\n+s\n canner(o\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-18_16-24-32",
+            "content": "@@ -154,197 +154,8 @@\n t()%0A\n-    scanner.Scan()%0A    var letra rune%0A    fmt.Sscanf(scanner.Text(), %22%25c%22, &letra)%0A%0A    cont := 0%0A    for _, c := range line %7B%0A        if c == letra %7B%0A            cont += 1%0A        %7D%0A    %7D%0A\n     \n@@ -170,12 +170,12 @@\n tln(\n-cont\n+line\n )%0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-05-18_16-28-22",
+            "content": "package main\nimport (\n    \"bufio\"\n    \"os\"\n    \"fmt\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    line := scanner.Text()\n    scanner.Scan()\n    var letra rune\n    fmt.Sscanf(scanner.Text(), \"%c\", &letra)\n\n    cont := 0\n    for _, c := range line {\n        if c == letra {\n            cont += 1\n        }\n    }\n    fmt.Println(cont)\n}\n",
+            "lines": "22"
+        }
+    ]
+}
