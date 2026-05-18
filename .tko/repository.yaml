@@ -20,7 +20,6 @@ sources:
   quests: null
 expanded:
 - sandbox@sandbox
-- fup@string
 - fup@list
 flags:
   inbox: all
@@ -29,5 +28,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: fup@avestruz
-selected_index: 91
+selected: fup@string
+selected_index: 63

@@ -27,5 +27,5 @@ func main() {
             fmt.Print(" ")
         }
     }
-    fmt.Print(" ]")
+    fmt.Println(" ]")
 }
