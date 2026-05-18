@@ -105,3 +105,5 @@
 2026-05-18 16:46:38, EXEC, v:1, k:fup@avestruz, mode:FULL, rate:100, size:30
 2026-05-18 16:46:42, MOVE, v:1, k:fup@avestruz, mode:BACK
 2026-05-18 16:46:45, SELF, v:1, k:fup@avestruz, self:1, rate:100
+2026-05-18 16:46:30, MOVE, v:1, k:fup@avestruz, mode:EDIT
+2026-05-18 16:46:38, MOVE, v:1, k:fup@avestruz, mode:EDIT
