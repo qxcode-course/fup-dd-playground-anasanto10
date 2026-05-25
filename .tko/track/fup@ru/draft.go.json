@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-02-08",
+            "content": "@@ -17,43 +17,14 @@\n ort \n-(%0A    %22bufio%22%0A    %22os%22%0A    \n %22fmt%22%0A\n-)%0A\n func\n@@ -41,115 +41,35 @@\n     \n-scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    line := scanner.Text()%0A    scanner.Scan()%0A%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_17-08-20",
+            "content": "@@ -178,361 +178,7 @@\n     \n-var vogais %5B%5Drune%0A    var consoantes %5B%5Drune%0A%0A    for _, letras := range line %7B%0A        if letras == 'a' %7C%7C letras == 'e' %7C%7C letras == 'i' %7C%7C letras == 'o' %7C%7C letras == 'u' %7B%0A            vogais = append(vogais, letras)%0A        %7D else %7B%0A            consoantes = append(consoantes, letras)%0A        %7D%0A    %7D%0A    fmt.Println(vogais)%0A    fmt.Println(consoantes)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-19_17-18-03",
+            "content": "@@ -497,23 +497,15 @@\n tln(\n-string(\n vogais)\n-)\n %0A   \n@@ -521,15 +521,8 @@\n tln(\n-string(\n cons\n@@ -528,12 +528,11 @@\n soantes)\n-)\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-19_17-18-58",
+            "content": "@@ -256,36 +256,8 @@\n ne %7B\n-%0A%0A        if letras != ' ' %7B\n %0A   \n@@ -477,18 +477,16 @@\n %7D%0A    %7D%0A\n-%7D%0A\n     fmt.\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-19_17-21-29",
+            "content": "package main\nimport (\n    \"bufio\"\n    \"os\"\n    \"fmt\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    line := scanner.Text()\n    scanner.Scan()\n\n    var vogais []rune\n    var consoantes []rune\n\n    for _, letras := range line {\n\n        if letras != ' ' {\n        if letras == 'a' || letras == 'e' || letras == 'i' || letras == 'o' || letras == 'u' {\n            vogais = append(vogais, letras)\n        } else {\n            consoantes = append(consoantes, letras)\n        }\n    }\n}\n    fmt.Println(string(vogais))\n    fmt.Println(string(consoantes))\n}\n",
+            "lines": "28"
+        }
+    ]
+}

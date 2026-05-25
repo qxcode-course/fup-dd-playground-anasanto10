@@ -1,0 +1,5 @@
+2026-05-25 00:02:08, EXEC, v:1, k:fup@casais, mode:FULL, rate:100, size:28
+2026-05-25 00:03:20, MOVE, v:1, k:fup@casais, mode:BACK
+2026-05-25 00:03:25, SELF, v:1, k:fup@casais, self:1, rate:100
+2026-05-25 00:02:08, MOVE, v:1, k:fup@casais, mode:EDIT
+2026-05-25 00:02:08, MOVE, v:1, k:fup@casais, mode:EDIT

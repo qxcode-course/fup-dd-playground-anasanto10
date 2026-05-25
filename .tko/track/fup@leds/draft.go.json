@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-19_17-21-44",
+            "content": "@@ -41,816 +41,35 @@\n     \n-var N int%0A    arr := make(%5B%5Dstring, N)%0A%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A%0A    for i := 0; i %3C N; i++ %7B%0A        total := 0%0A        numero := arr%5Bi%5D%0A%0A        for j := 0; j %3Clen(numero); j++ %7B%0A            switch numero%5Bj%5D %7B%0A%0A            case '0':%0A                total += 6%0A%0A            case '1':%0A                total += 2%0A%0A            case '2':%0A                total += 5%0A%0A            case '3':%0A                total += 5%0A%0A            case '4':%0A                total += 4%0A%0A            case '5':%0A                total += 5%0A%0A            case '6':%0A                total += 6%0A%0A            case '7':%0A                total += 3%0A%0A            case '8':%0A                total += 7%0A%0A            case '9':%0A                total += 6%0A            %7D%0A        %7D%0A        fmt.Println(total, %22leds%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-19_17-38-54",
+            "content": "@@ -817,19 +817,8 @@\n     \n-%0A    %7D%0A    \n  fmt\n@@ -841,11 +841,16 @@\n %22leds%22)%0A\n+    \n %7D%0A\n+%7D\n %0A\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-05-19_17-39-52",
+            "content": "@@ -799,24 +799,41 @@\n    %7D%0A       \n+ %7D%0A       %0A    %7D%0A\n      fmt.Pri\n@@ -856,31 +856,7 @@\n s%22)%0A\n-        %7D%0A       %0A    %7D%0A\n %7D%0A%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-19_17-40-09",
+            "content": "@@ -797,29 +797,24 @@\n      %7D%0A     \n-   %7D%0A\n        fmt.P\n@@ -835,16 +835,34 @@\n %22leds%22)%0A\n+        %7D%0A       %0A\n     %7D%0A%7D%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-05-19_17-40-21",
+            "content": "@@ -51,25 +51,8 @@\n int%0A\n-    fmt.Scan(&N)%0A\n     \n@@ -164,17 +164,16 @@\n ; i++ %7B%0A\n-%0A\n         \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-05-19_17-42-00",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var N int\n    fmt.Scan(&N)\n    arr := make([]string, N)\n\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n\n    for i := 0; i < N; i++ {\n\n        total := 0\n        numero := arr[i]\n\n        for j := 0; j <len(numero); j++ {\n            switch numero[j] {\n\n            case '0':\n                total += 6\n\n            case '1':\n                total += 2\n\n            case '2':\n                total += 5\n\n            case '3':\n                total += 5\n\n            case '4':\n                total += 4\n\n            case '5':\n                total += 5\n\n            case '6':\n                total += 6\n\n            case '7':\n                total += 3\n\n            case '8':\n                total += 7\n\n            case '9':\n                total += 6\n            }\n        }\n       fmt.Println(total, \"leds\")\n    }\n}\n\n",
+            "lines": "54"
+        }
+    ]
+}
