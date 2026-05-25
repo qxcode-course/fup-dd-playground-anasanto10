@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-25_15-17-24",
+            "content": "@@ -41,471 +41,35 @@\n     \n-var n int%0A    fmt.Scan(&n)%0A%0A    arr := make(%5B%5Dint, n)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A    metade := n/2%0A%0A    somJedi := 0%0A    somSith := 0%0A%0A    for i := 0; i %3C metade; i++ %7B%0A        somJedi += arr%5Bi%5D%0A    %7D%0A%0A    for i := metade; i %3C n; i++ %7B%0A        somSith += arr%5Bi%5D%0A    %7D%0A%0A    if somJedi %3C somSith %7B%0A        fmt.Println(%22Sith%22)%0A    %7D else if somSith %3C somJedi %7B%0A        fmt.Println(%22Jedi%22)%0A    %7D else %7B%0A        fmt.Println(%22Empate%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-25_15-39-36",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    arr := make([]int, n)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n    metade := n/2\n\n    somJedi := 0\n    somSith := 0\n\n    for i := 0; i < metade; i++ {\n        somJedi += arr[i]\n    }\n\n    for i := metade; i < n; i++ {\n        somSith += arr[i]\n    }\n\n    if somJedi < somSith {\n        fmt.Println(\"Sith\")\n    } else if somSith < somJedi {\n        fmt.Println(\"Jedi\")\n    } else {\n        fmt.Println(\"Empate\")\n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}
