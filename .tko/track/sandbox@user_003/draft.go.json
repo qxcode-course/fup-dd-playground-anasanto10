@@ -17,8 +17,23 @@
         },
         {
             "label": "2026-03-16_17-38-34",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n\nvar nome string\nvar idade int\nfmt.Println(\"Digite nome:\")\nfmt.Scan(&nome)\nfmt.Println(\"Digite a idade:\")\nfmt.Scan(&idade)\nfmt.Printf(\"Seu nome \u00e9 %v e sua idade \u00e9 %v\\n\", nome, idade)\n\n}\n",
+            "content": "@@ -37,39 +37,190 @@\n ) %7B%0A\n-    fmt.Println(%22Hello, World!%22)\n+%0Avar nome string%0Avar idade int%0Afmt.Println(%22Digite nome:%22)%0Afmt.Scan(&nome)%0Afmt.Println(%22Digite a idade:%22)%0Afmt.Scan(&idade)%0Afmt.Printf(%22Seu nome %C3%A9 %25v e sua idade %C3%A9 %25v%5Cn%22, nome, idade)%0A\n %0A%7D%0A\n",
             "lines": "13"
+        },
+        {
+            "label": "2026-05-25_17-03-06",
+            "content": "@@ -23,218 +23,53 @@\n mt%22%0A\n-%0Atype Pessoa struct %7B%0A    nome string%0A    idade int%0A    altura float32%0A%7D%0A%0Afunc main() %7B%0A    var david Pessoa = Pessoa%0A    david.nome = %22david%22%0A    david.idade = 42%0A    david.altura = 1.78%0A%0A    fmt.Println(david\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-25_17-08-07",
+            "content": "@@ -140,10 +140,8 @@\n ssoa\n-%7B%7D\n %0A   \n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-25_17-08-18",
+            "content": "package main\nimport \"fmt\"\n\ntype Pessoa struct {\n    nome string\n    idade int\n    altura float32\n}\n\nfunc main() {\n    var david Pessoa = Pessoa{}\n    david.nome = \"david\"\n    david.idade = 42\n    david.altura = 1.78\n\n    fmt.Println(david)\n}\n",
+            "lines": "17"
         }
     ]
 }

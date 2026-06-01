@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_15-29-50",
+            "content": "@@ -41,688 +41,35 @@\n     \n-var s, q int%0A    fmt.Scan(& s, &q)%0A    var digitos string%0A    fmt.Scan(&alg)%0A    var senha string%0A    fmt.Scan(&inicio)%0A%0A    vetorSenha := %5B%5Dbyte(senha)%0A%0A    for k := 0; k %3C q; k++ %7B%0A%0A        for i := s - 1; i %3E= 0; i--%7B%0A%0A            indice := 0 %0A%0A            for j := 0; j %3C len(digitos); j++%7B%0A                if vetorSenha%5Bi%5D == digitos%5Bj%5D %7B%0A                    indice = j%0A                    break%0A                %7D%0A            %7D%0A%0A            if indice %3C len(digitos)-1 %7B%0A                vetorSenha%5Bi%5D = digitos%5Bindice+1%5D%0A                break%0A            %7D else %7B%0A                vetorSenha%5Bi%5D = digitos%5B0%5D%0A            %7D%0A        %7D%0A%0A        fmt.Println(string(vetorSenha))%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_15-45-47",
+            "content": "@@ -109,23 +109,19 @@\n t.Scan(&\n-digitos\n+alg\n )%0A    va\n@@ -149,21 +149,22 @@\n t.Scan(&\n-senha\n+inicio\n )%0A%0A    v\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-01_15-46-07",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var s, q int\n    fmt.Scan(& s, &q)\n    var digitos string\n    fmt.Scan(&digitos)\n    var senha string\n    fmt.Scan(&senha)\n\n    vetorSenha := []byte(senha)\n\n    for k := 0; k < q; k++ {\n\n        for i := s - 1; i >= 0; i--{\n\n            indice := 0 \n\n            for j := 0; j < len(digitos); j++{\n                if vetorSenha[i] == digitos[j] {\n                    indice = j\n                    break\n                }\n            }\n\n            if indice < len(digitos)-1 {\n                vetorSenha[i] = digitos[indice+1]\n                break\n            } else {\n                vetorSenha[i] = digitos[0]\n            }\n        }\n\n        fmt.Println(string(vetorSenha))\n    }\n}\n",
+            "lines": "36"
+        }
+    ]
+}

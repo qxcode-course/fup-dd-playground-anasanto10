@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_15-16-57",
+            "content": "@@ -41,872 +41,35 @@\n     \n-var n, m int%0A    fmt.Scan(&n, &m)%0A%0A    inicio := 1%0A    for i := 1; i %3C n; i++%7B%0A        inicio *= 10%0A    %7D%0A%0A    fim := inicio*10 -1%0A%0A    var lista %5B%5Dint%0A%0A    for i := inicio; i %3C= fim; i++%7B%0A        for j := i; j %3C= fim; j++%7B%0A            produto := i * j%0A%0A            original := produto%0A            invertido := 0%0A            aux := produto%0A%0A            for aux %3E 0%7B%0A                invertido = invertido*10 + aux%2510%0A                aux /= 10%0A            %7D%0A%0A            if original == invertido %7B%0A                lista == append(lista, produto)%0A            %7D%0A        %7D%0A    %7D%0A%0A    for i := 0; i %3C len(lista)-1; i++%7B%0A        for j := 0; j %3C len(lista)-1; j++%7B%0A            if lista%5Bj%5D %3C lista%5Bj+1%5D%7B%0A                lista%5Bj%5D, lista%5Bj+1%5D = lista%5Bj+1%5D, lista%5Bj%5D%0A            %7D%0A        %7D%0A    %7D%0A%0A    for i:=0; i %3C m && i %3C len(lista); i++%7B%0A        fmt.Println(lista%5Bi%5D)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_15-28-58",
+            "content": "@@ -556,16 +556,17 @@\n  lista =\n+=\n  append(\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-06-01_15-29-24",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n, m int\n    fmt.Scan(&n, &m)\n\n    inicio := 1\n    for i := 1; i < n; i++{\n        inicio *= 10\n    }\n\n    fim := inicio*10 -1\n\n    var lista []int\n\n    for i := inicio; i <= fim; i++{\n        for j := i; j <= fim; j++{\n            produto := i * j\n\n            original := produto\n            invertido := 0\n            aux := produto\n\n            for aux > 0{\n                invertido = invertido*10 + aux%10\n                aux /= 10\n            }\n\n            if original == invertido {\n                lista = append(lista, produto)\n            }\n        }\n    }\n\n    for i := 0; i < len(lista)-1; i++{\n        for j := 0; j < len(lista)-1; j++{\n            if lista[j] < lista[j+1]{\n                lista[j], lista[j+1] = lista[j+1], lista[j]\n            }\n        }\n    }\n\n    for i:=0; i < m && i < len(lista); i++{\n        fmt.Println(lista[i])\n    }\n}\n",
+            "lines": "46"
+        }
+    ]
+}

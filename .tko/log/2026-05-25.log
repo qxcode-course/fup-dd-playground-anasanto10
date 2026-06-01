@@ -56,3 +56,40 @@
 2026-05-25 16:44:30, MOVE, v:1, k:fup@piao, mode:DOWN
 2026-05-25 16:44:31, MOVE, v:1, k:fup@piao, mode:PICK
 2026-05-25 16:44:32, EXEC, v:1, k:fup@piao, mode:FULL, rate:0, size:5
+2026-05-25 16:43:45, MOVE, v:1, k:fup@intervalada, mode:EDIT
+2026-05-25 16:43:45, MOVE, v:1, k:fup@intervalada, mode:EDIT
+2026-05-25 16:44:30, MOVE, v:1, k:fup@piao, mode:EDIT
+2026-05-25 16:44:30, MOVE, v:1, k:fup@piao, mode:EDIT
+2026-05-25 16:44:31, MOVE, v:1, k:fup@piao, mode:EDIT
+2026-05-25 16:50:05, MOVE, v:1, k:fup@piao, mode:EDIT
+2026-05-25 16:55:53, MOVE, v:1, k:fup@piao, mode:BACK
+2026-05-25 16:56:01, MOVE, v:1, k:fup@parkour, mode:PICK
+2026-05-25 16:56:02, EXEC, v:1, k:fup@parkour, mode:FULL, rate:0
+2026-05-25 16:56:02, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-05-25 16:57:42, MOVE, v:1, k:fup@parkour, mode:EDIT
+2026-05-25 16:59:07, MOVE, v:1, k:fup@parkour, mode:BACK
+2026-05-25 17:03:06, MOVE, v:1, k:sandbox@user_003, mode:PICK
+2026-05-25 17:03:06, EXEC, v:1, k:sandbox@user_003, mode:LOCK, rate:0, size:5
+2026-05-25 17:03:04, MOVE, v:1, k:sandbox@user_003, mode:EDIT
+2026-05-25 17:03:06, MOVE, v:1, k:sandbox@user_003, mode:EDIT
+2026-05-25 17:08:07, EXEC, v:1, k:sandbox@user_003, mode:FULL, size:17, fail:COMP
+2026-05-25 17:08:18, EXEC, v:1, k:sandbox@user_003, mode:LOCK, rate:0, size:17
+2026-05-25 17:08:20, EXEC, v:1, k:sandbox@user_003, mode:LOCK, rate:0
+2026-05-25 17:08:17, MOVE, v:1, k:sandbox@user_003, mode:EDIT
+2026-05-25 17:08:20, MOVE, v:1, k:sandbox@user_003, mode:EDIT
+2026-05-25 17:08:39, EXEC, v:1, k:sandbox@user_003, mode:LOCK, rate:0
+2026-05-25 17:08:42, EXEC, v:1, k:sandbox@user_003, mode:FREE
+2026-05-25 17:12:15, MOVE, v:1, k:sandbox@user_003, mode:EDIT
+2026-05-25 17:12:13, MOVE, v:1, k:sandbox@user_003, mode:EDIT
+2026-05-25 17:16:41, MOVE, v:1, k:sandbox@user_003, mode:EDIT
+2026-05-25 17:22:55, MOVE, v:1, k:sandbox@user_003, mode:EDIT
+2026-05-25 17:30:16, MOVE, v:1, k:sandbox@user_003, mode:BACK
+2026-05-25 17:34:01, MOVE, v:1, k:fup@botas, mode:PICK
+2026-05-25 17:34:02, EXEC, v:1, k:fup@botas, mode:FULL, rate:100
+2026-05-25 17:38:11, MOVE, v:1, k:fup@botas, mode:BACK
+2026-05-25 17:34:02, MOVE, v:1, k:fup@botas, mode:EDIT
+2026-05-25 17:38:09, MOVE, v:1, k:fup@botas, mode:EDIT
+2026-05-25 17:38:38, MOVE, v:1, k:fup@botas, mode:PICK
+2026-05-25 17:38:40, EXEC, v:1, k:fup@botas, mode:FULL, rate:100
+2026-05-25 17:38:40, MOVE, v:1, k:fup@botas, mode:EDIT
+2026-05-25 17:57:07, MOVE, v:1, k:fup@botas, mode:BACK

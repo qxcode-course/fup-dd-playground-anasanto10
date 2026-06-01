@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_15-32-35",
+            "content": "@@ -41,518 +41,35 @@\n     \n-var s int%0A    fmt.Scan(&s)%0A%0A    arr := make(%5B%5Dfloat32, s)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A%0A     var soma float32 = 0%0A     for i := 0; i %3C len(arr); i++ %7B%0A        soma += arr%5Bi%5D%0A     %7D%0A%0A     media := float32(soma) / float32(len(arr))%0A     %0A     for i := 0; i %3C s; i++ %7B%0A        if arr%5Bi%5D %3C media %7B%0A            fmt.Println(%22P%22)%0A        %7D else if arr%5Bi%5D %3E media %7B%0A            fmt.Println(%22G%22)%0A        %7D else %7B%0A            fmt.Println(%22M%22)%0A        %7D%0A     %7D%0A%0A     fmt.Printf(%22%25.2f%5Cn%22, media\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-26_15-44-59",
+            "content": "@@ -299,41 +299,8 @@\n r))%0A\n-     fmt.Printf(%22%25.2f%5Cn%22, media)%0A\n     \n@@ -516,10 +516,43 @@\n      %7D%0A%0A\n+     fmt.Printf(%22%25.2f%5Cn%22, media)%0A\n %7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_15-45-23",
+            "content": "@@ -413,16 +413,18 @@\n mt.Print\n+ln\n (%22P%22)%0A  \n@@ -477,16 +477,18 @@\n mt.Print\n+ln\n (%22G%22)%0A  \n@@ -523,16 +523,18 @@\n mt.Print\n+ln\n (%22M%22)%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_15-47-56",
+            "content": "@@ -416,17 +416,16 @@\n Print(%22P\n- \n %22)%0A     \n@@ -478,17 +478,16 @@\n Print(%22G\n- \n %22)%0A     \n@@ -522,17 +522,16 @@\n Print(%22M\n- \n %22)%0A     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_15-48-06",
+            "content": "@@ -313,11 +313,20 @@\n rint\n-ln(\n+f(%22%25.2f%5Cn%22, \n medi\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_15-49-10",
+            "content": "@@ -313,20 +313,11 @@\n rint\n-f(%22%25.2f%5Cn%22, \n+ln(\n medi\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_15-49-23",
+            "content": "@@ -416,16 +416,17 @@\n Print(%22P\n+ \n %22)%0A     \n@@ -479,16 +479,17 @@\n Print(%22G\n+ \n %22)%0A     \n@@ -528,67 +528,8 @@\n t(%22M\n-%22)%0A        %7D%0A%0A        if i != s-1 %7B%0A            fmt.Print(%22\n  %22)%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-26_15-57-28",
+            "content": "@@ -88,18 +88,18 @@\n (%5B%5Dfloat\n-64\n+32\n , s)%0A   \n@@ -172,18 +172,18 @@\n ma float\n-64\n+32\n  = 0%0A   \n@@ -266,18 +266,18 @@\n := float\n-64\n+32\n (soma) /\n@@ -286,10 +286,10 @@\n loat\n-64\n+32\n (len\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-26_15-58-39",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -33,17 +33,20 @@\n ain() %7B%0A\n-%09\n+    \n var s in\n@@ -47,17 +47,20 @@\n r s int%0A\n-%09\n+    \n fmt.Scan\n@@ -65,17 +65,20 @@\n an(&s)%0A%0A\n-%09\n+    \n arr := m\n@@ -95,17 +95,20 @@\n t64, s)%0A\n-%09\n+    \n for i :=\n@@ -120,18 +120,24 @@\n e arr %7B%0A\n-%09%09\n+        \n fmt.Scan\n@@ -146,21 +146,28 @@\n arr%5Bi%5D)%0A\n-%09%7D%0A%0A%09\n+    %7D%0A%0A     \n var soma\n@@ -179,17 +179,21 @@\n t64 = 0%0A\n-%09\n+     \n for i :=\n@@ -216,18 +216,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n soma += \n@@ -239,21 +239,29 @@\n  arr%5Bi%5D%0A\n-%09%7D%0A%0A%09\n+     %7D%0A%0A     \n media :=\n@@ -295,17 +295,21 @@\n n(arr))%0A\n-%09\n+     \n fmt.Prin\n@@ -328,18 +328,27 @@\n  media)%0A\n-%0A%09\n+     %0A     \n for i :=\n@@ -364,18 +364,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n if arr%5Bi\n@@ -384,35 +384,44 @@\n rr%5Bi%5D %3C media %7B%0A\n-%09%09%09\n+            \n fmt.Print(%22P%22)%0A%09\n@@ -419,18 +419,24 @@\n nt(%22P%22)%0A\n-%09%09\n+        \n %7D else i\n@@ -454,19 +454,28 @@\n media %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -481,18 +481,24 @@\n nt(%22G%22)%0A\n-%09%09\n+        \n %7D else %7B\n@@ -498,19 +498,28 @@\n  else %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -529,15 +529,27 @@\n M%22)%0A\n-%09%09%7D%0A%0A%09%09\n+        %7D%0A%0A        \n if i\n@@ -562,11 +562,20 @@\n 1 %7B%0A\n-%09%09%09\n+            \n fmt.\n@@ -589,13 +589,23 @@\n  %22)%0A\n-%09%09%7D%0A%09\n+        %7D%0A     \n %7D%0A%0A%7D\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-26_15-59-26",
+            "content": "@@ -463,10 +463,8 @@\n rint\n-ln\n (%22 %22\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-26_15-59-58",
+            "content": "@@ -459,16 +459,18 @@\n mt.Print\n+ln\n (%22 %22)%0A%09%09\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-26_16-00-06",
+            "content": "@@ -476,24 +476,7 @@\n %0A%09%7D%0A\n-    fmt.Println()\n %0A%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-26_16-00-51",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n\tvar s int\n\tfmt.Scan(&s)\n\n\tarr := make([]float64, s)\n\tfor i := range arr {\n\t\tfmt.Scan(&arr[i])\n\t}\n\n\tvar soma float64 = 0\n\tfor i := 0; i < len(arr); i++ {\n\t\tsoma += arr[i]\n\t}\n\n\tmedia := float64(soma) / float64(len(arr))\n\tfmt.Printf(\"%.2f\\n\", media)\n\n\tfor i := 0; i < s; i++ {\n\t\tif arr[i] < media {\n\t\t\tfmt.Print(\"P\")\n\t\t} else if arr[i] > media {\n\t\t\tfmt.Print(\"G\")\n\t\t} else {\n\t\t\tfmt.Print(\"M\")\n\t\t}\n\n\t\tif i != s-1 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n    fmt.Println()\n}\n",
+            "lines": "36"
+        }
+    ]
+}

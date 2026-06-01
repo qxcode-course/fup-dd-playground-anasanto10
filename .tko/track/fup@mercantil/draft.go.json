@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_16-03-49",
+            "content": "@@ -41,55 +41,35 @@\n     \n-var r int%0A    fmt.Scan(&r)%0A    valor := make(%5B%5D\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-26_16-06-46",
+            "content": "@@ -64,17 +64,16 @@\n can(&r)%0A\n-%0A\n     valo\n@@ -88,786 +88,8 @@\n e(%5B%5D\n-float64, r)%0A    for i := range valor %7B%0A        fmt.Scan(&valor%5Bi%5D)%0A    %7D%0A%0A    chutes := make(%5B%5Dfloat64, r)%0A    for i := range chutes %7B%0A        fmt.Scan(&chutes%5Bi%5D)%0A    %7D%0A%0A    escolhas := make(%5B%5Drune, r)%0A    for i := range escolhas %7B%0A        fmt.Scan(&escolhas%5Bi%5D)%0A    %7D%0A%0A    jog1 := 0%0A    jog2 := 0 %0A%0A    for i := 0; i %3C r; i++%7B%0A        if chutes%5Bi%5D == valor%5Bi%5D %7C%7C chutes%5Bi%5D %3C valor%5Bi%5D && escolhas%5Bi%5D == 'm' %7C%7C chutes%5Bi%5D %3E valor%5Bi%5D && escolhas%5Bi%5D == 'M'%7B%0A            jog1++%0A        %7D else if valor%5Bi%5D %3C chutes%5Bi%5D && escolhas%5Bi%5D == 'm' %7C%7C valor%5Bi%5D %3E chutes%5Bi%5D && escolhas%5Bi%5D == 'M' %7B%0A            jog2++%0A        %7D%0A    %7D%0A%0A    if jog1 %3E jog2 %7B%0A        fmt.Println(%22primeiro%22)%0A    %7D else if jog2 %3E jog1 %7B%0A        fmt.Println(%22segundo%22)%0A    %7D else %7B%0A        fmt.Println(%22empate%22)%0A    %7D\n+)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-26_16-20-08",
+            "content": "@@ -453,150 +453,224 @@\n %5D %7C%7C\n-%0A         valor%5Bi%5D %3E chutes%5Bi%5D && escolhas%5Bi%5D == 'm' %7C%7C%0A         valor%5Bi%5D %3C chutes%5Bi%5D && escolhas%5Bi%5D == 'M'%7B%0A            jog1++%0A        %7D else\n+ chutes%5Bi%5D %3C valor%5Bi%5D && escolhas%5Bi%5D == 'm' %7C%7C chutes%5Bi%5D %3E valor%5Bi%5D && escolhas%5Bi%5D == 'M'%7B%0A            jog1++%0A        %7D else if valor%5Bi%5D %3C chutes%5Bi%5D && escolhas%5Bi%5D == 'm' %7C%7C valor%5Bi%5D %3E chutes%5Bi%5D && escolhas%5Bi%5D == 'M'\n  %7B%0A \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-26_16-23-46",
+            "content": "@@ -283,14 +283,12 @@\n e(%5B%5D\n-string\n+rune\n , r)\n@@ -502,11 +502,11 @@\n  == \n-%22m%22\n+'m'\n  %7C%7C%0A\n@@ -557,10 +557,11 @@\n  == \n-%22M\n+'M'\n %7B%0A  \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-26_16-25-30",
+            "content": "@@ -557,18 +557,16 @@\n i%5D == %22M\n-%22 \n %7B%0A      \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-26_16-25-37",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var r int\n    fmt.Scan(&r)\n\n    valor := make([]float64, r)\n    for i := range valor {\n        fmt.Scan(&valor[i])\n    }\n\n    chutes := make([]float64, r)\n    for i := range chutes {\n        fmt.Scan(&chutes[i])\n    }\n\n    escolhas := make([]string, r)\n    for i := range escolhas {\n        fmt.Scan(&escolhas[i])\n    }\n\n    jog1 := 0\n    jog2 := 0 \n\n    for i := 0; i < r; i++{\n        if chutes[i] == valor[i] ||\n         valor[i] > chutes[i] && escolhas[i] == \"m\" ||\n         valor[i] < chutes[i] && escolhas[i] == \"M\" {\n            jog1++\n        } else {\n            jog2++\n        }\n    }\n\n    if jog1 > jog2 {\n        fmt.Println(\"primeiro\")\n    } else if jog2 > jog1 {\n        fmt.Println(\"segundo\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "42"
+        }
+    ]
+}
