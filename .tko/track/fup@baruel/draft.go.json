@@ -27,8 +27,13 @@
         },
         {
             "label": "2026-05-18_17-42-48",
-            "content": "",
+            "content": "@@ -1,100 +0,0 @@\n-package main%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A%09indMax := 0%0A%09qtdFig := 0%0A%09fmt.Scan(&indMax, &qtdFig)%0A%0A%09%0A%7D%0A\n",
             "lines": "0"
+        },
+        {
+            "label": "2026-06-02_11-49-47",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n\tindMax := 0\n\tqtdFig := 0\n\tfmt.Scan(&indMax, &qtdFig)\n\n\t\n}\n",
+            "lines": "10"
         }
     ]
 }

@@ -17,8 +17,13 @@
         },
         {
             "label": "2026-05-05_17-45-54",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var cb, cc, qtd int\n    fmt.Scan(&cb, &cc, &qtd)\n\n    animais := make([]string, qtd)\n\n    for i := 0; i < qtd; i++{\n        fmt.Scan(&animais[i])\n    }\n\n    total := 0\n\n    for i := 0; i < qtd; i++{\n        if animais[i] == \"v\"{\n            total += 4\n        } else if animais[i] == \"g\"{\n            total += 2\n        } else if animais[i] == \"c\"{\n            total += 4\n        } \n    }\n    fmt.Println(total)\n\n    dif_chico := cb - total\n    if dif_chico < 0{\n        dif_chico = -dif_chico\n    }\n    dif_ceb := cc - total\n    if dif_ceb < 0{\n        dif_ceb = -dif_ceb\n    }\n\n    if dif_chico < dif_ceb {\n        fmt.Println(\"Chico Bento\")\n    } else if dif_ceb < dif_chico {\n        fmt.Println(\"Cebolinha\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "content": "@@ -23,56 +23,45 @@\n mt%22%0A\n-%0A\n func \n-criarEpreencher () %5B%5Dstring %7B%0A    qtd := 0\n+main() %7B%0A    var cb, cc, qtd int\n %0A   \n@@ -74,21 +74,36 @@\n can(\n+&cb, &cc, \n &qtd)%0A\n+%0A\n     a\n-rr\n+nimais\n  := \n@@ -122,16 +122,17 @@\n g, qtd)%0A\n+%0A\n     for \n@@ -140,18 +140,23 @@\n  := \n-range arr \n+0; i %3C qtd; i++\n %7B%0A  \n@@ -176,123 +176,24 @@\n n(&a\n-rr%5Bi%5D)%0A    %7D%0A    return arr%0A%7D%0A%0Afunc main() %7B%0A    var cb, cc int%0A    fmt.Scan(&cb, &cc)%0A    arr := criarEpreencher()\n+nimais%5Bi%5D)%0A    %7D\n %0A%0A  \n@@ -230,16 +230,11 @@\n i %3C \n-len(arr)\n+qtd\n ; i+\n@@ -244,26 +244,30 @@\n         if a\n-rr\n+nimais\n %5Bi%5D == %22v%22%7B%0A\n@@ -300,34 +300,38 @@\n      %7D else if a\n-rr\n+nimais\n %5Bi%5D == %22g%22%7B%0A    \n@@ -372,10 +372,14 @@\n if a\n-rr\n+nimais\n %5Bi%5D \n",
             "lines": "42"
+        },
+        {
+            "label": "2026-06-08_12-43-19",
+            "content": "package main\nimport \"fmt\"\n\nfunc criarEpreencher () []string {\n    qtd := 0\n    fmt.Scan(&qtd)\n    arr := make([]string, qtd)\n    for i := range arr {\n        fmt.Scan(&arr[i])\n    }\n    return arr\n}\n\nfunc main() {\n    var cb, cc int\n    fmt.Scan(&cb, &cc)\n    arr := criarEpreencher()\n\n    total := 0\n\n    for i := 0; i < len(arr); i++{\n        if arr[i] == \"v\"{\n            total += 4\n        } else if arr[i] == \"g\"{\n            total += 2\n        } else if arr[i] == \"c\"{\n            total += 4\n        } \n    }\n    fmt.Println(total)\n\n    dif_chico := cb - total\n    if dif_chico < 0{\n        dif_chico = -dif_chico\n    }\n    dif_ceb := cc - total\n    if dif_ceb < 0{\n        dif_ceb = -dif_ceb\n    }\n\n    if dif_chico < dif_ceb {\n        fmt.Println(\"Chico Bento\")\n    } else if dif_ceb < dif_chico {\n        fmt.Println(\"Cebolinha\")\n    } else {\n        fmt.Println(\"empate\")\n    }\n}\n",
+            "lines": "48"
         }
     ]
 }

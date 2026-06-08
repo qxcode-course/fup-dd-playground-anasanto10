@@ -1,22 +1,36 @@
 package main
 import "fmt"
-func main() {
-    var tam int
-    fmt.Scan(&tam)
 
-    arr := make([]int, tam)
+func criarEpreencher() []int {
+    qtd := 0 
+    fmt.Scan(&qtd)
+    arr := make([]int, qtd)
     for i := range arr {
         fmt.Scan(&arr[i])
     }
+    return arr
+}
 
-    for i := 0; i < len(arr); i++ {
-        for j := i + 1; j < len(arr); i++ {
-
-            if arr[i] > arr[j] {
-                arr[i], arr[j] = arr[j], arr[i]
+func ordernarCrescente(arr []int) []int {
+    for i := 0; i < len(arr)-1; i++ {
+        for j := 0; j < len(arr)-1; j++ {
+            if arr[j] > arr[j+1] {
+                arr[j], arr[j+1] = arr[j+1], arr[j]
             }
         }
     }
+    return arr
+}
 
-    fmt.Println(arr)
+func main() {
+    arr := criarEpreencher()
+    ordernar := ordernarCrescente(arr)
+    
+    for i := 0; i < len(arr); i++ {
+        if i > 0 {
+            fmt.Print(" ")
+        }
+        fmt.Print(ordernar[i])
+    }
+    fmt.Println()
 }

@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_17-14-36",
+            "content": "@@ -23,914 +23,53 @@\n mt%22%0A\n-%0Afunc ehVogal(c rune) bool %7B%0A    return c == 'a' %7C%7C c == 'A' %7C%7C c == 'e' %7C%7C c == 'E' %7C%7C c == 'i' %7C%7C c == 'I' %7C%7C c == 'o' %7C%7C c == 'O' %7C%7C c == 'u' %7C%7C c == 'U' %0A%7D%0A%0Afunc contarVogais(nome string) int %7B%0A    cont := 0%0A    for _, c := range nome %7B%0A        if ehVogal(c) %7B%0A            cont += 1%0A        %7D%0A    %7D%0A    return cont%0A%7D%0A%0Afunc main() %7B%0A    var nome1, nome2 string %0A    fmt.Scan(&nome1, &nome2)%0A    var pontos int%0A    if nome1%5B0%5D == nome2%5B0%5D %7B%0A        pontos += 20%0A    %7D%0A%0A    if len(nome1) == len(nome2) %7B%0A        pontos += 30%0A    %7D%0A     if contarVogais(nome1) == contarVogais(nome2) %7B%0A        pontos += 30%0A     %7D%0A     ult1 := rune(nome1%5Blen(nome1) - 1%5D)%0A     ult2 := rune(nome2%5Blen(nome2) - 1%5D)%0A     if (ehVogal(ult1) && ehVogal(ult2)) %7C%7C (ehVogal(ult1) && !ehVogal(ult2))%7B%0A        pontos += 20%0A     %7D else %7B%0A        pontos -= 10%0A     %7D%0A%0A     fmt.Printf(%22As chances do crush te adr bola sao: %25d%25%25!%22, pontos\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_17-32-12",
+            "content": "@@ -901,10 +901,10 @@\n  te \n-d\n a\n+d\n r bo\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-01_17-32-23",
+            "content": "@@ -920,10 +920,8 @@\n d%25%25!\n-%5Cn\n %22, p\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-01_17-32-53",
+            "content": "@@ -860,54 +860,8 @@\n   %7D%0A\n-     if pontos %3C 0 %7B%0A        pontos = 0%0A     %7D\n %0A   \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-01_17-33-42",
+            "content": "@@ -714,25 +714,24 @@\n ) - 1%5D)%0A\n-%0A\n      if \n ehVogal(\n@@ -714,32 +714,33 @@\n ) - 1%5D)%0A     if \n+(\n ehVogal(ult1) ==\n@@ -737,18 +737,18 @@\n l(ult1) \n-==\n+&&\n  ehVogal\n@@ -753,21 +753,64 @@\n al(ult2)\n- %7B%0A%09%09\n+) %7C%7C (ehVogal(ult1) && !ehVogal(ult2))%7B%0A        \n pontos +\n@@ -814,17 +814,21 @@\n s += 20%0A\n-%09\n+     \n %7D else %7B\n@@ -832,10 +832,16 @@\n e %7B%0A\n-%09%09\n+        \n pont\n@@ -853,11 +853,14 @@\n  10%0A\n-%09%7D%0A\n+     %7D\n %0A   \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-01_17-50-40",
+            "content": "package main\nimport \"fmt\"\n\nfunc ehVogal(c rune) bool {\n    return c == 'a' || c == 'A' || c == 'e' || c == 'E' || c == 'i' || c == 'I' || c == 'o' || c == 'O' || c == 'u' || c == 'U' \n}\n\nfunc contarVogais(nome string) int {\n    cont := 0\n    for _, c := range nome {\n        if ehVogal(c) {\n            cont += 1\n        }\n    }\n    return cont\n}\n\nfunc main() {\n    var nome1, nome2 string \n    fmt.Scan(&nome1, &nome2)\n    var pontos int\n    if nome1[0] == nome2[0] {\n        pontos += 20\n    }\n\n    if len(nome1) == len(nome2) {\n        pontos += 30\n    }\n     if contarVogais(nome1) == contarVogais(nome2) {\n        pontos += 30\n     }\n     ult1 := rune(nome1[len(nome1) - 1])\n     ult2 := rune(nome2[len(nome2) - 1])\n\n     if ehVogal(ult1) == ehVogal(ult2) {\n\t\tpontos += 20\n\t} else {\n\t\tpontos -= 10\n\t}\n\n     if pontos < 0 {\n        pontos = 0\n     }\n     fmt.Printf(\"As chances do crush te dar bola sao: %d%%!\\n\", pontos)\n}\n",
+            "lines": "45"
+        }
+    ]
+}

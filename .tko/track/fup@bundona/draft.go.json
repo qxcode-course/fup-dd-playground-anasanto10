@@ -22,8 +22,38 @@
         },
         {
             "label": "2026-04-07_01-06-07",
-            "content": "package main\n\nimport \"fmt\"\n\nfunc main() {\n    var H, M, D int\n    var S string\n    fmt.Scanln(&H)\n    fmt.Scanln(&M)\n    fmt.Scanln(&S)\n    fmt.Scanln(&D)\n\n    totalMinutos := H*60 + M\n    minutosAndados := D * 10\n\n    if S == \"H\" {\n        totalMinutos += minutosAndados\n    } else {\n        totalMinutos -= minutosAndados\n    }\n\n    totalMinutos = (totalMinutos + 12*60) % (12*60)\n\n    hora := totalMinutos / 60\n    minuto := totalMinutos % 60\n\n    fmt.Printf(\"%02d %02d\\n\", hora, minuto)\n}",
+            "content": "@@ -0,0 +1,492 @@\n+package main%0A%0Aimport %22fmt%22%0A%0Afunc main() %7B%0A    var H, M, D int%0A    var S string%0A    fmt.Scanln(&H)%0A    fmt.Scanln(&M)%0A    fmt.Scanln(&S)%0A    fmt.Scanln(&D)%0A%0A    totalMinutos := H*60 + M%0A    minutosAndados := D * 10%0A%0A    if S == %22H%22 %7B%0A        totalMinutos += minutosAndados%0A    %7D else %7B%0A        totalMinutos -= minutosAndados%0A    %7D%0A%0A    totalMinutos = (totalMinutos + 12*60) %25 (12*60)%0A%0A    hora := totalMinutos / 60%0A    minuto := totalMinutos %25 60%0A%0A    fmt.Printf(%22%2502d %2502d%5Cn%22, hora, minuto)%0A%7D\n",
             "lines": "28"
+        },
+        {
+            "label": "2026-06-01_15-55-08",
+            "content": "@@ -1,382 +0,0 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A%09var hora, min, dist int%0A%09var sentido string%0A%09fmt.Scan(&hora, &min, &sentido, &dist)%0A%0A%09total := hora*60 + min%0A%0A%09movimento := dist * 10%0A%0A%09if sentido == %22H%22 %7B%0A%09%09total += movimento%0A%09%7D else %7B%0A%09%09total -= movimento%0A%09%7D%0A%0A%09total = total%25720%0A%0A%09if total %3C 0 %7B%0A%09%09total += 720%0A%09%7D%0A%0A%09hora = total/60%0A%09min = total%2560%0A%0A%09fmt.Printf(%22%2502d %2502d%5Cn%22, hora, min)%0A%7D%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2026-06-01_16-00-27",
+            "content": "@@ -144,16 +144,40 @@\n  + min%0A%0A\n+%09movimento := dist * 10%0A\n %0A%09if sen\n@@ -201,25 +201,25 @@\n otal += \n-dist * 10\n+movimento\n %0A%09%7D else\n@@ -236,75 +236,75 @@\n  -= \n-dist * 10%0A%09%7D%0A%0A%0A%09for total %3C 0 %7B%0A%09%09total += 720%0A%09%7D%0A%0A    \n+movimento%0A%09%7D%0A%0A%09total = total%25720%0A%0A%09if total %3C 0 %7B%0A%09%09\n total \n-%25\n++\n = 720\n+%0A%09%7D\n %0A%0A%09h\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_16-03-08",
+            "content": "@@ -43,14 +43,22 @@\n ar h\n+ora\n , m\n+in\n , d\n+ist\n  int\n@@ -68,16 +68,22 @@\n ar s\n+entido\n  string%0A\n %0A%09fm\n@@ -78,17 +78,16 @@\n  string%0A\n-%0A\n %09fmt.Sca\n@@ -94,50 +94,34 @@\n n(&h\n-)%0A%09fmt.Scan(&m)%0A%09fmt.Scan(&s)%0A%09fmt.Scan(&d\n+ora, &min, &sentido, &dist\n )%0A%0A%09\n@@ -134,22 +134,34 @@\n := h\n+ora\n *60 + m\n+in%0A\n %0A%0A%09if s\n+entido\n  == \n@@ -178,16 +178,19 @@\n tal += d\n+ist\n  * 10%0A%09%7D\n@@ -209,16 +209,19 @@\n tal -= d\n+ist\n  * 10%0A%09%7D\n@@ -226,48 +226,65 @@\n %09%7D%0A%0A\n-%09total = ((\n+%0A%09for total %3C 0 %7B%0A%09%09\n total \n-%25\n++=\n  720\n-) + 720)\n+%0A%09%7D%0A%0A    total\n  %25\n+=\n  720%0A%0A%09h\n  = t\n@@ -279,24 +279,27 @@\n  720%0A%0A%09h\n+ora\n  = total\n  / 60%0A%09m\n@@ -294,24 +294,24 @@\n otal\n- / \n+/\n 60%0A%09m\n+in\n  = total\n  %25 6\n@@ -310,11 +310,9 @@\n otal\n- %25 \n+%25\n 60%0A%0A\n@@ -337,15 +337,22 @@\n %2502d\n+%5Cn\n %22, h\n+ora\n , m\n+in\n )%0A%7D%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_16-07-09",
+            "content": "@@ -304,10 +304,8 @@\n %2502d\n-%5Cn\n %22, h\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-01_16-09-02",
+            "content": "@@ -127,25 +127,25 @@\n )%0A%0A%09\n-pos\n+total\n  := h*6\n+0\n  + m\n-/10\n %0A%0A%09i\n@@ -163,104 +163,124 @@\n %7B%0A%09%09\n-pos += d%0A%09%7D else %7B%0A%09%09pos -= d%0A%09%7D%0A%0A%09pos = ((pos\n+total += d * 10%0A%09%7D else %7B%0A%09%09total -= d * 10%0A%09%7D%0A%0A%09total = ((total\n  %25 72\n+0\n ) + 72\n+0\n ) %25 72\n+0\n %0A%0A%09h = \n-pos\n+total\n  / 6\n+0\n %0A%09m = \n-(pos %25 6) * 1\n+total %25 6\n 0%0A%0A%09\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-01_16-34-15",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\tvar h, m, d int\n\tvar s string\n\n\tfmt.Scan(&h)\n\tfmt.Scan(&m)\n\tfmt.Scan(&s)\n\tfmt.Scan(&d)\n\n\tpos := h*6 + m/10\n\n\tif s == \"H\" {\n\t\tpos += d\n\t} else {\n\t\tpos -= d\n\t}\n\n\tpos = ((pos % 72) + 72) % 72\n\n\th = pos / 6\n\tm = (pos % 6) * 10\n\n\tfmt.Printf(\"%02d %02d\\n\", h, m)\n}\n",
+            "lines": "26"
         }
     ]
 }

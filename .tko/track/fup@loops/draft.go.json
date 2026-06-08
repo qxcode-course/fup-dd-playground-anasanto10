@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_15-48-50",
+            "content": "@@ -41,142 +41,35 @@\n     \n-var angulo int%0A    fmt.Scan(&angulo)%0A%0A    angulo = angulo%25360%0A%0A    if angulo %3C 0 %7B%0A        angulo += 360%0A    %7D%0A%0A    fmt.Println(angulo\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-01_15-52-08",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var angulo int\n    fmt.Scan(&angulo)\n\n    angulo = angulo%360\n\n    if angulo < 0 {\n        angulo += 360\n    }\n\n    fmt.Println(angulo)\n}\n",
+            "lines": "14"
+        }
+    ]
+}

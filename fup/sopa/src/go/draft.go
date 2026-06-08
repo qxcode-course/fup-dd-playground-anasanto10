@@ -1,5 +1,22 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("Hello, World!")
+    var n int
+    fmt.Scan(&n)
+
+    if n == 1 || n == 2 {
+        fmt.Println(1)
+        return
+    }
+
+    a := 1
+    b := 1
+
+    for i := 3; i <= n; i++{
+        prox := a + b
+        a = b
+        b = prox
+    }
+
+    fmt.Println(b)
 }

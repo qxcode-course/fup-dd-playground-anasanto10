@@ -1,23 +1,28 @@
 package main
 import "fmt"
-func main() {
-    var cb, cc, qtd int
-    fmt.Scan(&cb, &cc, &qtd)
 
-    animais := make([]string, qtd)
-
-    for i := 0; i < qtd; i++{
-        fmt.Scan(&animais[i])
+func criarEpreencher() []string {
+    qtd := 0
+    fmt.Scan(&qtd)
+    arr := make([]string, qtd)
+    for i := range arr {
+        fmt.Scan(&arr[i])
     }
+    return arr
+}
+
+func main() {
+    var cb, cc int
+    fmt.Scan(&cb, &cc)
+    arr := criarEpreencher()
 
     total := 0
-
-    for i := 0; i < qtd; i++{
-        if animais[i] == "v"{
+    for i := 0; i < len(arr); i++{
+        if arr[i] == "v"{
             total += 4
-        } else if animais[i] == "g"{
+        } else if arr[i] == "g"{
             total += 2
-        } else if animais[i] == "c"{
+        } else if arr[i] == "c"{
             total += 4
         } 
     }

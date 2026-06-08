@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-08_16-01-44",
+            "content": "@@ -23,388 +23,53 @@\n mt%22%0A\n-%0A\n func \n-criarEpreencher() %5B%5Dint %7B%0A    qtd := 0%0A    fmt.Scan(&qtd)%0A    arr := make(%5B%5Dint, qtd)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A    return arr%0A%7D%0A%0Afunc main() %7B%0A    arr := criarEpreencher()%0A%0A    for i := 0; i %3C len(arr)-1; i++ %7B%0A        for j := 0; j %3C len(arr)-1; j++ %7B%0A                arr%5Bj%5D, arr%5Bj+1%5D = arr%5Bj+1%5D,arr%5Bj%5D   %0A        %7D%0A    %7D%0A    fmt.Println(arr\n+main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-08_16-13-42",
+            "content": "@@ -262,10 +262,10 @@\n arr)\n-/2\n+-1\n ; i+\n@@ -280,61 +280,105 @@\n     \n-arr%5Bi%5D, arr%5Blen(arr)-1-i%5D = arr%5Blen(arr)-1-i%5D, arr%5Bi%5D\n+for j := 0; j %3C len(arr)-1; j++ %7B%0A                arr%5Bj%5D, arr%5Bj+1%5D = arr%5Bj+1%5D,arr%5Bj%5D   %0A        %7D\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-08_16-17-13",
+            "content": "@@ -23,41 +23,217 @@\n mt%22%0A\n+%0A\n func \n-main() %7B%0A    arr := %5B%5Dint %7B%7D\n+criarEpreencher() %5B%5Dint %7B%0A    qtd := 0%0A    fmt.Scan(&qtd)%0A    arr := make(%5B%5Dint, qtd)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D%0A    return arr%0A%7D%0A%0Afunc main() %7B%0A    arr := criarEpreencher()\n %0A%0A  \n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-08_16-17-41",
+            "content": "@@ -37,22 +37,8 @@\n ) %7B%0A\n-    var n int%0A\n     \n@@ -48,22 +48,16 @@\n  := \n-make(\n %5B%5Dint\n-, n)\n+ %7B%7D\n %0A%0A  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-08_16-18-15",
+            "content": "@@ -41,120 +41,44 @@\n     \n-qtd := 0%0A    fmt.Scan(&qtd)%0A    arr := make(%5B%5Dint, qtd)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D\n+var n int%0A    arr := make(%5B%5Dint, n)%0A\n %0A   \n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-08_16-18-51",
+            "content": "@@ -41,29 +41,120 @@\n     \n-arr := make(%5B%5Dint, 0)\n+qtd := 0%0A    fmt.Scan(&qtd)%0A    arr := make(%5B%5Dint, qtd)%0A    for i := range arr %7B%0A        fmt.Scan(&arr%5Bi%5D)%0A    %7D\n %0A   \n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-08_16-20-34",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    arr := make([]int, 0)\n    for i := 0; i < len(arr)/2; i++ {\n        arr[i], arr[len(arr)-1-i] = arr[len(arr)-1-i], arr[i]\n    }\n    fmt.Println(arr)\n}\n",
+            "lines": "9"
+        }
+    ]
+}

@@ -1,5 +1,10 @@
 package main
 import "fmt"
 func main() {
-    fmt.Println("Hello, World!")
+    var n int
+    fmt.Scan(&n)
+
+    pecas := ((n+1) * (n+2))/2
+
+    fmt.Println(pecas)
 }
