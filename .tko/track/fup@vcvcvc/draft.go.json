@@ -27,8 +27,13 @@
         },
         {
             "label": "2026-05-19_18-19-27",
-            "content": "package main\nimport (\n    \"bufio\"\n    \"os\"\n    \"fmt\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    line := scanner.Text()\n    scanner.Scan()\n\n    l := []rune(line)\n\n    for i:= 0; i < len(line); i++ {\n    \n        if  l[i] == 'A' || l[i] == 'a' ||\n            l[i] == 'E' || l[i] == 'e'||\n            l[i] == 'I' || l[i] == 'i' ||\n            l[i] == 'O' || l[i] == 'o' ||\n            l[i] == 'U' || l[i] == 'u' {\n           l[i] = 'v'\n        } else if l[i] != ' '{\n           l[i] = 'c'\n        }\n    }\n    for i := 0; i < len(line); i++ {\n        fmt.Printf(\"%c\", l[i])\n    }\n\n   fmt.Println()\n}\n",
+            "content": "@@ -48,17 +48,16 @@\n %22fmt%22%0A)%0A\n-%0A\n func mai\n",
             "lines": "32"
+        },
+        {
+            "label": "2026-06-15_16-17-38",
+            "content": "package main\nimport (\n    \"bufio\"\n    \"os\"\n    \"fmt\"\n)\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    line := scanner.Text()\n    scanner.Scan()\n\n    l := []rune(line)\n\n    for i:= 0; i < len(line); i++ {\n    \n        if  l[i] == 'A' || l[i] == 'a' ||\n            l[i] == 'E' || l[i] == 'e'||\n            l[i] == 'I' || l[i] == 'i' ||\n            l[i] == 'O' || l[i] == 'o' ||\n            l[i] == 'U' || l[i] == 'u' {\n           l[i] = 'v'\n        } else if l[i] != ' '{\n           l[i] = 'c'\n        }\n    }\n    for i := 0; i < len(line); i++ {\n        fmt.Printf(\"%c\", l[i])\n    }\n\n   fmt.Println()\n}\n",
+            "lines": "33"
         }
     ]
 }

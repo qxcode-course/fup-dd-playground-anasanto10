@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-05-26_16-42-52",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,41 +41,35 @@\n     \n-var N, M int%0A    fmt.Scan(&N, &M)%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-14_20-50-01",
+            "content": "@@ -23,308 +23,59 @@\n mt%22%0A\n-%0Afunc mmc(a, b int) int%7B%0A    maior := a%0A    if b %3E maior %7B%0A        maior = b%0A    %7D%0A    for %7B%0A        if maior%25a == 0 && maior%25b == 0 %7B%0A            return maior%0A        %7D%0A        maior ++%0A    %7D%0A%7D%0Afunc main() %7B%0A    var N, M int%0A    fmt.Scan(&N, &M)%0A%0A    resultado := mmc(N, M)%0A    fmt.Println(resultado)\n+func main() %7B%0A    var N, M int%0A    fmt.Scan(&N, &M)%0A\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-06-14_21-01-54",
+            "content": "package main\nimport \"fmt\"\n\nfunc mmc(a, b int) int{\n    maior := a\n    if b > maior {\n        maior = b\n    }\n    for {\n        if maior%a == 0 && maior%b == 0 {\n            return maior\n        }\n        maior ++\n    }\n}\nfunc main() {\n    var N, M int\n    fmt.Scan(&N, &M)\n\n    resultado := mmc(N, M)\n    fmt.Println(resultado)\n}\n",
+            "lines": "22"
         }
     ]
 }

@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-05-04_17-44-52",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    \n}\n",
+            "content": "@@ -17,34 +17,14 @@\n ort \n-(%0A%09\n %22fmt%22%0A\n-%09%22bufio%22%0A%09%22os%22%0A)%0A\n func\n@@ -41,103 +41,7 @@\n     \n-scanner := bufio.NewScanner(os.Stdin)%0A%09scanner.Scan()%0A%09line := scanner.Text()%0A%09scanner.Scan()%0A%0A%09\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-15_11-04-49",
+            "content": "@@ -157,142 +157,7 @@\n )%0A%0A%09\n-r := %5B%5Drune(line)%0A%0A%09i := 0%0A%09j := len(r) - 1%0A%0A%09for i %3C j %7B%0A%09%09r%5Bi%5D, r%5Bj%5D = r%5Bj%5D, r%5Bi%5D%0A%09%09i++%0A%09%09j--%0A%09%7D%0A%09line = string(r)%0A%09fmt.Println(line)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-15_11-08-12",
+            "content": "package main\nimport (\n\t\"fmt\"\n\t\"bufio\"\n\t\"os\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tline := scanner.Text()\n\tscanner.Scan()\n\n\tr := []rune(line)\n\n\ti := 0\n\tj := len(r) - 1\n\n\tfor i < j {\n\t\tr[i], r[j] = r[j], r[i]\n\t\ti++\n\t\tj--\n\t}\n\tline = string(r)\n\tfmt.Println(line)\n}\n",
+            "lines": "25"
         }
     ]
 }
