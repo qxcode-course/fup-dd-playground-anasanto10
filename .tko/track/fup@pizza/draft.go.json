@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-16_15-26-33",
+            "content": "@@ -23,782 +23,53 @@\n mt%22%0A\n-%0Atype restaurante struct %7B%0A        nomeRest string%0A        pontosRest int%0A    %7D%0A%0Afunc escolherRest (restaurantes %5B%5Drestaurante) string %7B%0A    vencedor := restaurantes%5B0%5D%0A    for i := 1; i %3C len(restaurantes); i++ %7B%0A        if restaurantes%5Bi%5D.pontosRest %3E vencedor.pontosRest %7B%0A        vencedor = restaurantes%5Bi%5D%0A     %7D else if restaurantes%5Bi%5D.pontosRest == vencedor.pontosRest %7B%0A        if restaurantes%5Bi%5D.nomeRest %3C vencedor.nomeRest %7B%0A            vencedor = restaurantes%5Bi%5D%0A        %7D%0A     %7D%0A    %7D%0A    return vencedor.nomeRest%0A%7D%0Afunc main() %7B%0A    var n int%0A    fmt.Scan(&n)%0A%0A    restaurantes := make(%5B%5Drestaurante, n)%0A    for i := range restaurantes %7B%0A        fmt.Scan(&restaurantes%5Bi%5D.nomeRest, &restaurantes%5Bi%5D.pontosRest)%0A    %7D%0A%0A    fmt.Println(escolherRest(restaurantes)\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-16_15-49-33",
+            "content": "package main\nimport \"fmt\"\n\ntype restaurante struct {\n        nomeRest string\n        pontosRest int\n    }\n\nfunc escolherRest (restaurantes []restaurante) string {\n    vencedor := restaurantes[0]\n    for i := 1; i < len(restaurantes); i++ {\n        if restaurantes[i].pontosRest > vencedor.pontosRest {\n        vencedor = restaurantes[i]\n     } else if restaurantes[i].pontosRest == vencedor.pontosRest {\n        if restaurantes[i].nomeRest < vencedor.nomeRest {\n            vencedor = restaurantes[i]\n        }\n     }\n    }\n    return vencedor.nomeRest\n}\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    restaurantes := make([]restaurante, n)\n    for i := range restaurantes {\n        fmt.Scan(&restaurantes[i].nomeRest, &restaurantes[i].pontosRest)\n    }\n\n    fmt.Println(escolherRest(restaurantes))\n}\n",
+            "lines": "32"
+        }
+    ]
+}

@@ -19,26 +19,18 @@ sources:
   writeable: false
   quests: null
 expanded:
-- fup@mat
-- fup@if1
-- fup@string
-- eval1@eval1
-- fup@for2
-- fup@base
-- fup@if2
-- fup@list
-- fup@for1
 - fup@struct
-- fup@dict
-- sandbox@sandbox
-- fup@rec
-- fup@games
+- fup@mat
 flags:
   inbox: all
   panel: skills
-  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
+audit:
+  enabled: true
+  interval_seconds: null
+audit_enabled: true
+audit_interval_seconds: null
 lang: go
-selected: fup@vcvcvc
-selected_index: 162
+selected: fup@bingo
+selected_index: 9
