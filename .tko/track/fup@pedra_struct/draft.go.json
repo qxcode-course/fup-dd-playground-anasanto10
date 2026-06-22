@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-19_00-45-48",
+            "content": "@@ -22,99 +22,8 @@\n fmt%22\n-%0A%0Atype Jogada struct %7B%0A    p1 int%0A    p2 int%0A%7D%0A%0Afunc calcPont (jogadas Jogada) int %7B%0A    %0A%7D\n %0Afun\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-19_23-13-47",
+            "content": "@@ -100,583 +100,67 @@\n ada)\n- (bool,\n  int\n-)\n  %7B%0A    \n-if jogadas.p1 %3C 10 %7C%7C jogadas.p2 %3C 10 %7B%0A        return false, 0 %0A    %7D %0A    pont := jogadas.p1 - jogadas.p2%0A%0A    if pont %3C 0 %7B%0A        pont = -pont%0A    %7D%0A    return true, pont%0A%7D%0A%0Afunc melhorJogada (jogadas %5B%5DJogada) int %7B%0A    for i := 1; i %3C len(jogadas); i++ %7B%0A        value, menor := calcPont(jogadas%5B0%5D)%0A        if jogadas%5Bi%5D %3C menor %7B%0A            menor = jogadas%5Bi%5D %0A        %7D%0A    %7D%0A%7D%0Afunc main() %7B%0A    var qtd int%0A    fmt.Scan(&qtd)%0A%0A    jogadas := make(%5B%5DJogada, qtd)%0A    for i := range jogadas %7B%0A        fmt.Scan(&jogadas%5Bi%5D.p1, &jogadas%5Bi%5D.p2)%0A    %7D\n+%0A%7D%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-20_00-04-27",
+            "content": "package main\nimport \"fmt\"\n\ntype Jogada struct {\n    p1 int\n    p2 int\n}\n\nfunc calcPont (jogadas Jogada) (bool, int) {\n    if jogadas.p1 < 10 || jogadas.p2 < 10 {\n        return false, 0 \n    } \n    pont := jogadas.p1 - jogadas.p2\n\n    if pont < 0 {\n        pont = -pont\n    }\n    return true, pont\n}\n\nfunc melhorJogada (jogadas []Jogada) int {\n    for i := 1; i < len(jogadas); i++ {\n        value, menor := calcPont(jogadas[0])\n        if jogadas[i] < menor {\n            menor = jogadas[i] \n        }\n    }\n}\nfunc main() {\n    var qtd int\n    fmt.Scan(&qtd)\n\n    jogadas := make([]Jogada, qtd)\n    for i := range jogadas {\n        fmt.Scan(&jogadas[i].p1, &jogadas[i].p2)\n    }\n}\n",
+            "lines": "37"
+        }
+    ]
+}

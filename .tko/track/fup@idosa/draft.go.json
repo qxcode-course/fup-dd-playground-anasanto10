@@ -2,8 +2,13 @@
     "patches": [
         {
             "label": "2026-06-16_16-35-36",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -23,573 +23,53 @@\n mt%22%0A\n-%0Atype Pessoa struct %7B%0A    nome string%0A    idade int%0A    sexo string%0A%7D%0A%0Afunc maisIdosa (pessoas %5B%5DPessoa) %7B%0A   maisVelha := make(%5B%5DPessoa, 0)%0A%0A   for i := 0; i %3C len(pessoas) - 1; i++ %7B%0A    if pessoas%5Bi%5D.sexo == %22f%22 %7B%0A        maisVelha = pessoas%5Bi%5D%0A    %7D%0A   %7D%0A%0A   for i := 1; i %3C len(maisVelha); i++ %7B%0A    if maisVelha %3C pessoas%5Bi%5D %7B%0A        maisVelha = pessoas %5Bi%5D%0A    %7D%0A   %7D%0A%7D%0A%0Afunc main() %7B%0A    var n int%0A    fmt.Scan(&n)%0A%0A    pessoas := make(%5B%5DPessoa, n)%0A    for i := range pessoas %7B%0A        fmt.Scan(&pessoas%5Bi%5D.nome, &pessoas%5Bi%5D.idade, &pessoas%5Bi%5D.sexo)%0A    %7D%0A%0A\n+func main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-20_00-02-56",
+            "content": "package main\nimport \"fmt\"\n\ntype Pessoa struct {\n    nome string\n    idade int\n    sexo string\n}\n\nfunc maisIdosa (pessoas []Pessoa) {\n   maisVelha := make([]Pessoa, 0)\n\n   for i := 0; i < len(pessoas) - 1; i++ {\n    if pessoas[i].sexo == \"f\" {\n        maisVelha = pessoas[i]\n    }\n   }\n\n   for i := 1; i < len(maisVelha); i++ {\n    if maisVelha < pessoas[i] {\n        maisVelha = pessoas [i]\n    }\n   }\n}\n\nfunc main() {\n    var n int\n    fmt.Scan(&n)\n\n    pessoas := make([]Pessoa, n)\n    for i := range pessoas {\n        fmt.Scan(&pessoas[i].nome, &pessoas[i].idade, &pessoas[i].sexo)\n    }\n\n\n}\n",
+            "lines": "36"
         }
     ]
 }

@@ -1,0 +1,9 @@
+2026-06-20 00:02:39, MOVE, v:1, k:fup@pedra_struct, mode:BACK
+2026-06-20 00:02:56, MOVE, v:1, k:fup@idosa, mode:PICK
+2026-06-20 00:02:56, EXEC, v:1, k:fup@idosa, mode:FULL, size:36, fail:COMP
+2026-06-20 00:03:22, MOVE, v:1, k:fup@idosa, mode:BACK
+2026-06-20 00:00:24, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-06-20 00:04:27, MOVE, v:1, k:fup@pedra_struct, mode:PICK
+2026-06-20 00:04:27, EXEC, v:1, k:fup@pedra_struct, mode:FULL, size:37, fail:COMP
+2026-06-20 00:04:28, EXEC, v:1, k:fup@pedra_struct, mode:FULL, fail:COMP
+2026-06-20 00:05:04, MOVE, v:1, k:fup@pedra_struct, mode:BACK

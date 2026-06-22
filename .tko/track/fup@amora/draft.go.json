@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-18_23-57-37",
+            "content": "@@ -17,238 +17,59 @@\n ort \n-(%0A    %22fmt%22%0A    %22os%22%0A    %22bufio%22%0A)%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    line := scanner.Text()%0A    scanner.Scan()%0A%0A    var trecho string%0A    fmt.Scan(&trecho)%0A%0A    fmt.Println(line, trecho\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-19_00-02-07",
+            "content": "@@ -178,50 +178,46 @@\n     \n+var \n trecho \n-:= scanner.Text()%0A    scanner.Scan(\n+string%0A    fmt.Scan(&trecho\n )%0A%0A \n@@ -249,13 +249,6 @@\n ho)%0A\n-%0A%0A    %0A\n %7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-19_00-03-47",
+            "content": "@@ -50,22 +50,8 @@\n io%22%0A\n-    %22strings%22%0A\n )%0Afu\n@@ -227,101 +227,39 @@\n     \n-cont := 0 %0A%0A    if strings.Contains(line, trecho) %7B%0A        cont++%0A    %7D%0A    fmt.Println(cont)\n+fmt.Println(line, trecho)%0A%0A%0A    \n %0A%7D%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-06-19_00-06-47",
+            "content": "@@ -270,11 +270,14 @@\n s.Co\n-u\n nt\n+ains\n (lin\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-19_00-09-56",
+            "content": "@@ -244,16 +244,27 @@\n  cont :=\n+ 0 %0A%0A    if\n  strings\n@@ -283,21 +283,39 @@\n  trecho)\n-%0A    \n+ %7B%0A        cont++%0A    %7D\n %0A    fmt\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-19_00-16-55",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"os\"\n    \"bufio\"\n    \"strings\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    line := scanner.Text()\n    scanner.Scan()\n\n    trecho := scanner.Text()\n    scanner.Scan()\n\n    cont := strings.Count(line, trecho)\n    \n    fmt.Println(cont)\n}\n",
+            "lines": "20"
+        }
+    ]
+}

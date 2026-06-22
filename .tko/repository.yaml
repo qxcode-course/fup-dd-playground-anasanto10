@@ -18,9 +18,7 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- fup@struct
-- fup@mat
+expanded: []
 flags:
   inbox: all
   panel: skills
@@ -29,8 +27,6 @@ flags:
 audit:
   enabled: true
   interval_seconds: null
-audit_enabled: true
-audit_interval_seconds: null
 lang: go
-selected: fup@bingo
-selected_index: 9
+selected: fup@base
+selected_index: 1
