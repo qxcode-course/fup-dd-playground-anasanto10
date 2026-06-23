@@ -7,7 +7,12 @@
         },
         {
             "label": "2026-06-19_00-43-15",
-            "content": "package main\nimport (\n    \"fmt\"\n    \"os\"\n    \"bufio\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    line := scanner.Text()\n    scanner.Scan()\n\n    soma := 0\n    for i := 0; i < len(line); i++ {\n        if line[i] >= '0' && line[i] <= '9' {\n            num := 0\n\n            if i < len(line) && line[i] >= '0' && line[i] <= '9' {\n                num = num*10 + int(line[i]-'0')\n                i++\n            }\n            soma += num\n        }\n    }\n    fmt.Println(soma)\n}\n",
+            "content": "@@ -301,19 +301,18 @@\n         \n+i\n f\n-or\n  i %3C len\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-22_16-51-33",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"os\"\n    \"bufio\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    line := scanner.Text()\n    scanner.Scan()\n\n    soma := 0\n    for i := 0; i < len(line); i++ {\n        if line[i] >= '0' && line[i] <= '9' {\n            num := 0\n\n            for i < len(line) && line[i] >= '0' && line[i] <= '9' {\n                num = num*10 + int(line[i]-'0')\n                i++\n            }\n            soma += num\n        }\n    }\n    fmt.Println(soma)\n}\n",
             "lines": "26"
         }
     ]

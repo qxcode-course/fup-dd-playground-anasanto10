@@ -8,7 +8,7 @@ type Jogada struct {
 
 func calcPont (jogadas Jogada) (bool, int) {
     if jogadas.p1 < 10 || jogadas.p2 < 10 {
-        return false, 0 
+        return false, 1000
     } 
     pont := jogadas.p1 - jogadas.p2
 
@@ -19,12 +19,16 @@ func calcPont (jogadas Jogada) (bool, int) {
 }
 
 func melhorJogada (jogadas []Jogada) int {
-    for i := 1; i < len(jogadas); i++ {
-        value, menor := calcPont(jogadas[0])
-        if jogadas[i] < menor {
-            menor = jogadas[i] 
+    anterior := 1000
+    indice := 0
+    for i := 0; i < len(jogadas); i++ {
+        value, menor := calcPont(jogadas[i])
+        if anterior > menor && value == true {
+            anterior = menor
+            indice = i
         }
     }
+    return indice
 }
 func main() {
     var qtd int
@@ -34,4 +38,6 @@ func main() {
     for i := range jogadas {
         fmt.Scan(&jogadas[i].p1, &jogadas[i].p2)
     }
+
+    fmt.Println(melhorJogada(jogadas))
 }

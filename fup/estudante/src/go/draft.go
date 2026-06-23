@@ -1,5 +1,9 @@
 package main
-import "fmt"
+import (
+    "fmt"
+    "bufio"
+    "os"
+)
 
 type Aluno struct {
     nome string
@@ -23,15 +27,35 @@ func ordenarAluno (alunos []Aluno) {
             }
         } 
     }
+    
 }
 
 func main() {
+    scanner := bufio.NewScanner(os.Stdin)
     var n int
     fmt.Scan(&n)
-
+    
     alunos := make([]Aluno, n)
     for i := range alunos {
-        fmt.Scan(&alunos[i].nome, &alunos[i].n1, &alunos[i].n2, &alunos[i].n3)
+        scanner.Scan()
+        alunos[i].nome = scanner.Text()
+          scanner.Scan()
+    fmt.Sscanf(scanner.Text(),
+        "%f %f %f",
+        &alunos[i].n1,
+        &alunos[i].n2,
+        &alunos[i].n3)
+
+    alunos[i].media = mediaNotas(
+        alunos[i].n1,
+        alunos[i].n2,
+        alunos[i].n3,
+    )
+    }
+     ordenarAluno(alunos)
+    for i := 0;  i < len(alunos); i++ {
+        fmt.Printf("%d: %s\n   Media: %.2f\n   N1: %.2f, N2: %.2f, N3: %.2f\n", i, alunos[i].nome, alunos[i].media, alunos[i].n1, alunos[i].n2, alunos[i].n3)
     }
 }
+
     

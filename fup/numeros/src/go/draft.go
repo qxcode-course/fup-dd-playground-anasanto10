@@ -15,7 +15,7 @@ func main() {
         if line[i] >= '0' && line[i] <= '9' {
             num := 0
 
-            if i < len(line) && line[i] >= '0' && line[i] <= '9' {
+            for i < len(line) && line[i] >= '0' && line[i] <= '9' {
                 num = num*10 + int(line[i]-'0')
                 i++
             }

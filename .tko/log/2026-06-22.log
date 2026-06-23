@@ -1,0 +1,98 @@
+2026-06-22 16:08:34, MOVE, v:1, k:fup@pedra_struct, mode:PICK
+2026-06-22 16:08:35, EXEC, v:1, k:fup@pedra_struct, mode:FULL, fail:COMP
+2026-06-22 16:30:30, MOVE, v:1, k:fup@pedra_struct, mode:BACK
+2026-06-22 16:47:54, MOVE, v:1, k:fup@muquirana, mode:EDIT
+2026-06-22 16:47:54, MOVE, v:1, k:fup@muquirana, mode:DOWN
+2026-06-22 16:47:54, MOVE, v:1, k:fup@muquirana, mode:PICK
+2026-06-22 16:49:07, MOVE, v:1, k:fup@muquirana, mode:PICK
+2026-06-22 16:49:08, EXEC, v:1, k:fup@muquirana, mode:FULL, rate:0, size:5
+2026-06-22 16:49:12, MOVE, v:1, k:fup@muquirana, mode:BACK
+2026-06-22 16:49:17, MOVE, v:1, k:fup@jequiti, mode:DOWN
+2026-06-22 16:49:17, MOVE, v:1, k:fup@jequiti, mode:PICK
+2026-06-22 16:49:18, EXEC, v:1, k:fup@jequiti, mode:FULL, rate:0, size:5
+2026-06-22 16:49:20, MOVE, v:1, k:fup@jequiti, mode:BACK
+2026-06-22 16:49:22, MOVE, v:1, k:fup@tokens, mode:DOWN
+2026-06-22 16:49:22, MOVE, v:1, k:fup@tokens, mode:PICK
+2026-06-22 16:50:13, MOVE, v:1, k:fup@numeros, mode:PICK
+2026-06-22 16:50:14, EXEC, v:1, k:fup@numeros, mode:FULL, rate:50
+2026-06-22 16:51:33, EXEC, v:1, k:fup@numeros, mode:FULL, rate:100, size:26
+2026-06-22 16:51:38, MOVE, v:1, k:fup@numeros, mode:BACK
+2026-06-22 16:51:43, SELF, v:1, k:fup@numeros, self:1, rate:100
+2026-06-22 16:51:56, MOVE, v:1, k:fup@rocicleia, mode:DOWN
+2026-06-22 16:51:57, MOVE, v:1, k:fup@rocicleia, mode:PICK
+2026-06-22 16:51:58, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:0, size:5
+2026-06-22 16:52:10, MOVE, v:1, k:fup@rocicleia, mode:BACK
+2026-06-22 16:52:25, MOVE, v:1, k:fup@ascologia, mode:PICK
+2026-06-22 16:52:26, EXEC, v:1, k:fup@ascologia, mode:FULL, rate:100
+2026-06-22 16:52:32, MOVE, v:1, k:fup@ascologia, mode:BACK
+2026-06-22 16:52:36, MOVE, v:1, k:fup@perfeicao, mode:DOWN
+2026-06-22 16:52:37, MOVE, v:1, k:fup@perfeicao, mode:PICK
+2026-06-22 16:52:38, EXEC, v:1, k:fup@perfeicao, mode:FULL, rate:0, size:5
+2026-06-22 16:53:43, MOVE, v:1, k:fup@perfeicao, mode:BACK
+2026-06-22 16:53:47, MOVE, v:1, k:fup@gagueira, mode:DOWN
+2026-06-22 16:53:47, MOVE, v:1, k:fup@gagueira, mode:PICK
+2026-06-22 16:53:48, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:0, size:5
+2026-06-22 16:53:53, MOVE, v:1, k:fup@gagueira, mode:BACK
+2026-06-22 16:54:06, MOVE, v:1, k:fup@pedra_struct, mode:PICK
+2026-06-22 16:54:06, EXEC, v:1, k:fup@pedra_struct, mode:FULL, fail:COMP
+2026-06-22 16:51:33, MOVE, v:1, k:fup@numeros, mode:EDIT
+2026-06-22 16:51:32, MOVE, v:1, k:fup@numeros, mode:EDIT
+2026-06-22 16:51:56, MOVE, v:1, k:fup@rocicleia, mode:EDIT
+2026-06-22 16:51:56, MOVE, v:1, k:fup@rocicleia, mode:EDIT
+2026-06-22 16:51:57, MOVE, v:1, k:fup@rocicleia, mode:EDIT
+2026-06-22 16:52:26, MOVE, v:1, k:fup@ascologia, mode:EDIT
+2026-06-22 16:52:36, MOVE, v:1, k:fup@perfeicao, mode:EDIT
+2026-06-22 16:52:38, MOVE, v:1, k:fup@perfeicao, mode:EDIT
+2026-06-22 16:53:47, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-06-22 16:53:48, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-06-22 17:03:45, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-06-22 17:09:37, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-06-22 17:13:23, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-06-22 17:19:11, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-06-22 17:22:21, EXEC, v:1, k:fup@pedra_struct, mode:FULL, rate:0, size:41
+2026-06-22 17:24:30, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-06-22 17:22:21, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-06-22 17:24:55, EXEC, v:1, k:fup@pedra_struct, mode:FULL, rate:100, size:43
+2026-06-22 17:25:08, MOVE, v:1, k:fup@pedra_struct, mode:BACK
+2026-06-22 17:25:19, SELF, v:1, k:fup@pedra_struct, self:1, rate:100, friend:daniel
+2026-06-22 17:25:22, MOVE, v:1, k:fup@estudante, mode:PICK
+2026-06-22 17:25:23, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:37
+2026-06-22 17:25:59, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0
+2026-06-22 17:24:52, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-06-22 17:24:55, MOVE, v:1, k:fup@pedra_struct, mode:EDIT
+2026-06-22 17:25:59, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 17:27:35, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 17:34:19, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 17:39:39, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 17:40:37, EXEC, v:1, k:fup@estudante, mode:FULL, size:42, fail:COMP
+2026-06-22 17:40:41, EXEC, v:1, k:fup@estudante, mode:FULL, size:43, fail:COMP
+2026-06-22 17:40:49, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:43
+2026-06-22 17:41:29, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:43
+2026-06-22 17:44:38, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 17:41:29, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 17:46:11, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:50
+2026-06-22 17:46:34, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:50
+2026-06-22 17:49:32, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 17:46:34, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 17:50:02, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:52
+2026-06-22 17:50:34, MOVE, v:1, k:fup@estudante, mode:PICK
+2026-06-22 17:50:53, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:50
+2026-06-22 17:51:13, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:50
+2026-06-22 17:53:34, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:50
+2026-06-22 17:54:00, MOVE, v:1, k:fup@estudante, mode:PICK
+2026-06-22 17:56:57, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:50
+2026-06-22 17:56:56, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 17:56:57, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 18:01:17, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:51
+2026-06-22 18:01:16, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 18:01:17, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 18:07:19, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:61
+2026-06-22 18:08:10, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:61
+2026-06-22 18:08:31, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:61
+2026-06-22 18:08:24, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 18:08:31, MOVE, v:1, k:fup@estudante, mode:EDIT
+2026-06-22 18:09:11, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:61
+2026-06-22 18:10:09, EXEC, v:1, k:fup@estudante, mode:FULL, rate:0, size:61
+2026-06-22 18:10:24, EXEC, v:1, k:fup@estudante, mode:FULL, rate:100, size:61
+2026-06-22 18:10:27, MOVE, v:1, k:fup@estudante, mode:BACK
+2026-06-22 18:10:34, SELF, v:1, k:fup@estudante, self:1, rate:100, friend:daniel
