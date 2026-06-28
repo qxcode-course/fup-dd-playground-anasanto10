@@ -2,8 +2,28 @@
     "patches": [
         {
             "label": "2026-06-16_17-31-15",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,145 +41,35 @@\n     \n-numeros := make(%5B%5Dint, 6)%0A    for i := range numeros %7B%0A        fmt.Scan(&numeros%5Bi%5D)%0A    %7D%0A    fmt.Println(numeros)%0A    acertos := 0%0A%0A    \n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-25_15-22-43",
+            "content": "@@ -157,16 +157,28 @@\n os)%0A    \n+acertos := 0\n %0A%0A    %0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-25_15-22-48",
+            "content": "@@ -132,404 +132,42 @@\n   %7D%0A\n-%0A\n     \n-matriz := %5B4%5D%5B4%5Dint %7B%0A        %7B1, 9, 27, 23%7D%0A        %7B34, 20, 37, 47%7D%0A        %7B30, 87, 55, 69%7D%0A        %7B13, 60, 99, 66%7D%0A    %7D%0A    acertos := 0%0A%0A    for _, num := range numeros %7B%0A        for i := 0; i %3C 4 ; i++ %7B%0A            for j := 0; j %3C 4; j++ %7B%0A                if num == matriz%5Bi%5D%5Bj%5D %7B%0A                    ac\n+fmt.Println(num\n er\n-t\n os\n-++\n+)\n %0A    \n+%0A%0A\n     \n-        %7D%0A            %7D%0A        %7D%0A    %7D%0A    fmt.Println(acertos)\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-25_15-25-49",
+            "content": "@@ -177,17 +177,16 @@\n  27, 23%7D\n-,\n %0A       \n@@ -202,17 +202,16 @@\n  37, 47%7D\n-,\n %0A       \n@@ -227,17 +227,16 @@\n  55, 69%7D\n-,\n %0A       \n@@ -252,17 +252,16 @@\n  99, 66%7D\n-,\n %0A    %7D%0A \n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-25_15-26-06",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    numeros := make([]int, 6)\n    for i := range numeros {\n        fmt.Scan(&numeros[i])\n    }\n\n    matriz := [4][4]int {\n        {1, 9, 27, 23},\n        {34, 20, 37, 47},\n        {30, 87, 55, 69},\n        {13, 60, 99, 66},\n    }\n    acertos := 0\n\n    for _, num := range numeros {\n        for i := 0; i < 4 ; i++ {\n            for j := 0; j < 4; j++ {\n                if num == matriz[i][j] {\n                    acertos++\n                }\n            }\n        }\n    }\n    fmt.Println(acertos)\n}\n",
+            "lines": "27"
         }
     ]
 }

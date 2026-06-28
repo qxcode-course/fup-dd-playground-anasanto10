@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-25_15-31-31",
+            "content": "@@ -41,536 +41,35 @@\n     \n-var n int%0A    fmt.Scan(n)%0A%0A    matriz := %5B%5D%5B%5Dint %7B%7D%0A    for i := 0; i %3C n; i++ %7B%0A        matriz%5Bi%5D = make(%5B%5Dint, n)%0A%0A        for j := 0; j %3C n; j++%7B%0A            fmt.Scan(&matriz%5Bi%5D%5Bj%5D)%0A        %7D%0A    %7D%0A%0A    maiorVal := -1%0A    indiceMai := 0%0A%0A    for coluna := 0; coluna %3C n; coluna++ %7B%0A        soma := 0%0A%0A        for linha := 0; linha %3C n; linha++%7B%0A            soma += matriz%5Blinha%5D%5Bcoluna%5D * matriz%5Blinha%5D%5Bcoluna%5D%0A        %7D%0A%0A        if soma %3E maiorVal %7B%0A            maiorVal = soma%0A            indiceMai = coluna%0A        %7D%0A    %7D%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-25_15-51-22",
+            "content": "@@ -570,33 +570,7 @@\n   %7D%0A\n-    fmt.Println(indiceMai)\n %0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-25_15-51-45",
+            "content": "@@ -82,24 +82,18 @@\n  := \n-make(\n %5B%5D%5B%5Dint\n-, n)\n+ %7B%7D\n %0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-25_15-54-27",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var n int\n    fmt.Scan(n)\n\n    matriz := make([][]int, n)\n    for i := 0; i < n; i++ {\n        matriz[i] = make([]int, n)\n\n        for j := 0; j < n; j++{\n            fmt.Scan(&matriz[i][j])\n        }\n    }\n\n    maiorVal := -1\n    indiceMai := 0\n\n    for coluna := 0; coluna < n; coluna++ {\n        soma := 0\n\n        for linha := 0; linha < n; linha++{\n            soma += matriz[linha][coluna] * matriz[linha][coluna]\n        }\n\n        if soma > maiorVal {\n            maiorVal = soma\n            indiceMai = coluna\n        }\n    }\n    fmt.Println(indiceMai)\n}\n",
+            "lines": "32"
+        }
+    ]
+}

@@ -18,7 +18,8 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded: []
+expanded:
+- fup@mat
 flags:
   inbox: all
   panel: skills
@@ -28,5 +29,5 @@ audit:
   enabled: true
   interval_seconds: null
 lang: go
-selected: fup@string
-selected_index: 7
+selected: fup@subdiagonais
+selected_index: 18
