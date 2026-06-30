@@ -1,0 +1,63 @@
+[[tests]]
+input = '''
+11
+'''
+output = '''
+sim
+'''
+
+[[tests]]
+input = '''
+110
+'''
+output = '''
+sim
+'''
+
+[[tests]]
+input = '''
+123
+'''
+output = '''
+nao
+'''
+
+[[tests]]
+input = '''
+1
+'''
+output = '''
+nao
+'''
+
+[[tests]]
+input = '''
+121
+'''
+output = '''
+sim
+'''
+
+[[tests]]
+input = '''
+120
+'''
+output = '''
+nao
+'''
+
+[[tests]]
+input = '''
+12100000000
+'''
+output = '''
+sim
+'''
+
+[[tests]]
+input = '''
+12109020000
+'''
+output = '''
+sim
+'''

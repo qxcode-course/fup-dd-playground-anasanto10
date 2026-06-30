@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-28_19-56-28",
+            "content": "@@ -41,107 +41,35 @@\n     \n-var s string%0A    var ind, qtd int %0A%0A    fmt.Scanln(&s)%0A    fmt. Scan(&ind, &qtd)%0A%0A    fmt.Println(s\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-28_19-59-57",
+            "content": "@@ -23,154 +23,8 @@\n mt%22%0A\n-%0Afunc Substring(s string, ind, qtd int) string %7B%0A    fim := ind + qtd%0A%0A    if fim %3E len(s) %7B%0A        fim = len(s)%0A    %7D%0A%0A    return s%5Bind:fim%5D%0A%7D%0A%0A\n func\n@@ -119,11 +119,29 @@\n  &qtd)%0A%0A\n+    fmt.Println(s)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-28_20-04-44",
+            "content": "@@ -269,46 +269,7 @@\n d)%0A%0A\n-    fmt.Println(Substring(s, ind, qtd))\n %0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-28_20-05-12",
+            "content": "@@ -68,17 +68,16 @@\n tring %7B%0A\n-%0A\n     fim \n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-28_20-08-53",
+            "content": "@@ -72,76 +72,8 @@\n g %7B%0A\n-    if ind %3C 0 %7C%7C ind %3E= len(s) %7C%7C qtd %3C=0 %7B%0A        return %22%22%0A    %7D\n %0A   \n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-28_20-09-43",
+            "content": "@@ -17,42 +17,13 @@\n ort \n-(%0A    %22fmt%22%0A    %22bufio%22%0A    %22os%22%0A)\n+%22fmt%22\n %0A%0Afu\n@@ -256,82 +256,20 @@\n     \n-s := bufio.NewScanner(os.Stdin)%0A    s.Scan()%0A    s = s.Text()%0A    s.Scan()\n+var s string\n %0A   \n@@ -286,16 +286,36 @@\n qtd int \n+%0A%0A    fmt.Scanln(&s)\n %0A    fmt\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-28_20-12-29",
+            "content": "@@ -282,22 +282,16 @@\n  %7B%0A    s\n-canner\n  := bufi\n@@ -318,22 +318,16 @@\n n)%0A    s\n-canner\n .Scan()%0A\n@@ -332,17 +332,16 @@\n )%0A    s \n-:\n = s.Text\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-28_20-13-24",
+            "content": "@@ -348,22 +348,16 @@\n   s := s\n-canner\n .Text()%0A\n@@ -357,30 +357,24 @@\n Text()%0A    s\n-canner\n .Scan()%0A    \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-28_20-13-36",
+            "content": "@@ -362,16 +362,34 @@\n .Text()%0A\n+    scanner.Scan()\n %0A    var\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-28_20-13-56",
+            "content": "@@ -367,27 +367,8 @@\n ()%0A%0A\n-    fmt.Println(s)%0A\n     \n@@ -412,11 +412,50 @@\n  &qtd)%0A%0A\n+    fmt.Println(Substring(s, ind, qtd))\n %0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-28_20-17-57",
+            "content": "@@ -50,22 +50,8 @@\n os%22%0A\n-    %22strconv%22%0A\n )%0A%0Af\n@@ -371,167 +371,71 @@\n     \n-scanner.Scan()%0A    ind, _ := strconv.Atoi(scanner.Text())%0A%0A    scanner.Scan()%0A    qtd, _ := strconv.Atoi(scanner.Text())%0A%0A    fmt.Print(Substring(s, \n+fmt.Println(s)%0A    var ind, qtd int %0A    fmt. Scan(&\n ind, \n+&\n qtd)\n-)\n+%0A\n %0A%0A%7D%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-28_20-20-42",
+            "content": "@@ -545,22 +545,7 @@\n d))%0A\n-    fmt.Println()\n+%0A%7D\n %0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-28_20-21-23",
+            "content": "@@ -559,10 +559,8 @@\n intln()%0A\n-%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-28_20-21-42",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n    \"strconv\"\n)\n\nfunc Substring(s string, ind, qtd int) string {\n    if ind < 0 || ind >= len(s) || qtd <=0 {\n        return \"\"\n    }\n    fim := ind + qtd\n\n    if fim > len(s) {\n        fim = len(s)\n    }\n\n    return s[ind:fim]\n}\n\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    s := scanner.Text()\n\n    scanner.Scan()\n    ind, _ := strconv.Atoi(scanner.Text())\n\n    scanner.Scan()\n    qtd, _ := strconv.Atoi(scanner.Text())\n\n    fmt.Print(Substring(s, ind, qtd))\n    fmt.Println()\n}\n",
+            "lines": "35"
+        }
+    ]
+}

@@ -16,7 +16,21 @@ func main() {
     subs := scanner.Text()
     scanner.Scan()
 
-    for i := 0; i <= len(line)-len(pal); i++ {
-        
+    i := 0
+
+    for i <= len(line)-len(pal){
+        if line[i:i+len(pal)] == pal {
+            fmt.Print(subs)
+            i += len(pal)
+        } else {
+            fmt.Printf("%c", line[i])
+            i++
+        }
     }
+
+    for i < len(line) {
+        fmt.Printf("%c", line[i])
+        i++
+    }
+    fmt.Println()
 }

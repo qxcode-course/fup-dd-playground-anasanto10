@@ -2,8 +2,23 @@
     "patches": [
         {
             "label": "2026-06-22_16-53-48",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -17,483 +17,59 @@\n ort \n-(%0A    %22fmt%22%0A    %22bufio%22%0A    %22os%22%0A)%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    frase := scanner.Text()%0A    scanner.Scan()%0A%0A    palavra := %22%22%0A%0A    for i := 0; i %3C len(frase); i++ %7B%0A        if frase%5Bi%5D != ' ' %7B%0A            palavra += string(frase%5Bi%5D)          %0A        %7D else %7B%0A            fmt.Println(palavra, %22 %22, palavra, %22 %22)%0A            palavra = %22%22%0A        %7D%0A    %7D%0A%0A    if palavra != %22%22 %7B%0A        fmt.Println(palavra, %22 %22, palavra)%0A    %7D\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-30_11-58-57",
+            "content": "@@ -337,32 +337,34 @@\n        fmt.Print\n+ln\n (palavra, %22 %22, p\n@@ -458,16 +458,18 @@\n mt.Print\n+ln\n (palavra\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-30_11-59-18",
+            "content": "@@ -490,29 +490,6 @@\n   %7D%0A\n-    %0A    fmt.Println()%0A\n %7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-30_11-59-32",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    frase := scanner.Text()\n    scanner.Scan()\n\n    palavra := \"\"\n\n    for i := 0; i < len(frase); i++ {\n        if frase[i] != ' ' {\n            palavra += string(frase[i])          \n        } else {\n            fmt.Print(palavra, \" \", palavra, \" \")\n            palavra = \"\"\n        }\n    }\n\n    if palavra != \"\" {\n        fmt.Print(palavra, \" \", palavra)\n    }\n    \n    fmt.Println()\n}\n",
+            "lines": "29"
         }
     ]
 }

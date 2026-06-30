@@ -1,0 +1,52 @@
+2026-06-28 19:54:01, MOVE, v:1, k:fup@imperador, mode:PICK
+2026-06-28 19:54:37, MOVE, v:1, k:fup@imperador, mode:PICK
+2026-06-28 19:55:11, MOVE, v:1, k:fup@coluna, mode:PICK
+2026-06-28 19:56:27, MOVE, v:1, k:fup@substring, mode:PICK
+2026-06-28 19:56:28, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:5
+2026-06-28 19:59:57, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:11
+2026-06-28 19:59:57, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:01:14, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:04:44, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:22
+2026-06-28 20:05:12, EXEC, v:1, k:fup@substring, mode:FULL, rate:71, size:22
+2026-06-28 20:05:19, EXEC, v:1, k:fup@substring, mode:FULL, rate:71
+2026-06-28 20:05:51, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:05:19, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:08:54, EXEC, v:1, k:fup@substring, mode:FULL, rate:71, size:23
+2026-06-28 20:09:43, EXEC, v:1, k:fup@substring, mode:FULL, rate:71, size:25
+2026-06-28 20:09:51, EXEC, v:1, k:fup@substring, mode:FULL, rate:71
+2026-06-28 20:09:52, EXEC, v:1, k:fup@substring, mode:FULL, rate:71
+2026-06-28 20:11:11, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:09:52, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:12:29, EXEC, v:1, k:fup@substring, mode:FULL, size:30, fail:COMP
+2026-06-28 20:13:24, EXEC, v:1, k:fup@substring, mode:FULL, size:30, fail:COMP
+2026-06-28 20:13:36, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:30
+2026-06-28 20:13:56, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:30
+2026-06-28 20:13:56, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:13:56, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:17:57, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:31
+2026-06-28 20:20:42, EXEC, v:1, k:fup@substring, mode:FULL, rate:0, size:35
+2026-06-28 20:21:13, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:20:42, MOVE, v:1, k:fup@substring, mode:EDIT
+2026-06-28 20:21:23, EXEC, v:1, k:fup@substring, mode:FULL, size:34, fail:COMP
+2026-06-28 20:21:42, EXEC, v:1, k:fup@substring, mode:FULL, rate:100, size:35
+2026-06-28 20:21:46, MOVE, v:1, k:fup@substring, mode:BACK
+2026-06-28 20:21:57, SELF, v:1, k:fup@substring, self:1, rate:100
+2026-06-28 20:22:38, SELF, v:1, k:fup@amora, self:1, rate:100
+2026-06-28 20:22:38, MOVE, v:1, k:fup@amora, mode:PICK
+2026-06-28 20:22:40, EXEC, v:1, k:fup@amora, mode:FULL, rate:100
+2026-06-28 20:22:40, EXEC, v:1, k:fup@amora, mode:FULL, rate:100
+2026-06-28 20:22:41, EXEC, v:1, k:fup@amora, mode:FULL, rate:100
+2026-06-28 20:22:42, EXEC, v:1, k:fup@amora, mode:FULL, rate:100
+2026-06-28 20:22:42, EXEC, v:1, k:fup@amora, mode:FULL, rate:100
+2026-06-28 20:22:52, EXEC, v:1, k:fup@amora, mode:FULL, rate:100
+2026-06-28 20:22:55, MOVE, v:1, k:fup@amora, mode:BACK
+2026-06-28 20:23:23, MOVE, v:1, k:fup@traficantes, mode:PICK
+2026-06-28 20:23:24, EXEC, v:1, k:fup@traficantes, mode:FULL, fail:COMP
+2026-06-28 20:27:47, MOVE, v:1, k:fup@traficantes, mode:EDIT
+2026-06-28 20:29:26, MOVE, v:1, k:fup@traficantes, mode:EDIT
+2026-06-28 20:39:03, EXEC, v:1, k:fup@traficantes, mode:FULL, rate:0, size:35
+2026-06-28 20:39:16, EXEC, v:1, k:fup@traficantes, mode:FULL, rate:100, size:36
+2026-06-28 20:39:17, MOVE, v:1, k:fup@traficantes, mode:BACK
+2026-06-28 20:39:22, SELF, v:1, k:fup@traficantes, self:1, rate:100
+2026-06-28 20:39:55, MOVE, v:1, k:fup@rocicleia, mode:PICK
+2026-06-28 20:39:56, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:0

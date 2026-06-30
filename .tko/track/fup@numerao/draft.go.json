@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_12-34-23",
+            "content": "@@ -41,438 +41,35 @@\n     \n-var num string%0A    fmt.Scan(&num)%0A%0A    somaPar := 0%0A    somaImpar := 0%0A%0A    for i := 0; i %3C len(num); i++ %7B%0A        digito := int(num%5Bi%5D - '0')%0A%0A        if i%252 == 0 %7B%0A            somaPar += digito%0A        %7D else %7B%0A            somaImpar += digito%0A        %7D%0A    %7D%0A%0A    dif := somaPar - somaImpar%0A%0A    if dif %3C 0 %7B%0A        dif = -dif%0A    %7D%0A%0A    if dif%2511 == 0 %7B%0A        fmt.Println(%22sim%22)%0A    %7D else %7B%0A        fmt.Println(%22nao%22)%0A    %7D\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_12-47-49",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n    var num string\n    fmt.Scan(&num)\n\n    somaPar := 0\n    somaImpar := 0\n\n    for i := 0; i < len(num); i++ {\n        digito := int(num[i] - '0')\n\n        if i%2 == 0 {\n            somaPar += digito\n        } else {\n            somaImpar += digito\n        }\n    }\n\n    dif := somaPar - somaImpar\n\n    if dif < 0 {\n        dif = -dif\n    }\n\n    if dif%11 == 0 {\n        fmt.Println(\"sim\")\n    } else {\n        fmt.Println(\"nao\")\n    }\n}\n",
+            "lines": "31"
+        }
+    ]
+}

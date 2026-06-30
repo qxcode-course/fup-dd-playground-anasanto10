@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-30_12-48-31",
+            "content": "@@ -17,752 +17,59 @@\n ort \n-(%0A    %22fmt%22%0A    %22bufio%22%0A    %22os%22%0A)%0Afunc main() %7B%0A    scanner := bufio.NewScanner(os.Stdin)%0A    scanner.Scan()%0A    frase := scanner.Text()%0A    %0A    resposta := 0 %0A    for letra := byte('a'); letra %3C= 'z'; letra++ %7B%0A%0A        comum := true%0A        inicio := 0%0A%0A        for inicio %3C len(frase) %7B%0A%0A            achou := false%0A            fim := inicio%0A%0A            for fim %3C len(frase) && frase%5Bfim%5D != ' ' %7B%0A                if frase%5Bfim%5D == letra %7B%0A                    achou = true%0A                %7D%0A                fim++%0A            %7D%0A%0A            if !achou %7B%0A                comum = false%0A                break%0A            %7D%0A            inicio = fim + 1%0A        %7D%0A        if comum %7B%0A            resposta++%0A        %7D%0A    %7D%0A%0A    fmt.Println(resposta\n+%22fmt%22%0Afunc main() %7B%0A    fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-06-30_13-04-05",
+            "content": "package main\nimport (\n    \"fmt\"\n    \"bufio\"\n    \"os\"\n)\nfunc main() {\n    scanner := bufio.NewScanner(os.Stdin)\n    scanner.Scan()\n    frase := scanner.Text()\n    \n    resposta := 0 \n    for letra := byte('a'); letra <= 'z'; letra++ {\n\n        comum := true\n        inicio := 0\n\n        for inicio < len(frase) {\n\n            achou := false\n            fim := inicio\n\n            for fim < len(frase) && frase[fim] != ' ' {\n                if frase[fim] == letra {\n                    achou = true\n                }\n                fim++\n            }\n\n            if !achou {\n                comum = false\n                break\n            }\n            inicio = fim + 1\n        }\n        if comum {\n            resposta++\n        }\n    }\n\n    fmt.Println(resposta)\n}\n",
+            "lines": "42"
+        }
+    ]
+}

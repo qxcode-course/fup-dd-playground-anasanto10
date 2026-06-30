@@ -2,7 +2,8 @@
 
 ![_](assets/cover.jpg)
 
-O traficante Aldemir liga para seu comparsa Valdemiro por um telefone que estava grampeado. Aldemir fala:
+O traficante Aldemir liga para seu comparsa Valdemiro por um telefone que es
+tava grampeado. Aldemir fala:
 
 - "preciso de tutu pra comprar uma tutuda porque o Carlos nao me entutu mais".
 

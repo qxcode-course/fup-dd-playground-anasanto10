@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2026-06-22_16-51-58",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"Hello, World!\")\n}\n",
+            "content": "@@ -41,72 +41,35 @@\n     \n-var p1, p2 string%0A    fmt.Scan(&p1, &p2)%0A%0A    fmt.Println(p1, p2\n+fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-06-30_12-02-06",
+            "content": "@@ -87,369 +87,26 @@\n     \n-if len(p1) != len(p2) %7B%0A        fmt.Println(%22n%C3%A3o%22)%0A    %7D%0A%0A    cont := make(%5B%5Dint, 26)%0A%0A    for i := 0; i %3C len(p1); i++ %7B%0A        cont%5Bp1%5Bi%5D-'a'%5D++%0A    %7D%0A%0A    for i := 0; i %3C len(p2); i++ %7B%0A        cont%5Bp2%5Bi%5D-'a'%5D--%0A    %7D%0A%0A    anagrama := true%0A%0A    for i := 0; i %3C 26; i++%7B%0A        if cont%5Bi%5D != 0 %7B%0A            anagrama = false%0A            break%0A        %7D%0A    %7D\n+fmt.Println(p1, p2)\n %0A%7D%0A\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-30_12-12-17",
+            "content": "@@ -449,99 +449,7 @@\n    %7D\n-%0A%0A    if anagrama %7B%0A        fmt.Println(%22sim%22)%0A    %7D else %7B%0A        fmt.Println(%22n%C3%A3o%22)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-06-30_12-13-29",
+            "content": "@@ -527,17 +527,17 @@\n intln(%22n\n-a\n+%C3%A3\n o%22)%0A    \n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-30_12-14-21",
+            "content": "@@ -121,33 +121,33 @@\n   fmt.Println(%22n\n-a\n+%C3%A3\n o%22)%0A    %7D%0A%0A    c\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-30_12-14-45",
+            "content": "@@ -83,16 +83,72 @@\n 2)%0A%0A    \n+if len(p1) != len(p2) %7B%0A        fmt.Println(%22nao%22)%0A    %7D\n %0A%0A    co\n",
+            "lines": "35"
         }
     ]
 }

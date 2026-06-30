@@ -1,0 +1,95 @@
+2026-06-30 11:50:30, MOVE, v:1, k:fup@gagueira, mode:PICK
+2026-06-30 11:51:10, MOVE, v:1, k:fup@gagueira, mode:PICK
+2026-06-30 11:51:10, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:0
+2026-06-30 11:51:10, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-06-30 11:55:50, MOVE, v:1, k:fup@gagueira, mode:EDIT
+2026-06-30 11:58:57, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:0, size:27
+2026-06-30 11:59:18, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:0, size:27
+2026-06-30 11:59:32, EXEC, v:1, k:fup@gagueira, mode:FULL, rate:100, size:29
+2026-06-30 11:59:34, MOVE, v:1, k:fup@gagueira, mode:BACK
+2026-06-30 11:59:40, SELF, v:1, k:fup@gagueira, self:1, rate:100
+2026-06-30 11:59:52, MOVE, v:1, k:fup@rocicleia, mode:PICK
+2026-06-30 11:59:56, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:0
+2026-06-30 12:00:24, MOVE, v:1, k:fup@rocicleia, mode:PICK
+2026-06-30 12:00:25, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:0
+2026-06-30 12:02:06, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:0, size:8
+2026-06-30 12:02:06, MOVE, v:1, k:fup@rocicleia, mode:EDIT
+2026-06-30 12:02:11, MOVE, v:1, k:fup@rocicleia, mode:EDIT
+2026-06-30 12:10:14, MOVE, v:1, k:fup@rocicleia, mode:EDIT
+2026-06-30 12:12:17, EXEC, v:1, k:fup@rocicleia, mode:FULL, size:29, fail:COMP
+2026-06-30 12:13:29, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:66, size:35
+2026-06-30 12:13:35, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:66
+2026-06-30 12:14:21, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:83, size:35
+2026-06-30 12:14:45, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:83, size:35
+2026-06-30 12:14:51, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:100, size:33
+2026-06-30 12:14:51, EXEC, v:1, k:fup@rocicleia, mode:FULL, rate:100, size:33
+2026-06-30 12:14:58, MOVE, v:1, k:fup@rocicleia, mode:BACK
+2026-06-30 12:15:07, SELF, v:1, k:fup@rocicleia, self:1, rate:100
+2026-06-30 12:14:57, MOVE, v:1, k:fup@rocicleia, mode:EDIT
+2026-06-30 12:14:51, MOVE, v:1, k:fup@rocicleia, mode:EDIT
+2026-06-30 12:17:38, MOVE, v:1, k:fup@tokens, mode:PICK
+2026-06-30 12:17:39, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0, size:5
+2026-06-30 12:17:39, MOVE, v:1, k:fup@tokens, mode:EDIT
+2026-06-30 12:19:22, MOVE, v:1, k:fup@tokens, mode:EDIT
+2026-06-30 12:20:46, EXEC, v:1, k:fup@tokens, mode:FREE, size:14
+2026-06-30 12:23:34, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0, size:20
+2026-06-30 12:25:07, MOVE, v:1, k:fup@tokens, mode:EDIT
+2026-06-30 12:23:34, MOVE, v:1, k:fup@tokens, mode:EDIT
+2026-06-30 12:25:35, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0, size:20
+2026-06-30 12:25:48, EXEC, v:1, k:fup@tokens, mode:FULL, rate:33, size:22
+2026-06-30 12:25:56, EXEC, v:1, k:fup@tokens, mode:FULL, rate:33, size:21
+2026-06-30 12:26:40, MOVE, v:1, k:fup@tokens, mode:PICK
+2026-06-30 12:26:41, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0
+2026-06-30 12:26:50, EXEC, v:1, k:fup@tokens, mode:FULL, rate:33, size:21
+2026-06-30 12:27:33, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0, size:21
+2026-06-30 12:27:46, EXEC, v:1, k:fup@tokens, mode:FULL, rate:33, size:21
+2026-06-30 12:28:43, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0, size:21
+2026-06-30 12:29:18, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0
+2026-06-30 12:29:19, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0
+2026-06-30 12:29:30, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0, size:21
+2026-06-30 12:29:46, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0
+2026-06-30 12:30:59, EXEC, v:1, k:fup@tokens, mode:FULL, rate:0
+2026-06-30 12:30:59, MOVE, v:1, k:fup@tokens, mode:EDIT
+2026-06-30 12:30:58, MOVE, v:1, k:fup@tokens, mode:EDIT
+2026-06-30 12:34:02, EXEC, v:1, k:fup@tokens, mode:FULL, rate:100, size:25
+2026-06-30 12:34:05, MOVE, v:1, k:fup@tokens, mode:BACK
+2026-06-30 12:34:10, SELF, v:1, k:fup@tokens, self:1, rate:100
+2026-06-30 12:34:10, MOVE, v:1, k:fup@tokens, mode:PICK
+2026-06-30 12:34:11, EXEC, v:1, k:fup@tokens, mode:FULL, rate:100
+2026-06-30 12:34:12, MOVE, v:1, k:fup@tokens, mode:BACK
+2026-06-30 12:34:22, MOVE, v:1, k:fup@numerao, mode:DOWN
+2026-06-30 12:34:22, MOVE, v:1, k:fup@numerao, mode:PICK
+2026-06-30 12:34:23, EXEC, v:1, k:fup@numerao, mode:FULL, rate:0, size:5
+2026-06-30 12:33:48, MOVE, v:1, k:fup@tokens, mode:EDIT
+2026-06-30 12:34:11, MOVE, v:1, k:fup@tokens, mode:EDIT
+2026-06-30 12:34:22, MOVE, v:1, k:fup@numerao, mode:EDIT
+2026-06-30 12:34:23, MOVE, v:1, k:fup@numerao, mode:EDIT
+2026-06-30 12:36:21, MOVE, v:1, k:fup@numerao, mode:EDIT
+2026-06-30 12:39:17, MOVE, v:1, k:fup@numerao, mode:EDIT
+2026-06-30 12:47:49, EXEC, v:1, k:fup@numerao, mode:FULL, rate:100, size:31
+2026-06-30 12:47:51, MOVE, v:1, k:fup@numerao, mode:BACK
+2026-06-30 12:47:58, SELF, v:1, k:fup@numerao, self:1, rate:100
+2026-06-30 12:48:29, MOVE, v:1, k:fup@sorvete, mode:DOWN
+2026-06-30 12:48:29, MOVE, v:1, k:fup@sorvete, mode:PICK
+2026-06-30 12:48:31, EXEC, v:1, k:fup@sorvete, mode:FULL, rate:0, size:5
+2026-06-30 12:47:49, MOVE, v:1, k:fup@numerao, mode:EDIT
+2026-06-30 12:48:29, MOVE, v:1, k:fup@sorvete, mode:EDIT
+2026-06-30 12:51:35, MOVE, v:1, k:fup@sorvete, mode:EDIT
+2026-06-30 12:48:31, MOVE, v:1, k:fup@sorvete, mode:EDIT
+2026-06-30 12:56:38, MOVE, v:1, k:fup@sorvete, mode:EDIT
+2026-06-30 12:57:21, MOVE, v:1, k:fup@sorvete, mode:EDIT
+2026-06-30 13:04:05, EXEC, v:1, k:fup@sorvete, mode:FULL, rate:100, size:42
+2026-06-30 13:04:07, MOVE, v:1, k:fup@sorvete, mode:BACK
+2026-06-30 13:04:12, SELF, v:1, k:fup@sorvete, self:1, rate:100
+2026-06-30 13:04:43, MOVE, v:1, k:fup@quadrado, mode:DOWN
+2026-06-30 13:04:44, MOVE, v:1, k:fup@quadrado, mode:PICK
+2026-06-30 13:04:46, EXEC, v:1, k:fup@quadrado, mode:FULL, rate:0, size:5
+2026-06-30 13:04:05, MOVE, v:1, k:fup@sorvete, mode:EDIT
+2026-06-30 13:04:43, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-06-30 13:04:46, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-06-30 13:09:42, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-06-30 13:16:37, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-06-30 13:17:49, MOVE, v:1, k:fup@quadrado, mode:EDIT
+2026-06-30 13:22:26, EXEC, v:1, k:fup@quadrado, mode:FULL, rate:100, size:48
+2026-06-30 13:22:39, MOVE, v:1, k:fup@quadrado, mode:BACK
+2026-06-30 13:22:46, SELF, v:1, k:fup@quadrado, self:1, rate:100, concept:1
